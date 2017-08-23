@@ -1,6 +1,9 @@
 **Qual é a finalidade da Engenharia de Software?**  
-**Quem são os interessados do sistema de matrícula da DAR? Dê um exemplo de funcionalidade, ou de intercâmbio de**  
-**dados, ou de controle para cada um dos tipos de interessados.**  
+> Engenharia de Software visa desenvolver economicamente software adequado a todos os interessados possuindo qualidade assegurada e capaz de operar fidedignamente em ambientes reais
+
+**Quem são os interessados do sistema de matrícula da DAR? Dê um exemplo de funcionalidade, ou de intercâmbio de dados, ou de controle para cada um dos tipos de interessados.**  
+Alunos e DAR são o minimo que consigo pensar. Não sei se deve se incluir computadores/website...
+
 **Quem são os interessados de um controle remoto de uma televisão? Dê um exemplo de funcionalidade, ou de intercâmbio**  
 **de dados, ou de controle para cada um dos tipos de interessados.**  
 **Defina genericamente o que é um sistema?**  
