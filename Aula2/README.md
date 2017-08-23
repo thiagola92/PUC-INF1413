@@ -50,4 +50,5 @@ O motivo disso é, as vezes nem o cliente sabe dizer o que quer **ou** o que é 
 Em outras palavras, faz software de qualidade.  
 
 **Sistema**:  
-
+Um conjunto de elementos/artefatos interdependetes, ou seja, elementos quem afetam a todos os outros no conjunto e que por sua vez são afetados por todos os outros no conjunto.  
+E esses elementos trabalham em conjunto para obter um objetivo em comum.  
