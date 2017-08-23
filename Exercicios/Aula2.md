@@ -3,6 +3,7 @@
 
 **Quem são os interessados do sistema de matrícula da DAR? Dê um exemplo de funcionalidade, ou de intercâmbio de dados, ou de controle para cada um dos tipos de interessados.**  
 Um **aluno** vai no site da puc online e se matricula usando o sistema de matricula do **DAR**.  
+O **professor** que vai dar a aula para os alunos.  
 
 **Quem são os interessados de um controle remoto de uma televisão? Dê um exemplo de funcionalidade, ou de intercâmbio de dados, ou de controle para cada um dos tipos de interessados.**  
 O **usuário** usa o controle para se comunicar com a **televisão**.  
