@@ -44,3 +44,8 @@ Todas necessidades que foram devidamente anotadas/escritas/faladas, passadas par
 Necessidades que **não** foram devidamente anotadas/escritas/faladas, passadas para você por algum meio de comunicação.  
 O motivo disso é, as vezes nem o cliente sabe dizer o que quer **ou** o que é **ou** acha que já esta subentendido.  
 
+**Engenharia Software**:  
+> Engenharia de Software visa desenvolver economicamente software adequado a todos os interessados possuindo qualidade assegurada e capaz de operar fidedignamente em ambientes reais
+
+Em outras palavras, faz software de qualidade.  
+
