@@ -52,3 +52,35 @@ Em outras palavras, faz software de qualidade.
 **Sistema**:  
 Um conjunto de elementos/artefatos interdependetes, ou seja, elementos quem afetam a todos os outros no conjunto e que por sua vez são afetados por todos os outros no conjunto.  
 E esses elementos trabalham em conjunto para obter um objetivo em comum.  
+
+**Defeito**:  
+É um fragmento de um artefato que, **se utilizado**, pode levar a um erro.  
+Em outras palavras, um pedaço de um código que se for executado pode levar a um erro.  
+
+O ponto que você tem que notar é que, defeitos não são horriveis. Se nunca forem utilizados então nunca causara nenhum erro.  
+
+**Erro**:  
+Surge por causa de um defeito.  
+Um erro é o desvio entre o que é desejado/objetivo e o que é gerado/obtido. Em outras palavras, é um estado do sistema diferente do esperado.  
+
+**Falha**:  
+É um erro observado.  
+Quando dizemos observado, queremos dizer que estamos cientes da existência dele durante o código, ou seja, notamos que ele ocorreu.   
+Geralmente tratamos o erro ao nota-lo (try, catch).  
+
+**Latência do erro**:  
+É o tempo entre o erro surgir e ele ser observado.  
+O tempo que demorou para notar que existia um erro.  
+
+Quanto maior o tempo, mas difícil vai ser de descobrir onde ocorreu.  
+```
+1)
+|--------|
+Erro    Observado
+
+2)
+|--------------------------------------------------|
+Erro                                              Observado
+```
+
+Note que é mais fácil de descobrir o erro se observarmos o mais cedo possível.  
