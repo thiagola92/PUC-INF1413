@@ -66,7 +66,6 @@ Um erro é o desvio entre o que é desejado/objetivo e o que é gerado/obtido. E
 **Falha**:  
 É um erro observado.  
 Quando dizemos observado, queremos dizer que estamos cientes da existência dele durante o código, ou seja, notamos que ele ocorreu.   
-Geralmente tratamos o erro ao nota-lo (try, catch).  
 
 **Latência do erro**:  
 É o tempo entre o erro surgir e ele ser observado.  
@@ -84,3 +83,44 @@ Erro                                              Observado
 ```
 
 Note que é mais fácil de descobrir o erro se observarmos o mais cedo possível.  
+
+Existe varias maneiras de descobrir onde acontece o erro:  
+Você pode ir andando passo a passo do seu programa até ver o erro.  
+Você pode procurar uma região onde pode estar a causa da falha e você bota um breakpoint.  
+Você pode usar o log.  
+Para quem não tem log, usa varios printf.  
+
+**Dano**:
+Uma falha gera um dano no sistema, mas já que falha é um erro observado sabemos que o dano veio de algo conhecido/observado.  
+> Dano é a consequência externa conhecida (prejuízo observado) provocado por uma falha
+
+**Lesão**:
+Um erro gera uma lesão no sistema, diferente do dano, você não observou/conhece ele e não sabe o prejuízo que está trazendo.  
+> Lesão é a consequência externa desconhecida provocada por um erro não observado
+
+**Vulnerabilidade**:  
+Parte do artefato que quando usado de certa maneira, pode gerar um erro.  
+Vulnerabilidades são como defeitos.  
+
+---
+
+**Anomalia(bad smell)**:  
+- O artefato está correto, do ponto de vista funcional e não funcional, mas é difícil de manter.  
+- Engenharia ruim.  
+- Faz o que querem mas não faz de uma maneira boa.  
+
+> Tráz dificuldade para a manutenção
+
+**Deficiência**:
+- Interface humana ruim.  
+- Induzir usuário a cometer erros de uso.  
+- Documentação e auxílios não conformes com o implementado.  
+
+> Programa está correto mas ele é muito ruim de usar
+
+**Inadequação**:
+- Não atende as reas necessidades dos interessados.  
+- Não satisfaz os requisitos não funcionais e inversos estabelecidos.  
+
+PIOR CASO?
+
