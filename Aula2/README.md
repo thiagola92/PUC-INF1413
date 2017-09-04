@@ -53,6 +53,8 @@ Em outras palavras, faz software de qualidade.
 Um conjunto de elementos/artefatos interdependetes, ou seja, elementos quem afetam a todos os outros no conjunto e que por sua vez são afetados por todos os outros no conjunto.  
 E esses elementos trabalham em conjunto para obter um objetivo em comum.  
 
+---
+
 **Defeito**:  
 É um fragmento de um artefato que, **se utilizado**, pode levar a um erro.  
 Em outras palavras, um pedaço de um código que se for executado pode levar a um erro.  
@@ -122,5 +124,29 @@ Vulnerabilidades são como defeitos.
 - Não atende as reas necessidades dos interessados.  
 - Não satisfaz os requisitos não funcionais e inversos estabelecidos.  
 
-PIOR CASO?
+Esse é o pior caso?
 
+---
+
+**Risco**:  
+Risco é a chance de um evento negativo acontecer.  
+> Risco é um evento que tem uma probabilidade de ocorrer, impactando negativamente um interessado.  
+
+Nós temos dois tipos de riscos  
+
+**Risco de Desenvolvimento**:  
+Por exemplo:  
+Você não conseguir entregar o software no tempo que você prometeu.  
+Isso pode ocorrer por milhares de motivos, sejá não ter tecnologia ou problemas técnicos.  
+
+**Risco de Uso**:  
+Por exemplo:  
+Você quer se matricular e resolve se matricular o último dia da matricula e faltando 30 minutos.  
+Você está correndo o risco de não conseguir, pois pode faltar luz ou muita gente acessar nesse mesmo horário...  
+O risco de não conseguir se matricular é bem maior.  
+Se fosse no primeiro dia, você ainda teria outros dias para tentar, além disso é pouco provável que a matricula fique offline todos os dias da matricula. Risco bem menor.  
+
+O risco de não funcionar por um longo periodo é menor do que não funcionar por um curto periodo.  
+
+**Qualidade satisfatória**:  
+Quando atende as necessidades do cliente com o risco que satisfaça o cliente.  
