@@ -148,5 +148,17 @@ Se fosse no primeiro dia, você ainda teria outros dias para tentar, além disso
 
 O risco de não funcionar por um longo periodo é menor do que não funcionar por um curto periodo.  
 
+---
+
 **Qualidade satisfatória**:  
 Quando atende as necessidades do cliente com o risco que satisfaça o cliente.  
+Nós dividimos em 3 graus de qualidade:  
+* Qualidade por construção
+* Qualidade por desenvolvimento
+* Qualidade por manutenção
+
+**Qualidade por construção**:  
+Um artefato possui qualidade por construção quando possui todas as qualidades satisfatórias antes do primeiro teste. Ou seja, se você fez algo correto antes do primeiro teste, qualidade por construção.  
+
+**Qualidade por desenvolvimento**:
+
