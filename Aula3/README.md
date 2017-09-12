@@ -40,3 +40,10 @@ Perdas humanas
 
 Perdas ecológicas......
 
+---
+
+**Garantia da qualidade**:  
+Assegurar que tenha qualidade.  
+Para isso devemos fazer muitas coisas, não basta apenas testar. Tem que seguir uma forma de trabalhar que leva você a qualidade garantida.  
+
+Por exemplo, você não pode trabalhar com o 'olhometro', você tem que saber medir.  
