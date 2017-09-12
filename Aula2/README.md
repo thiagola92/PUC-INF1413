@@ -160,5 +160,16 @@ Nós dividimos em 3 graus de qualidade:
 **Qualidade por construção**:  
 Um artefato possui qualidade por construção quando possui todas as qualidades satisfatórias antes do primeiro teste. Ou seja, se você fez algo correto antes do primeiro teste, qualidade por construção.  
 
-**Qualidade por desenvolvimento**:
+Barragens é um exemplo disso, você não pode construir uma barragem, testar, ver se está funcionando, concertar, testar...  
+Você tem que fazer funcionando desdo inicio.   
+
+**Qualidade por desenvolvimento**:  
+Um artefato possui qualidade por desenvolvimento quando possui todas as qualidades satisfatórias para tudo esperando. Ou seja, se você faz algo que funciona para tudo que você esperava, qualidade por desenvolvimento.  
+
+**Qualidade por manutenção**:  
+Um artefato possui qualidade por manutenção quando possui todas as qualidades satisfatórias para tudo esperando depoiss de qualquer manutenção ou atualização. Ou seja, se você faz uma manutenção e depois funcionou para tudo que você esperava, qualidade por manutenção.  
+
+---
+
+**Sistema intensivo em software**:  1:00 ~ 1:10
 
