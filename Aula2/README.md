@@ -197,5 +197,30 @@ Requisitos não funcionais clássicos: segurança, usabilidade, confiabilidade, 
 Ex:  
 Faça um sistema que calcule a soma de 10 números em menos de 1 nanosegundo.  
 
+**Qualidade**:  
+Dar um valor/nota a coisa que está sendo observada.  
+Para que possamos medir ou dar a nota a algo, precisamos ter uma maneira de medir/avaliar.  
+Existe 4 tipos de medição.  
+* Mensurar (tirar a medida)  
+* 
+* Avaliação por especialista devidamente treinado
+* Gosto  
 
+**Mensurar**:  
+Da mesma maneira que você mede com régua você consegue medir as coisas.  
+Você consegue medir quanta energia está sendo gasta em um sistema.  
+Você consegue medir quanta agua está sendo gasta.  
+
+**Avaliação estatistica**:  
+
+**Avaliação por especialista devidamente treinado**:  
+É um humano que recebe um treinamento que permite ele fazer uma determinada avaliação.  
+Por exemplo, um professor da uma nota a prova pois tem conhecimento da matéria e sabe dizer o que está certo ou errado, geralmente a nota segue um regulamento minimo de quanto vale cada coisa.  
+Lado negativo, a chance de errar é bem maior do que os outros.  
+Defesa de doutorado é outro exemplo, 3 professores avaliam.  
+
+**Gosto**:  
+"Acho que está correto".  
+"Gosto dele assim".  
+Nada confiável e muito dependente de alguém avaliar.  
 
