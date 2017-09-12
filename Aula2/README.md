@@ -171,5 +171,31 @@ Um artefato possui qualidade por manutenção quando possui todas as qualidades 
 
 ---
 
-**Sistema intensivo em software**:  1:00 ~ 1:10
+**Sistema intensivo em software**:  
+Software + hardware usado para ajudar você a alcançar um objetivo.  
+
+**Sistema correto**:  
+Existe duas definições:  
+- Um sistema que implementa exatamente as especifições.  
+- 
+
+Qual o problema da primeira definição? A especificação pode estar incorreta.  
+O que é qualidade? Especificações são qualidades.  
+Especificações podem ser muitas coisas, por exemplo requisitos.  
+
+**Requisito funcional**:  
+Algo que o sistema deve fazer, necessidade do sistema.  
+
+Ex:  
+Faça um sistema que calcule a soma de 10 números.  
+O sistema deve reservar a vaga de um cliente.  
+
+**Requisito não funcional**
+Caracteristicas técnicas do sistema.  
+Requisitos não funcionais clássicos: segurança, usabilidade, confiabilidade, padrão, desempenho, hardware/software...
+
+Ex:  
+Faça um sistema que calcule a soma de 10 números em menos de 1 nanosegundo.  
+
+
 
