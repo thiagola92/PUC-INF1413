@@ -45,5 +45,25 @@ Perdas ecológicas......
 **Garantia da qualidade**:  
 Assegurar que tenha qualidade.  
 Para isso devemos fazer muitas coisas, não basta apenas testar. Tem que seguir uma forma de trabalhar que leva você a qualidade garantida.  
-
 Por exemplo, você não pode trabalhar com o 'olhometro', você tem que saber medir.  
+
+Garantia de qualidade implica você dispor de especificações que deixem claro como vai ser avaliado a qualidade.  
+
+**Solicitação exógenas**:  
+Especificações produzidas por pessoas de fora, são coisas que interessam pessoas de fora da equipe.  
+
+**Solicitação endogenas**:  
+Especificações produzidas pela equipe, são coisas que interessam pessoas de dentro da equipe.  
+
+**Especificação de software**:  
+São representações de como o software vai funciona, essa representação pode ser por texto/tabela/diagrams.  
+Normalmente essas representações são **ad hoc**, ou seja, inventadas pelo redator e não tem uma regra de sintaxe, nem semântica. Lado negativo é que acabam por ser confusas justamente por não ter maneira certa de fazer.  
+
+**Propriedades básicas de representações**:  
+* Inteligibilidade: Fácil de entender para a todos que esse software interessa.  
+* Vocabulário usado: As palavras e termos tem que ser conhecida por todos involvidos que o software interessa.  
+  * Dicionário de termos/dados: Uma lista de termos e seus significados, para que todos interessados possam conferir.  
+    * Termo: Palavra usada que pode estar fora do conhecimento do interessado   
+    * Significado: Explicação do que signfica.  
+* Sintaxe: A representação estar sintaticamente correta em relação à linguagem de representação usada (se for ad hoc não tem muito como conferir).  
+* Semântica: Todos interessados entendem a representação.  
