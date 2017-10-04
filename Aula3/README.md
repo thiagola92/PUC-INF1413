@@ -67,3 +67,50 @@ Normalmente essas representações são **ad hoc**, ou seja, inventadas pelo red
     * Significado: Explicação do que signfica.  
 * Sintaxe: A representação estar sintaticamente correta em relação à linguagem de representação usada (se for ad hoc não tem muito como conferir).  
 * Semântica: Todos interessados entendem a representação.  
+
+**Laudo**:  
+É um relatório de técnico de um problema ocorrido em um artefato.  
+O que tem em um laudo:  
+* Artefato  
+  * Nome
+  * Versão
+  * Data
+  * Quem
+  * Como:
+    * Revisão, inspeção
+    * Caso de teste
+    * Uso
+    * Outros
+* Tipo do problema
+  * Código
+  * Consulta
+  * Documentação
+  * Especificação (design)
+  * Sugestão
+* Serveridade
+  * Possíveis danos provocados pelo problema
+  * É possível continuar a usar?
+    * [ ] não, prova danos sérios
+    * [ ] não, é impossível utilizar os resultados
+    * [ ] sim, se evitar a região problemática
+    * [ ] sim, usando outra sequência de trabalho
+    * [ ] sim, se desprezar alguns resultados
+    * [ ] sim, pois somoente incomoda
+* É reprodutível?
+  * Identificação do problema
+  * Descrição do problema e como produzi-lo
+* Sugestão de solução
+  * Isso nem sempre é desejável
+* Solução
+  * Estado da solução
+    * Datas de mudança de estado
+    * Responsáveis pelo trabalho nos estados de execução
+  * Descrição da solução
+  * Artefatos criados, alterados, eliminados
+    * Versões resultantes
+  * Possíveis causas das faltas identificadas
+* FAP -  Ficha de acompanhamento de problemas
+  * Registra o problema e a evolução da solução até sido completamente resolvido
+    
+
+Como você sabe se um artefato pode ser aprovado? Quando o laudo estiver vazio, ele pode ter varias pendências mas funciona.  
