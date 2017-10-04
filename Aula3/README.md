@@ -68,6 +68,10 @@ Normalmente essas representações são **ad hoc**, ou seja, inventadas pelo red
 * Sintaxe: A representação estar sintaticamente correta em relação à linguagem de representação usada (se for ad hoc não tem muito como conferir).  
 * Semântica: Todos interessados entendem a representação.  
 
+**Especificação inicial**:  
+Contém o que os interessados querem do software. Todos os requisitos deveriam estar aqui mas pode ocorrer de não estar. Essa especificação inicial nem sempre é a melhor maneira de fazer.  
+Nada falado aqui deveria ser considerado óbvio, deve-se tirar dúvidas de tudo que não entende ou deveria ser deixado claro. 
+
 **Laudo**:  
 É um relatório de técnico de um problema ocorrido em um artefato.  
 O que tem em um laudo:  
