@@ -1,5 +1,19 @@
-# Aula 2
+# Aula 1
 Como essa aula pareceu mais um dicionário eu resolvi escrever como se fosse um.  
+
+**Verificação**:  
+Olhar um documento e verificar se está correto.  
+Em outras palavras, ver se fez a 'coisa' direito ou implementou direito".  
+
+**Validação**:  
+Olhar um conjunto de documentos e verificar se estão corretos.  
+Em outras palavras, ver se fez a**s** 'coisa**s**'' direito, ver se implementou o serviço direito.  
+
+**Aceitação**:  
+Ver se era isso que o usúario/cliente queria.  
+
+Sempre bom ao final de cada 'coisa' verificar se está certo com o usuário/cliente.  
+Se você simplesmente seguir a especificação, você pode até ter feito correto segundo a especificação, mas se a especificação estiver errada você vai acabar com muito retrabalho inútil.  
 
 **Artefato**:  
 Artefato é qualquer objeto usado para compor um software.  
@@ -177,7 +191,7 @@ Software + hardware usado para ajudar você a alcançar um objetivo.
 **Sistema correto**:  
 Existe duas definições:  
 - Um sistema que implementa exatamente as especifições.  
-- 
+-
 
 Qual o problema da primeira definição? A especificação pode estar incorreta.  
 O que é qualidade? Especificações são qualidades.  
@@ -202,7 +216,7 @@ Dar um valor/nota a coisa que está sendo observada.
 Para que possamos medir ou dar a nota a algo, precisamos ter uma maneira de medir/avaliar.  
 Existe 4 tipos de medição.  
 * Mensurar (tirar a medida)  
-* 
+*
 * Avaliação por especialista devidamente treinado
 * Gosto  
 
@@ -223,4 +237,3 @@ Defesa de doutorado é outro exemplo, 3 professores avaliam.
 "Acho que está correto".  
 "Gosto dele assim".  
 Nada confiável e muito dependente de alguém avaliar.  
-
