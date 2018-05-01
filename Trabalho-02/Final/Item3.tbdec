@@ -1,0 +1,26 @@
+// Grupo:
+// Pedro Paulo da Silva - 1421422
+// Stephanie Fay - 1721631
+// Thiago Lages de Alencar - 1721629
+
+//                            1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+conecta servidor            : t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  f
+conecta GPS                 : t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  f  -
+manda coordenadas           : t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  f  -  -
+manda raio de busca         : t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  t  f  -  -  -
+estacionamento == 0         : t  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  f  -  -  -  -
+estacionamento == 1         : -  t  t  t  t  t  t  t  t  t  t  t  t  f  f  f  f  f  f  f  f  f  f  f  f  f  -  -  -  -
+estacionamento > 1          : -  -  -  -  -  -  -  -  -  -  -  -  -  t  t  t  t  t  t  t  t  t  t  t  t  f  -  -  -  -
+vagas == 0                  : -  t  f  f  f  f  f  f  f  f  f  f  f  t  f  f  f  f  f  f  f  f  f  f  f  -  -  -  -  -
+vagas == 1                  : -  -  t  t  t  t  t  f  f  f  f  f  f  -  t  t  t  t  t  f  f  f  f  f  f  -  -  -  -  -
+vagas > 1                   : -  -  -  -  -  -  -  t  t  t  t  t  f  -  -  -  -  -  -  t  t  t  t  t  f  -  -  -  -  -
+estacionamento              : -  -  t  t  t  t  f  t  t  t  t  f  -  -  t  t  t  t  f  t  t  t  t  f  -  -  -  -  -  -
+mapa                        : -  -  t  f  f  f  -  t  f  f  f  -  -  -  t  f  f  f  -  t  f  f  f  -  -  -  -  -  -  -
+roteiro de rua              : -  -  -  t  f  f  -  -  t  f  f  -  -  -  -  t  f  f  -  -  t  f  f  -  -  -  -  -  -  -
+GPS                         : -  -  -  -  t  f  -  -  -  t  f  -  -  -  -  -  t  f  -  -  -  t  f  -  -  -  -  -  -  -
+===================================
+Nenhum estacionamento       : x  x                                   x
+Guiar pelo mapa             :       x              x                    x              x
+Guiar pelo roteiro de rua   :          x              x                    x              x
+Guiar pelo GPS              :             x              x                    x              x
+Erro                        :                x  x           x  x  x              x  x           x  x  x  x  x  x  x  x

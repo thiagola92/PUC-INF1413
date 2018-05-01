@@ -1,0 +1,14 @@
+// Grupo:
+// Pedro Paulo da Silva - 1421422
+// Stephanie Fay - 1721631
+// Thiago Lages de Alencar - 1721629
+
+estacionamentos < 0               : t  f  f  f  f
+estacionamentos == 0              : -  t  f  f  f
+estacionamentos == 1              : -  -  t  f  f
+estacionamentos > 1               : -  -  -  t  f
+====================================================
+Nenhum estacionamento disponivel  :    x
+Um estacionamento disponivel      :       x
+Mais que um estacionamento        :          x
+Erro                              : x           x

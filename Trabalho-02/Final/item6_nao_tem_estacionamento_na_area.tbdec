@@ -1,0 +1,15 @@
+// Grupo:
+// Pedro Paulo da Silva - 1421422
+// Stephanie Fay - 1721631
+// Thiago Lages de Alencar - 1721629
+
+aumenta o raio de busca               : t  t  t  f  f  f  f  f  f
+diminui o raio de busca               : -  -  -  t  t  t  f  f  f
+repete busca                          : t  f  f  t  f  f  t  f  f
+cancela busca                         : -  t  f  -  t  f  -  t  f
+======================================================================
+Busca com raio de busca maior         : x
+Busca com raio de busca menor         :          x
+Busca com mesmo raio de busca       :                   x
+Cancela a busca                       :    x        x        x
+Erro                                  :       x        x        x
