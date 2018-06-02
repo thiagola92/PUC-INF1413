@@ -1,0 +1,9 @@
+Encontrou na memória real                                                      : t t f f f
+Precisa estar na memória                                                       : t f - t f
+Tem página virtual livre                                                       : - - t f f
+==================================================================================================
+Retorna a página que já estava na memória real e move ela para a cabeça da LRU :   x
+Retorna a página que já estava na memória real                                 : x
+Retorna a página que substituiu um espaço vazio                                :     x
+Retorna null                                                                   :       x
+Retorna a página que substituiu uma que estava na memória real                 :         x
