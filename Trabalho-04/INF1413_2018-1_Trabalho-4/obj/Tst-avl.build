@@ -1,0 +1,6 @@
+/OUT:Tst-avl.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+avltree.obj  tst_avl.obj  main.obj  breakpnt.obj  string.obj  
+..\obj\TalismanTestLib.lib
+

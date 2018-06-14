@@ -1,0 +1,90 @@
+// Script:    Tst-avl-01.script
+// Author:    Arndt von Staa
+// Date:      05/jun/2018
+// Purpose:   Test avl trees 
+
+== Declare constants
+=DeclareParameter  AssertionExc      int 1
+=DeclareParameter  EnforceExc        int 2
+=DeclareParameter  ErrorExc          int 3
+=DeclareParameter  FailureExc        int 4
+=DeclareParameter  AssertionExcId    int 144
+=DeclareParameter  EnforceExcId      int 143
+
+=DeclareParameter  PREFIX            int 0
+=DeclareParameter  INFIX             int 1
+=DeclareParameter  POSFIX            int 2
+
+=DeclareParameter  Tree01            int 0  
+=DeclareParameter  Tree02            int 1  
+=DeclareParameter  Tree03            int 2  
+
+== Save the number of allocated data spaces
+=Reset
+=AllocSaveNum   3
+=AllocSaveBytes 1
+
+== Test create an empty tree
+=NewTree       Tree01
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert root
+=InsertSymbol  Tree01  13  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert left of root
+=InsertSymbol  Tree01  10  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right  of root
+=InsertSymbol  Tree01  15  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert left of left
+=InsertSymbol  Tree01  16  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right of left
+=InsertSymbol  Tree01  5  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert left of right
+=InsertSymbol  Tree01  11  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right of right
+=InsertSymbol  Tree01  14  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right of right
+=InsertSymbol  Tree01  4  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert left of left
+=InsertSymbol  Tree01  18  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right of right
+=InsertSymbol  Tree01  6  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right of right
+=InsertSymbol  Tree01  20  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Verify memory leak
+=Reset
+=AllocCompareBytes 1
+=AllocCompareNum   3

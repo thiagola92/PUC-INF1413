@@ -1,0 +1,58 @@
+// Script:    Tst-str-01.script
+// Author:    Arndt von Staa
+// Date:      28/ago/2007
+// Purpose:   Test string, construct and assign operations
+
+== Declare constants
+=DeclareParameter  Str1  int  1
+=DeclareParameter  Str2  int  2
+=DeclareParameter  Str3  int  3
+=DeclareParameter  Str4  int  4
+=DeclareParameter  Str9  int  9
+
+=DeclareParameter  pt    int  1
+=DeclareParameter  val   int  2
+
+=DeclareParameter  Less    int  0
+=DeclareParameter  Equal   int  1
+=DeclareParameter  Greater int  2
+
+== save the number of allocated data spaces
+=Reset
+=AllocSaveNum   3
+=AllocSaveBytes 1
+
+== Construct empty pointed string
+=NewEmptyPtString   Str1
+=GetLength          Str1  pt  0
+=GetString          Str1  pt  ""
+=VerifyString       Str1  pt .true
+=DestroyString      Str1
+
+== Construct empty pointed string
+=NewEmptyPtString   Str1
+=GetLength          Str1  pt  0
+=GetString          Str1  pt  ""
+=VerifyString       Str1  pt .true
+
+== Verify if printable
+=VerifyPrintable    "abcdefghijklmnopqrstuvxyz·‡‚„‰Á«¿¡¬√"   .true
+=VerifyPrintable    "   a   "  .true
+=VerifyPrintable    "  \x00 "  .false
+=VerifyPrintable    "  \x0A "  .false
+=VerifyPrintable    "   \x0F"  .false
+=VerifyPrintable    "\x80 \xD1 \xFF"  .true
+=VerifyPrintable    "\x81"  .false
+=VerifyPrintable    "\x81"  .true
+=Recover
+
+== Convert to hexadecimal
+=ConvertHexa        "ABCJKL"  30 .true "\\x41\\x42\\x43\\x4A\\x4B\\x4C"
+=ConvertHexa        "ABCJKL"  14 .true "\\x41\\x42..."
+=ConvertHexa        "ABCJKL"  15 .true "\\x41\\x42..."
+=ConvertHexa        "ABCJKL"  16 .true "\\x41\\x42\\x43..."
+
+== verify memory leak
+=Reset
+=AllocCompareBytes 1
+=AllocCompareNum   3

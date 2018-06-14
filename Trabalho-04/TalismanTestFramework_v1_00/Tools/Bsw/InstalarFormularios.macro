@@ -1,0 +1,16 @@
+Tecla da macro [ <!I> ]
+Nome da macro  !I - Instalar formularios de desenvolvimento Talisman
+
+Corpo da macro
+
+LM<DESCE>sf
+s<^Y>!<ENTER><ENTER><END>cppesp.frm<F3><F3>
+a<^Y>!<ENTER><ENTER><END>cppval.frm<F3><F3>
+n<^Y>!<ENTER><ENTER><END>cpplin.frm<F3><F3>
+r<^Y>!<ENTER><ENTER><END>cpptrn.frm<F3><F3>
+p<^Y>!<ENTER><ENTER><END>cppexp.frm<F3><F3>
+<ESC><ESC>
+LB<DESCE>sf
+<ENTER><^Y>!<ENTER><ENTER><END>basedt.frm<F3><F3>
+<ESC><ESC>
+LM<SOBE><SOBE>

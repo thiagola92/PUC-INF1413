@@ -1,0 +1,651 @@
+GERADOR DE SCRIPT DE DIRETIVAS PARA MAKE
+   LES / Informática / PUC-Rio    Versão 6.00 (c) 2005
+
+Composição do construto: tst-avl.comp
+
+   Nome do Construto:           Tst-avl
+   Diretório base:              C:\lixo\comp
+
+   Arquivo composição:          tst-avl.comp
+   Arquivo plataforma:          ..\tools\ms-cpp.parm
+
+   Arquivo diretivas MAKE:      Tst-avl.make
+   Arquivo diretivas LINK:      Tst-avl.build
+   Arquivo listagem:            Tst-avl.list
+
+Módulos do construto: tst-avl.comp
+
+   avltree.cpp
+   tst_avl.cpp
+   main.cpp
+   breakpnt.cpp
+   string.cpp
+
+Estatísticas do construto
+
+   Estatísticas do arquivo: avltree.cpp
+      Total linhas:             562
+      Linhas de código:         296
+      Linhas de comentário:     108
+      Linhas em branco:         151
+   Arquivos de inclusão de que necessita
+      avltree.hpp
+      bcdarit.hpp
+      dynspac.hpp
+      environ.hpp
+      exceptn.hpp
+      global.hpp
+      logger.hpp
+      message.hpp
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      string.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+
+   Estatísticas do arquivo: avltree.hpp
+      Total linhas:             281
+      Linhas de código:          54
+      Linhas de comentário:     116
+      Linhas em branco:          64
+   Arquivos de inclusão de que necessita
+      simplist.hpp
+      sls_elem.hpp
+      string.hpp
+      talisman_constants.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      main.cpp
+      specific-test.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: bcdarit.hpp
+      Total linhas:             680
+      Linhas de código:          86
+      Linhas de comentário:     390
+      Linhas em branco:          67
+   Arquivos de inclusão de que necessita
+      talisman_constants.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      counters.hpp
+      environ.hpp
+      exceptn.hpp
+      global.hpp
+      gnrctest.hpp
+      logger.hpp
+      main.cpp
+      message.hpp
+      specific-test.hpp
+      string.cpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: breakpnt.cpp
+      Total linhas:              52
+      Linhas de código:           8
+      Linhas de comentário:      27
+      Linhas em branco:          12
+   Arquivos de inclusão de que necessita
+      breakpnt.hpp
+
+   Estatísticas do arquivo: breakpnt.hpp
+      Total linhas:              83
+      Linhas de código:           5
+      Linhas de comentário:      50
+      Linhas em branco:          10
+   Arquivos em que é incluído
+      breakpnt.cpp
+
+   Estatísticas do arquivo: counters.hpp
+      Total linhas:             653
+      Linhas de código:          94
+      Linhas de comentário:     333
+      Linhas em branco:         105
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      message.hpp
+      simplist.hpp
+      sls_elem.hpp
+      string.hpp
+      symbtab.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      string.cpp
+
+   Estatísticas do arquivo: cte_str.inc
+      Total linhas:              56
+      Linhas de código:           9
+      Linhas de comentário:      27
+      Linhas em branco:           9
+   Arquivos em que é incluído
+      str_global.inc
+      str_str.inc
+      string.cpp
+
+   Estatísticas do arquivo: dynspac.hpp
+      Total linhas:             312
+      Linhas de código:          23
+      Linhas de comentário:     175
+      Linhas em branco:          40
+   Arquivos de inclusão de que necessita
+      talisman_constants.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      main.cpp
+      string.cpp
+
+   Estatísticas do arquivo: environ.hpp
+      Total linhas:             208
+      Linhas de código:          28
+      Linhas de comentário:     103
+      Linhas em branco:          32
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      message.hpp
+      string.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      global.hpp
+
+   Estatísticas do arquivo: exceptn.hpp
+      Total linhas:            1056
+      Linhas de código:         156
+      Linhas de comentário:     543
+      Linhas em branco:         165
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      message.hpp
+      string.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      gnrctest.hpp
+      main.cpp
+      specific-test.hpp
+      string.cpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: global.hpp
+      Total linhas:             252
+      Linhas de código:          36
+      Linhas de comentário:     127
+      Linhas em branco:          42
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      environ.hpp
+      logger.hpp
+      message.hpp
+      sioctrl.hpp
+      string.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      avltree.cpp
+
+   Estatísticas do arquivo: gnrctest.hpp
+      Total linhas:            1419
+      Linhas de código:         165
+      Linhas de comentário:     866
+      Linhas em branco:         141
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      exceptn.hpp
+      message.hpp
+      readtest.hpp
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      string.hpp
+      symbtab.hpp
+      talisman_constants.inc
+      tst_rtst.hpp
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      main.cpp
+      specific-test.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: logger.hpp
+      Total linhas:             436
+      Linhas de código:          70
+      Linhas de comentário:     231
+      Linhas em branco:          54
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      message.hpp
+      sioctrl.hpp
+      string.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      global.hpp
+
+   Estatísticas do arquivo: main.cpp
+      Total linhas:             494
+      Linhas de código:         322
+      Linhas de comentário:      64
+      Linhas em branco:         118
+   Arquivos de inclusão de que necessita
+      avltree.hpp
+      bcdarit.hpp
+      dynspac.hpp
+      exceptn.hpp
+      gnrctest.hpp
+      message.hpp
+      readtest.hpp
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      specific-test.hpp
+      string.hpp
+      symbtab.hpp
+      talisman_constants.inc
+      talisman_versioncontrol.inc
+      tst_avl.hpp
+      tst_rtst.hpp
+      typeidmessageitem.inc
+
+   Estatísticas do arquivo: message.hpp
+      Total linhas:             483
+      Linhas de código:          43
+      Linhas de comentário:     288
+      Linhas em branco:          52
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      string.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      counters.hpp
+      environ.hpp
+      exceptn.hpp
+      global.hpp
+      gnrctest.hpp
+      logger.hpp
+      main.cpp
+      specific-test.hpp
+      string.cpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: readtest.hpp
+      Total linhas:             746
+      Linhas de código:         110
+      Linhas de comentário:     367
+      Linhas em branco:         137
+   Arquivos de inclusão de que necessita
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      string.hpp
+      symbtab.hpp
+      talisman_constants.inc
+      tst_rtst.hpp
+   Arquivos em que é incluído
+      gnrctest.hpp
+      main.cpp
+      specific-test.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: simplist.hpp
+      Total linhas:             463
+      Linhas de código:          80
+      Linhas de comentário:     196
+      Linhas em branco:         107
+   Arquivos de inclusão de que necessita
+      sls_elem.hpp
+      talisman_constants.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      avltree.hpp
+      counters.hpp
+      gnrctest.hpp
+      main.cpp
+      readtest.hpp
+      specific-test.hpp
+      string.cpp
+      symbtab.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: sioctrl.hpp
+      Total linhas:             616
+      Linhas de código:          95
+      Linhas de comentário:     309
+      Linhas em branco:         103
+   Arquivos de inclusão de que necessita
+      string.hpp
+      talisman_constants.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      global.hpp
+      gnrctest.hpp
+      logger.hpp
+      main.cpp
+      readtest.hpp
+      specific-test.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: sls_elem.hpp
+      Total linhas:             125
+      Linhas de código:          14
+      Linhas de comentário:      66
+      Linhas em branco:          20
+   Arquivos de inclusão de que necessita
+      talisman_constants.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      avltree.hpp
+      counters.hpp
+      gnrctest.hpp
+      main.cpp
+      readtest.hpp
+      simplist.hpp
+      specific-test.hpp
+      string.cpp
+      symbtab.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: specific-test.hpp
+      Total linhas:               6
+      Linhas de código:           1
+      Linhas de comentário:       3
+      Linhas em branco:           2
+   Arquivos de inclusão de que necessita
+      avltree.hpp
+      bcdarit.hpp
+      exceptn.hpp
+      gnrctest.hpp
+      message.hpp
+      readtest.hpp
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      string.hpp
+      symbtab.hpp
+      talisman_constants.inc
+      tst_avl.hpp
+      tst_rtst.hpp
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      main.cpp
+
+   Estatísticas do arquivo: str_global.inc
+      Total linhas:              30
+      Linhas de código:           8
+      Linhas de comentário:      11
+      Linhas em branco:           6
+   Arquivos de inclusão de que necessita
+      cte_str.inc
+   Arquivos em que é incluído
+      string.cpp
+
+   Estatísticas do arquivo: str_str.inc
+      Total linhas:              29
+      Linhas de código:           7
+      Linhas de comentário:      11
+      Linhas em branco:           6
+   Arquivos de inclusão de que necessita
+      cte_str.inc
+   Arquivos em que é incluído
+      string.cpp
+
+   Estatísticas do arquivo: string.cpp
+      Total linhas:            1264
+      Linhas de código:         686
+      Linhas de comentário:     261
+      Linhas em branco:         312
+   Arquivos de inclusão de que necessita
+      bcdarit.hpp
+      counters.hpp
+      cte_str.inc
+      dynspac.hpp
+      exceptn.hpp
+      message.hpp
+      simplist.hpp
+      sls_elem.hpp
+      str_global.inc
+      str_str.inc
+      string.hpp
+      string.table
+      symbtab.hpp
+      talisman_constants.inc
+      typeidmessageitem.inc
+
+   Estatísticas do arquivo: string.hpp
+      Total linhas:             808
+      Linhas de código:          91
+      Linhas de comentário:     465
+      Linhas em branco:          85
+   Arquivos de inclusão de que necessita
+      talisman_constants.inc
+   Arquivos em que é incluído
+      avltree.cpp
+      avltree.hpp
+      counters.hpp
+      environ.hpp
+      exceptn.hpp
+      global.hpp
+      gnrctest.hpp
+      logger.hpp
+      main.cpp
+      message.hpp
+      readtest.hpp
+      sioctrl.hpp
+      specific-test.hpp
+      string.cpp
+      symbtab.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: string.table
+      Total linhas:             336
+      Linhas de código:         274
+      Linhas de comentário:     170
+      Linhas em branco:          16
+   Arquivos em que é incluído
+      string.cpp
+
+   Estatísticas do arquivo: symbtab.hpp
+      Total linhas:             407
+      Linhas de código:          57
+      Linhas de comentário:     203
+      Linhas em branco:          75
+   Arquivos de inclusão de que necessita
+      simplist.hpp
+      sls_elem.hpp
+      string.hpp
+      talisman_constants.inc
+   Arquivos em que é incluído
+      counters.hpp
+      gnrctest.hpp
+      main.cpp
+      readtest.hpp
+      specific-test.hpp
+      string.cpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: talisman_constants.inc
+      Total linhas:             253
+      Linhas de código:          86
+      Linhas de comentário:     103
+      Linhas em branco:          68
+   Arquivos em que é incluído
+      avltree.cpp
+      avltree.hpp
+      bcdarit.hpp
+      counters.hpp
+      dynspac.hpp
+      environ.hpp
+      exceptn.hpp
+      global.hpp
+      gnrctest.hpp
+      logger.hpp
+      main.cpp
+      message.hpp
+      readtest.hpp
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      specific-test.hpp
+      string.cpp
+      string.hpp
+      symbtab.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: talisman_versioncontrol.inc
+      Total linhas:              64
+      Linhas de código:           7
+      Linhas de comentário:      38
+      Linhas em branco:          10
+   Arquivos em que é incluído
+      main.cpp
+
+   Estatísticas do arquivo: tst_avl.cpp
+      Total linhas:             428
+      Linhas de código:         209
+      Linhas de comentário:     104
+      Linhas em branco:         114
+   Arquivos de inclusão de que necessita
+      avltree.hpp
+      bcdarit.hpp
+      exceptn.hpp
+      gnrctest.hpp
+      message.hpp
+      readtest.hpp
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      string.hpp
+      symbtab.hpp
+      talisman_constants.inc
+      tst_avl.hpp
+      tst_rtst.hpp
+      typeidmessageitem.inc
+
+   Estatísticas do arquivo: tst_avl.hpp
+      Total linhas:             178
+      Linhas de código:          37
+      Linhas de comentário:      80
+      Linhas em branco:          32
+   Arquivos de inclusão de que necessita
+      avltree.hpp
+      bcdarit.hpp
+      exceptn.hpp
+      gnrctest.hpp
+      message.hpp
+      readtest.hpp
+      simplist.hpp
+      sioctrl.hpp
+      sls_elem.hpp
+      string.hpp
+      symbtab.hpp
+      talisman_constants.inc
+      tst_rtst.hpp
+      typeidmessageitem.inc
+   Arquivos em que é incluído
+      main.cpp
+      specific-test.hpp
+      tst_avl.cpp
+
+   Estatísticas do arquivo: tst_rtst.hpp
+      Total linhas:              83
+      Linhas de código:          12
+      Linhas de comentário:      40
+      Linhas em branco:          21
+   Arquivos em que é incluído
+      gnrctest.hpp
+      main.cpp
+      readtest.hpp
+      specific-test.hpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+   Estatísticas do arquivo: typeidmessageitem.inc
+      Total linhas:              67
+      Linhas de código:          15
+      Linhas de comentário:      33
+      Linhas em branco:           8
+   Arquivos em que é incluído
+      avltree.cpp
+      counters.hpp
+      environ.hpp
+      exceptn.hpp
+      global.hpp
+      gnrctest.hpp
+      logger.hpp
+      main.cpp
+      message.hpp
+      specific-test.hpp
+      string.cpp
+      tst_avl.cpp
+      tst_avl.hpp
+
+Totais por tipo de arquivo
+
+  Tipo: inc      Path: ..\sources;..\test
+         Total linhas do tipo:       499
+         Linhas de código:           132
+         Linhas de comentário:       223
+         Linhas em branco:           107
+         Arquivos deste tipo:          6
+
+  Tipo: hpp      Path: ..\sources;..\test
+         Total linhas do tipo:      9295
+         Linhas de código:          1257
+         Linhas de comentário:      4951
+         Linhas em branco:          1354
+         Arquivos deste tipo:         20
+
+  Tipo: obj      Path: ..\obj
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: err      Path: ..\sources
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: DEFAULT  Path: ..\sources
+         Total linhas do tipo:       336
+         Linhas de código:           274
+         Linhas de comentário:       170
+         Linhas em branco:            16
+         Arquivos deste tipo:          1
+
+  Tipo: cpp      Path: ..\sources
+         Total linhas do tipo:      2800
+         Linhas de código:          1521
+         Linhas de comentário:       564
+         Linhas em branco:           707
+         Arquivos deste tipo:          5
+
+Totais para todo o construto Tst-avl
+
+   Total linhas:             12930
+   Linhas de código:          3184
+   Linhas de comentário:      5908
+   Linhas em branco:          2184
+   Arquivos processados:        32
+

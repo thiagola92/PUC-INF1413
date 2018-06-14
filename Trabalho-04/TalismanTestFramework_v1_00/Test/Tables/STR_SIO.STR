@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////////////////////////////
+// 
+// Strings of module:      SIO Sequential IO control
+// 
+// Generated file:         SIOCTRL.str
+// Identification letters: SIO
+// Identification number:  0280
+// 
+// Repository name:      IO Utilities
+// Repository file name: Z:\TALISMAN\TEST\BSW\SIOCTRL.BSW
+// 
+// Ownership
+//    Owning organization:    LES/INF/PUC-Rio
+//    Project:                Talisman
+// 
+////////////////////////////////////////////////////////////////////////////
+
+// !!!!! Generated file. Do not edit. !!!!!
+
+   <Offset>  280
+
+// Blocos programa: Open files to copy
+
+//    SIO_PrefixCopySource m "copy source"
+//    SIO_PrefixCopyDest   m "copy destination"
+
+  SIO_PrefixCopySource     1     m "copy source"
+  SIO_PrefixCopyDest       2     m "copy destination"
+
+// Blocos programa: Open files to compare
+
+//    SIO_PrefixCompare m "comparison"
+
+  SIO_PrefixCompare        3     m "comparison"
+
+// Blocos programa: Compare the files
+
+//    SIO_CompareFiles m "Comparing files:\n          File A: %1\n          File B: %2"
+
+  SIO_CompareFiles         4     m "Comparing files:\n          File A: %1\n          File B: %2"
+
+// Blocos programa: Compare the lines
+
+//    SIO_ErrorCompare  m "At count %0 lines are different."
+//    SIO_ErrorLimit    m "More than %0 errors, comparison canceled."
+//    SIO_ErrorAccepted m "Accepted different lines %0."
+
+  SIO_ErrorCompare         5     m "At count %0 lines are different."
+  SIO_ErrorLimit           6     m "More than %0 errors, comparison canceled."
+  SIO_ErrorAccepted        7     m "Accepted different lines %0."
+
+// Blocos programa: Close the files to compare
+
+//    SIO_ErrorLength  m "File %1 is greater than file %2"
+
+  SIO_ErrorLength          8     m "File %1 is greater than file %2"
+
+// Blocos programa: Control opening of files
+
+//    SIO_ErrorFileOpen m "Could not open %0 file: %1"
+
+  SIO_ErrorFileOpen        9     m "Could not open %0 file: %1"
+
+// Blocos programa: Read the line
+
+//    SIO_ErrorRead m "I/O error while reading from file: %0"
+
+  SIO_ErrorRead            10    m "I/O error while reading from file: %0"
+
+// Blocos programa: Root of SIO  $Do write
+
+//    SIO_ErrorWrite m "I/O error while writing to file: %0"
+
+  SIO_ErrorWrite           11    m "I/O error while writing to file: %0"
+
+//** End of string file, module: SIO Sequential IO control

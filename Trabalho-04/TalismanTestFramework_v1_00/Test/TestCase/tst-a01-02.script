@@ -1,0 +1,50 @@
+// Script:    Tst-avl-02.script
+// Author:    Arndt von Staa
+// Date:      09/dez/2017
+// Purpose:   Test avl tree, iteration 0
+
+== Reset all spaces
+=Reset
+=AllocSaveNum          0
+=AllocSaveBytes        0
+
+== Create avl tree
+=NewTree          1
+=VerifyTree       1   0
+
+== Display empty tree
+=DisplayTree      1   0
+=DisplayTree      1   1
+=DisplayTree      1   2
+
+== Do not fail displaying empty tree, incorrect traversal parameter
+=DisplayTree      1   3
+
+== Fail insert - no code
+=InsertSymbol     1   5  .f
+
+== Fail delete - no code
+=DeleteSymbol     1   5  .f
+
+== Fail search - no code
+=SearchSymbol     1   5  .f
+
+== Fail insert - no code
+=InsertSymbol     1   5  .t
+=Recover
+
+== Fail delete - no code
+=DeleteSymbol     1   5  .t
+=Recover
+
+== Fail search - no code
+=SearchSymbol     1   5  .t
+=Recover
+
+== Destruct these trees
+=DeleteTree       1
+
+== Verify leakage
+=AllocCompareNum   0
+=AllocCompareBytes 0
+  

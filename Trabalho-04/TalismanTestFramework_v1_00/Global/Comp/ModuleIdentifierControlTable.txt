@@ -1,0 +1,49 @@
+Module identification numbers and prefix letters
+
+Number Letters  Module name     BSW name       Description
+
+  200   MAIN    MAIN.CPP        MAIN.BSW       Main test program
+  240   TST     GNRCTEST.CPP    MAIN.BSW       Generic tester     
+  710   RDT     READTEST.CPP    UTILIT.BSW     Read and decompose test script commands
+   30   DSP     DYNSPAC.CPP     DYNSPAC.BSW    Dynamic memory allocation control
+   50   CNT     COUNTERS.CPP    COUNTER.BSW    Test coverage control   
+
+   
+   10   BCD     BCDARIT.CPP     BCDARIT.BSW    BCD arithmetic
+   70   EXC     EXCEPTN.CPP     EXCEPTN.BSW    Exceptions and exceptio handlers
+  590   DIS     DISASTER.CPP    DISASTER.BSW   Handle disaster termination
+  100   MSG     MESSAGE.CPP     MESSAGE.BSW    Message registry and handler
+  120   TMSG    TESTMSG.CPP     MESSAGE.BSW    Specific message tester
+  140   STR     STRING.CPP      STRING.BSW     String class 
+  180   GLOB    STR_GLOBAL.DEF                 Global strings
+  300   GLB     GLOBAL.CPP      GLOBAL.BSW     Global data and startup initialization
+  320   LOG     LOGGER.CPP      LOGGER.BSW     Logger, handles written message output      
+  400   SIO     SIOCTRL.CPP     SIOCTRL.BSW    Sequentiol IO control
+  580   SLS     SIMPLIST.CPP    SIMPLIST.BSW   Simple double linked list
+  585   SMT     SYMBTAB.CPP     SIMPLIST.BSW   Memory resident symbol table
+  700   RND     RANDGEN.CPP     SIMPLIST.BSW   Random number generator
+
+  340   SEG     SEGMENT.CPP     SEGMENT.BSW    Segment I/O control
+  360   SEGL    SEGLOCL.CPP     SEGMENT.BSW    Local file system segment I/O handler
+  380   SEGM    SEGMSG.CPP      SEGMENT.BSW    Segment message item
+  420   VM      VIRTMEM.CPP     VIRTMEM.BSW    Virtual memory handler
+  440   PG      PAGES.CPP       PAGES.BSW      Page inheritance structure root class
+  460   PTP     PAGETYPE.CPP    PAGES.BSW      Page type control
+  480   LSP     LISTPAGE.CPP    LISTPAGE.BSW   List of elements page
+  500   LSR     LISTSEG.CPP     LISTPAGE.BSW   List Segment Root page
+  510   LL      LISTLIST.CPP    LISTPAGE.BSW   List of lists page
+  530   OK      OBJKEY.CPP      ELEMKEY.BSW    Object key manipulation
+  550   ELM     ELEMENT.CPP     ELEMENT.BSW    Element inheritance structure root class
+  557   EBS     ELEMBSTR.CPP    ELEMENT.BSW    Byte string type element
+  560   ELT     ELEMTYPE.CPP    ELEMENT.BSW    Element type control 
+  570   PRM     PARAMETR.CPP    PARM.BSW       Parameter file manipulation
+  600   TAL     TALCAPI.CPP     TALCAPI.BSW    Talisman API for C/C++ programs  
+  650   DL      DICLIST.CPP     DICLIST.BSW    Dictionary list of lists page
+  670   DLE     DICLSELM.CPP    DICLIST.BSW    Dictionary list of lists element
+  680   ALE     ABSLSELM.CPP    DICLIST.BSW    Abstract dictionary list element 
+  690   VRF     VERIFIER.CPP    VERIFIER.BSW   Segment verifier
+
+        KEY     LISTKEY.CPP     ELEMKEY.BSW    List key abstract class
+        BTR     BTREE.CPP       LISTPAGE.BSW   Btree structure pages
+        FKL     FIXKLIST.CPP    LISTPAGE.BSW   Fixed key list
+        FLE     LISTELEM.CPP    LISTELEM.BSW   List element root class

@@ -1,0 +1,314 @@
+// Script:    Tst-str-01.script
+// Author:    Arndt von Staa
+// Date:      30/mai/2018
+// Purpose:   Test string, converison
+
+== Declare constants
+
+=DeclareParameter  AssertionExc      int 1
+=DeclareParameter  EnforceExc        int 2
+=DeclareParameter  ErrorExc          int 3
+=DeclareParameter  FailureExc        int 4
+=DeclareParameter  AssertionExcId    int 144
+=DeclareParameter  EnforceExcId      int 143
+
+== Save the number of allocated data spaces
+=Reset
+=AllocSaveNum   3
+=AllocSaveBytes 1
+
+== Test minimum converted string buffer size assertion 
+
+=ConvertPrintable   "abcde"  3  "ab"    .true .true
+=ExceptionProgram   EnforceExc EnforceExcId 'c'
+
+// Test truncate right fitting strings
+
+== Convert an empty string
+=ConvertPrintable   ""  7 ""  .true .true
+
+== Convert an one character string
+=ConvertPrintable   "a"  7 "a"  .true .true
+
+== Convert a to character string
+=ConvertPrintable   "ab"  7 "ab"  .true .true
+
+== Convert using hexadecimal coding
+=ConvertPrintable   "\x41"  7 "A"  .true .true
+=ConvertPrintable   "\x42"  7 "B"  .true .true
+=ConvertPrintable   "AB"  7 "\x41B"  .true .true
+=ConvertPrintable   "AB"  7 "A\x42"  .true .true
+
+// Test truncate right strings with no control character
+
+== Convert to non fitting buffers
+=ConvertPrintable   "abcdef"  8  "abcdef"  .true .true
+=ConvertPrintable   "abcdef"  7  "abcdef"  .true .true
+=ConvertPrintable   "abcdef"  6  "ab..."   .true .true
+=ConvertPrintable   "abcdef"  5  "a..."    .true .true
+=ConvertPrintable   "abcdef"  4  "..."     .true .true
+
+== Convert to an exact size buffer  
+=ConvertPrintable   "abcdef"  7  "abcdef"  .true .true
+=ConvertPrintable   "abcde"   6  "abcde"   .true .true
+=ConvertPrintable   "abcd"    5  "abcd"    .true .true
+=ConvertPrintable   "abc"     4  "abc"     .true .true
+
+== Convert small strings into fitting buffer
+=ConvertPrintable   ""        5  ""        .true .true
+=ConvertPrintable   "a"       5  "a"       .true .true
+=ConvertPrintable   "ab"      5  "ab"      .true .true
+=ConvertPrintable   "abc"     5  "abc"     .true .true
+=ConvertPrintable   "abcd"    5  "abcd"    .true .true
+=ConvertPrintable   "abcde"   5  "a..."    .true .true
+
+// Test truncate right string containing one control character
+
+== Convert single code to a large buffer
+=ConvertPrintable   "\xFF"  15 "\\xFF"  .true .true
+
+== Convert to exact buffer with walking control
+=ConvertPrintable   "abc\xFF"  8 "abc\\xFF"  .true .true
+=ConvertPrintable   "ab\xFFc"  8 "ab\\xFFc"  .true .true
+=ConvertPrintable   "a\xFFbc"  8 "a\\xFFbc"  .true .true
+=ConvertPrintable   "\xFFabc"  8 "\\xFFabc"  .true .true
+
+== Convert to exact buffer code at beginning with chars at end
+=ConvertPrintable   "\xFFab"   7 "\\xFFab"   .true .true
+=ConvertPrintable   "\xFFa"    6 "\\xFFa"    .true .true
+=ConvertPrintable   "\xFF"     5 "\\xFF"     .true .true
+=ConvertPrintable   "\xFF"     4 "..."       .true .true
+
+== Convert to smaller buffer with code block in the middle
+=ConvertPrintable   "ab\xFFcdef"  12 "ab\\xFFcdef"  .true .true
+=ConvertPrintable   "ab\xFFcdef"  11 "ab\\xFFcdef"  .true .true
+=ConvertPrintable   "ab\xFFcdef"  10 "ab\\xFF..."   .true .true
+=ConvertPrintable   "ab\xFFcdef"   9 "ab..."        .true .true
+=ConvertPrintable   "ab\xFFcdef"   8 "ab..."        .true .true
+=ConvertPrintable   "ab\xFFcdef"   7 "ab..."        .true .true
+=ConvertPrintable   "ab\xFFcdef"   6 "ab..."        .true .true
+=ConvertPrintable   "ab\xFFcdef"   5 "a..."         .true .true
+=ConvertPrintable   "ab\xFFcdef"   4 "..."          .true .true
+
+== Convert to smaller buffer with walking code block in the middle
+=ConvertPrintable   "\xFFcdef"     9 "\\xFFcdef"  .true .true
+=ConvertPrintable   "\xFFcdef"     8 "\\xFF..."   .true .true
+=ConvertPrintable   "c\xFFdef"     8 "c..."       .true .true
+=ConvertPrintable   "cd\xFFef"     8 "cd..."      .true .true
+=ConvertPrintable   "cde\xFFf"     8 "cde..."     .true .true
+=ConvertPrintable   "cdef\xFF"     8 "cdef..."    .true .true
+
+// Test truncate right strings containing two code blocks
+
+== Convert with decreasing buffer sizes and char before and between blocks
+=ConvertPrintable   "ab\xFFc\x11d"  14 "ab\\xFFc\\x11d"  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"  13 "ab\\xFFc\\x11d"  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"  12 "ab\\xFFc..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"  11 "ab\\xFFc..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"  10 "ab\\xFF..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"   9 "ab..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"   8 "ab..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"   7 "ab..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"   6 "ab..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"   5 "a..."  .true .true
+=ConvertPrintable   "ab\xFFc\x11d"   4 "..."  .true .true
+
+== Convert with decreasing buffer sizes and between blocks
+=ConvertPrintable   "\xFFc\x11defg"  15 "\\xFFc\\x11defg" .true .true
+=ConvertPrintable   "\xFFc\x11defg"  14 "\\xFFc\\x11defg" .true .true
+=ConvertPrintable   "\xFFc\x11defg"  13 "\\xFFc\\x11..."  .true .true
+=ConvertPrintable   "\xFFc\x11defg"  12 "\\xFFc..."       .true .true
+=ConvertPrintable   "\xFFc\x11defg"  11 "\\xFFc..."       .true .true
+=ConvertPrintable   "\xFFc\x11defg"  10 "\\xFFc..."       .true .true
+=ConvertPrintable   "\xFFc\x11defg"   9 "\\xFFc..."       .true .true
+=ConvertPrintable   "\xFFc\x11defg"   8 "\\xFF..."        .true .true
+=ConvertPrintable   "\xFFc\x11defg"   7 "..."             .true .true
+=ConvertPrintable   "\xFFc\x11defg"   6 "..."             .true .true
+=ConvertPrintable   "\xFFc\x11defg"   5 "..."             .true .true
+=ConvertPrintable   "\xFFc\x11defg"   4 "..."             .true .true
+
+== Convert with decreasing buffer sizes and char before and none blocks
+=ConvertPrintable   "ab\xFF\x11defg"  16 "ab\\xFF\\x11defg" .true .true
+=ConvertPrintable   "ab\xFF\x11defg"  15 "ab\\xFF\\x11defg" .true .true
+=ConvertPrintable   "ab\xFF\x11defg"  14 "ab\\xFF\\x11..."  .true .true
+=ConvertPrintable   "ab\xFF\x11defg"  13 "ab\\xFF..."       .true .true
+=ConvertPrintable   "ab\xFF\x11defg"  12 "ab\\xFF..."       .true .true
+=ConvertPrintable   "ab\xFF\x11defg"  11 "ab\\xFF..."       .true .true
+=ConvertPrintable   "ab\xFF\x11defg"  10 "ab\\xFF..."       .true .true
+=ConvertPrintable   "ab\xFF\x11defg"   9 "ab..."            .true .true
+=ConvertPrintable   "ab\xFF\x11defg"   8 "ab..."            .true .true
+=ConvertPrintable   "ab\xFF\x11defg"   7 "ab..."            .true .true
+=ConvertPrintable   "ab\xFF\x11defg"   6 "ab..."            .true .true
+=ConvertPrintable   "ab\xFF\x11defg"   5 "a..."             .true .true
+=ConvertPrintable   "ab\xFF\x11defg"   4 "..."              .true .true
+
+// Test truncate right when all converted characters are hexadecimal code
+
+== Convert a normal string into large buffer
+=ConvertPrintable   "abc"  20 "\\x61\\x62\\x63"  .true .false
+
+== Convert a normal string into exact buffer
+=ConvertPrintable   "abc"  14 "\\x61\\x62\\x63"  .true .false
+=ConvertPrintable   "abc"  13 "\\x61\\x62\\x63"  .true .false
+
+== Convert a normal string lnto decreasing size buffers
+=ConvertPrintable   "abc"  12 "\\x61\\x62..."  .true .false
+=ConvertPrintable   "abc"  11 "\\x61..."       .true .false
+=ConvertPrintable   "abc"  10 "\\x61..."       .true .false
+=ConvertPrintable   "abc"   9 "\\x61..."       .true .false
+=ConvertPrintable   "abc"   8 "\\x61..."       .true .false
+=ConvertPrintable   "abc"   7 "..."            .true .false
+=ConvertPrintable   "abc"   6 "..."            .true .false
+=ConvertPrintable   "abc"   5 "..."            .true .false
+=ConvertPrintable   "abc"   4 "..."            .true .false
+
+=ConvertPrintable   "a\x11b\xffc"  21 "\\x61\\x11\\x62\\xFF\\x63"  .true .false
+=ConvertPrintable   "a\x11b\xffc"  20 "\\x61\\x11\\x62\\xFF..."    .true .false
+=ConvertPrintable   "a\x11b\xffc"  19 "\\x61\\x11\\x62..."         .true .false
+=ConvertPrintable   "a\x11b\xffc"  16 "\\x61\\x11\\x62..."         .true .false
+=ConvertPrintable   "a\x11b\xffc"  15 "\\x61\\x11..."              .true .false
+=ConvertPrintable   "a\x11b\xffc"  12 "\\x61\\x11..."              .true .false
+=ConvertPrintable   "a\x11b\xffc"  11 "\\x61..."                   .true .false
+=ConvertPrintable   "a\x11b\xffc"   8 "\\x61..."                   .true .false
+=ConvertPrintable   "a\x11b\xffc"   7 "..."                        .true .false
+=ConvertPrintable   "a\x11b\xffc"   6 "..."                        .true .false
+
+// Test truncate left strings with no control character
+
+== Convert into non fitting buffers
+=ConvertPrintable   "abcdef"  8  "abcdef"  .false .true
+=ConvertPrintable   "abcdef"  7  "abcdef"  .false .true
+=ConvertPrintable   "abcdef"  6  "...ef"   .false .true
+=ConvertPrintable   "abcdef"  5  "...f"    .false .true
+=ConvertPrintable   "abcdef"  4  "..."     .false .true
+
+== Convert into exact size buffers
+=ConvertPrintable   "abcdef"  7  "abcdef"  .false .true
+=ConvertPrintable   "abcde"   6  "abcde"   .false .true
+=ConvertPrintable   "abcd"    5  "abcd"    .false .true
+=ConvertPrintable   "abc"     4  "abc"     .false .true
+
+== Convert small strings into fitting buffer
+=ConvertPrintable   ""        5  ""        .false .true
+=ConvertPrintable   "a"       5  "a"       .false .true
+=ConvertPrintable   "ab"      5  "ab"      .false .true
+=ConvertPrintable   "abc"     5  "abc"     .false .true
+=ConvertPrintable   "abcd"    5  "abcd"    .false .true
+=ConvertPrintable   "abcde"   5  "...e"    .false .true
+
+// Test truncate left strings containing one control character
+
+== Convert single code to a large buffer
+=ConvertPrintable   "\xFF"  15 "\\xFF"     .false .true
+
+== Convert to exact buffer with walking control
+=ConvertPrintable   "abc\xFF"  8 "abc\\xFF"  .false .true
+=ConvertPrintable   "ab\xFFc"  8 "ab\\xFFc"  .false .true
+=ConvertPrintable   "a\xFFbc"  8 "a\\xFFbc"  .false .true
+=ConvertPrintable   "\xFFabc"  8 "\\xFFabc"  .false .true
+
+== Convert to exact buffer code at beginning with chars at end
+=ConvertPrintable   "\xFFab"   7 "\\xFFab"     .false .true
+=ConvertPrintable   "\xFFa"    6 "\\xFFa"      .false .true
+=ConvertPrintable   "\xFF"     5 "\\xFF"       .false .true
+=ConvertPrintable   "\xFF"     4 "..."       .false .true
+
+== Convert to decreasing size with code block in the middle
+=ConvertPrintable   "abcd\xFFcd"  12 "abcd\\xFFcd"  .false .true
+=ConvertPrintable   "abcd\xFFcd"  11 "abcd\\xFFcd"  .false .true
+=ConvertPrintable   "abcd\xFFcd"  10 "...\\xFFcd"   .false .true
+=ConvertPrintable   "abcd\xFFcd"   9 "...cd"        .false .true
+=ConvertPrintable   "abcd\xFFcd"   8 "...cd"        .false .true
+=ConvertPrintable   "abcd\xFFcd"   7 "...cd"        .false .true
+=ConvertPrintable   "abcd\xFFcd"   6 "...cd"        .false .true
+=ConvertPrintable   "abcd\xFFcd"   5 "...d"         .false .true
+=ConvertPrintable   "abcd\xFFcd"   4 "..."          .false .true
+
+== Convert to smaller buffer with walking code block in the middle
+=ConvertPrintable   "\xFFcdef"     9 "\\xFFcdef"  .false .true
+=ConvertPrintable   "\xFFcdef"     8 "...cdef"    .false .true
+=ConvertPrintable   "c\xFFdef"     8 "...def"     .false .true
+=ConvertPrintable   "cd\xFFef"     8 "...ef"      .false .true
+=ConvertPrintable   "cde\xFFf"     8 "...f"       .false .true
+=ConvertPrintable   "cdef\xFF"     8 "...\\xFF"   .false .true
+
+// Test truncate right strings containing two code blocks
+
+== Convert with decreasing buffer sizes and char before and between blocks
+=ConvertPrintable   "abcd\xFFc\x11d"  16 "abcd\\xFFc\\x11d"  .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"  15 "abcd\\xFFc\\x11d"  .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"  14 "...\\xFFc\\x11d"   .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"  13 "...c\\x11d"        .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"  12 "...c\\x11d"        .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"  11 "...c\\x11d"        .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"  10 "...c\\x11d"        .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"   9 "...\\x11d"         .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"   8 "...d"              .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"   7 "...d"              .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"   6 "...d"              .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"   5 "...d"              .false .true
+=ConvertPrintable   "abcd\xFFc\x11d"   4 "..."               .false .true
+
+== Convert with decreasing buffer sizes and character between blocks
+=ConvertPrintable   "abcd\xFFc\x11"  15 "abcd\\xFFc\\x11" .false .true
+=ConvertPrintable   "abcd\xFFc\x11"  14 "abcd\\xFFc\\x11" .false .true
+=ConvertPrintable   "abcd\xFFc\x11"  13 "...\\xFFc\\x11"  .false .true
+=ConvertPrintable   "abcd\xFFc\x11"  12 "...c\\x11"       .false .true
+=ConvertPrintable   "abcd\xFFc\x11"  11 "...c\\x11"       .false .true
+=ConvertPrintable   "abcd\xFFc\x11"  10 "...c\\x11"       .false .true
+=ConvertPrintable   "abcd\xFFc\x11"   9 "...c\\x11"       .false .true
+=ConvertPrintable   "abcd\xFFc\x11"   8 "...\\x11"        .false .true
+=ConvertPrintable   "abcd\xFFc\x11"   7 "..."             .false .true
+=ConvertPrintable   "abcd\xFFc\x11"   6 "..."             .false .true
+=ConvertPrintable   "abcd\xFFc\x11"   5 "..."             .false .true
+=ConvertPrintable   "abcd\xFFc\x11"   4 "..."             .false .true
+
+== Convert with decreasing buffer sizes and char before and none between blocks
+=ConvertPrintable   "abcd\xFF\x11"  14 "abcd\\xFF\\x11" .false .true
+=ConvertPrintable   "abcd\xFF\x11"  13 "abcd\\xFF\\x11" .false .true
+=ConvertPrintable   "abcd\xFF\x11"  12 "...\\xFF\\x11"  .false .true
+=ConvertPrintable   "abcd\xFF\x11"  11 "...\\x11"       .false .true
+=ConvertPrintable   "abcd\xFF\x11"  10 "...\\x11"       .false .true
+=ConvertPrintable   "abcd\xFF\x11"   9 "...\\x11"       .false .true
+=ConvertPrintable   "abcd\xFF\x11"   8 "...\\x11"       .false .true
+=ConvertPrintable   "abcd\xFF\x11"   7 "..."            .false .true
+=ConvertPrintable   "abcd\xFF\x11"   6 "..."            .false .true
+=ConvertPrintable   "abcd\xFF\x11"   5 "..."            .false .true
+=ConvertPrintable   "abcd\xFF\x11"   4 "..."            .false .true
+
+// Test truncate lrft when all converted characters are hexadecimal code
+
+== Convert a normal string into large buffer
+=ConvertPrintable   "abc"  20 "\\x61\\x62\\x63"  .false .false
+
+== Convert a normal string into exact buffer
+=ConvertPrintable   "abc"  14 "\\x61\\x62\\x63"  .false .false
+=ConvertPrintable   "abc"  13 "\\x61\\x62\\x63"  .false .false
+
+== Convert a normal string lnto decreasing size buffers
+=ConvertPrintable   "abc"  12 "...\\x62\\x63"  .false .false
+=ConvertPrintable   "abc"  11 "...\\x63"       .false .false
+=ConvertPrintable   "abc"  10 "...\\x63"       .false .false
+=ConvertPrintable   "abc"   9 "...\\x63"       .false .false
+=ConvertPrintable   "abc"   8 "...\\x63"       .false .false
+=ConvertPrintable   "abc"   7 "..."            .false .false
+=ConvertPrintable   "abc"   6 "..."            .false .false
+=ConvertPrintable   "abc"   5 "..."            .false .false
+=ConvertPrintable   "abc"   4 "..."            .false .false
+
+== Convert mixed characters
+
+=ConvertPrintable   "a\x11b\xffc"  21 "\\x61\\x11\\x62\\xFF\\x63"  .false .false
+=ConvertPrintable   "a\x11b\xffc"  20 "...\\x11\\x62\\xFF\\x63"    .false .false
+=ConvertPrintable   "a\x11b\xffc"  19 "...\\x62\\xFF\\x63"         .false .false
+=ConvertPrintable   "a\x11b\xffc"  16 "...\\x62\\xFF\\x63"         .false .false
+=ConvertPrintable   "a\x11b\xffc"  15 "...\\xFF\\x63"              .false .false
+=ConvertPrintable   "a\x11b\xffc"  12 "...\\xFF\\x63"              .false .false
+=ConvertPrintable   "a\x11b\xffc"  11 "...\\x63"                   .false .false
+=ConvertPrintable   "a\x11b\xffc"   8 "...\\x63"                   .false .false
+=ConvertPrintable   "a\x11b\xffc"   7 "..."                        .false .false
+
+== Verify memory leak
+=Reset
+=AllocCompareBytes 1
+=AllocCompareNum   3

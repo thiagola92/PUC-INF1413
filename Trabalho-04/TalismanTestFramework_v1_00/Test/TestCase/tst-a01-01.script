@@ -1,0 +1,63 @@
+// Script:    Tst-avl-01.script
+// Author:    Arndt von Staa
+// Date:      09/dez/2017
+// Purpose:   Test avl tree, log base 2
+
+== Reset all spaces
+=Reset
+=AllocSaveNum          0
+=AllocSaveBytes        0
+
+== Test log2( 0 )
+=LimBase2Log   0   100  0
+
+== Test log2( 1 )
+=LimBase2Log   1   100  1
+
+== Test log2( 2 )
+=LimBase2Log   2   100  2
+
+== Test log2( 3 )
+=LimBase2Log   3   100  2
+
+== Test log2( 4 )
+=LimBase2Log   4   100  3
+
+== Test log2( 5 )
+=LimBase2Log   5   100  3
+
+== Test log2( 6 )
+=LimBase2Log   6   100  3
+
+== Test log2( 7 )
+=LimBase2Log   7   100  3
+
+== Test log2( 8 )
+=LimBase2Log   8   100  4
+
+== Test log2( 1023 )
+=LimBase2Log   1023   100  10
+
+== Test log2( 1024 )
+=LimBase2Log   1024   100  11
+
+== Test log2( 4095 )
+=LimBase2Log   4095   100  12
+
+== Test log2( 4095 )
+=LimBase2Log   4095   100  13
+=Recover
+
+== Test log2( 4096 )
+=LimBase2Log   4096   100  13
+
+== Test log2( 4096 )
+=LimBase2Log   4096    12  -1
+
+== Test log2( 4095 )
+=LimBase2Log   4095    12  12
+
+== Verify leakage
+=AllocCompareNum   0
+=AllocCompareBytes 0
+  

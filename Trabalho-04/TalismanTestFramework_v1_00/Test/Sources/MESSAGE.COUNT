@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////////////////////////////
+// 
+// Counter name file of module: MSG  Message handlers
+// 
+// Generated file:              Message.cnt
+// 
+// Repository file name:        Z:\TALISMAN\TEST\BSW\MESSAGE.BSW
+// 
+// Ownership
+//    Owning organization:      LES/DI/PUC-Rio
+//    Project:                  Talisman
+// 
+////////////////////////////////////////////////////////////////////////////
+
+// !!!!! Generated file. Do not edit. !!!!!
+
+
+MSGI Message item constructor
+
+MSGI Message item destructor
+
+
+
+MSG  !Message constructor
+
+MSG  !Message destructor
+
+MSG  !Get message id
+
+MSG  !Replace message id
+
+MSG  !Add item
+
+MSG  !Get message item
+
+MSG  !Assemble the message string
+Assemble with existing message string
+Assemble with error message string id
+Assemble with error message string
+Append items to nonexisting message
+
+MSG  $Do assemble message
+Handle a field
+Handle field refering to item
+Get field number
+Handle too many replacements - avoids recursive rplacements
+Replace field by item string
+Handle illegal field index
+Handle % character
+Handle unknown field code
+Handle illegal field syntax
+Get the modified string
+Next char
+
+//** End of counter name file, module: MSG  Message handlers

@@ -1,0 +1,228 @@
+// Script:    Tst-avl-01.script
+// Author:    Arndt von Staa
+// Date:      05/jun/2018
+// Purpose:   Test avl trees 
+
+== Declare constants
+=DeclareParameter  AssertionExc      int 1
+=DeclareParameter  EnforceExc        int 2
+=DeclareParameter  ErrorExc          int 3
+=DeclareParameter  FailureExc        int 4
+=DeclareParameter  AssertionExcId    int 144
+=DeclareParameter  EnforceExcId      int 143
+
+=DeclareParameter  PREFIX            int 0
+=DeclareParameter  INFIX             int 1
+=DeclareParameter  POSFIX            int 2
+
+=DeclareParameter  Tree01            int 0  
+=DeclareParameter  Tree02            int 1  
+=DeclareParameter  Tree03            int 2  
+=DeclareParameter  Tree04            int 3  
+=DeclareParameter  Tree05            int 4  
+=DeclareParameter  Tree06            int 5  
+=DeclareParameter  Tree07            int 6  
+
+== Save the number of allocated data spaces
+=Reset
+=AllocSaveNum   3
+=AllocSaveBytes 1
+
+// Árvore que não dá erro
+//
+== Test create an empty tree
+=NewTree       Tree01
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert root
+=InsertSymbol  Tree01  20  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert left of root
+=InsertSymbol  Tree01  10  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right  of root
+=InsertSymbol  Tree01  30  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert left of left
+=InsertSymbol  Tree01  5  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right of left
+=InsertSymbol  Tree01  15  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert left of right
+=InsertSymbol  Tree01  25  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Test insert right of right
+=InsertSymbol  Tree01  35  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+// ==========================================================
+//
+== Test left left 
+=DeleteTree    Tree01
+=NewTree       Tree01
+=InsertSymbol  Tree01  20  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  10  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  5   .true
+=ExceptionSystem       'c'
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+
+// ==========================================================
+// 
+== Test left right 
+=NewTree       Tree02
+=InsertSymbol  Tree02  20  .true
+=DisplayTree   Tree02  INFIX
+=VerifyTree    Tree02  0
+=InsertSymbol  Tree02  10  .true
+=DisplayTree   Tree02  INFIX
+=VerifyTree    Tree02  0
+=InsertSymbol  Tree02  15  .true
+=ExceptionSystem       'c'
+// =DisplayTree   Tree02  INFIX
+// =VerifyTree    Tree02  0
+
+// ==========================================================
+// 
+== Test right right 
+=DeleteTree    Tree01
+=NewTree       Tree01
+=InsertSymbol  Tree01  20  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  30  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  25  .true
+=ExceptionSystem       'c'
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+
+// ==========================================================
+//
+== Test right right 
+=DeleteTree    Tree01
+=NewTree       Tree01
+=InsertSymbol  Tree01  10  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  15  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  20  .true
+// =ExceptionSystem       'c'
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+// ==========================================================
+//
+== Test root left left  
+=DeleteTree    Tree01
+=NewTree       Tree01
+=InsertSymbol  Tree01  20  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  25  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  15  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  10 .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  05  .true
+=ExceptionSystem       'c'
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+
+// ==========================================================
+//
+== Test root left right  
+=DeleteTree    Tree01
+=NewTree       Tree01
+=InsertSymbol  Tree01  20  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  25  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  15  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  10 .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  12  .true
+=ExceptionSystem       'c'
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+
+// ==========================================================
+//
+== Test root right left   
+=NewTree       Tree03
+=InsertSymbol  Tree03  20  .true
+=DisplayTree   Tree03  INFIX
+=VerifyTree    Tree03  0
+=InsertSymbol  Tree03  15  .true
+=DisplayTree   Tree03  INFIX
+=VerifyTree    Tree03  0
+=InsertSymbol  Tree03  30  .true
+=DisplayTree   Tree03  INFIX
+=VerifyTree    Tree03  0
+=InsertSymbol  Tree03  35 .true
+=DisplayTree   Tree03  INFIX
+=VerifyTree    Tree03  0
+=InsertSymbol  Tree03  32  .true
+=ExceptionSystem       'c'
+// =DisplayTree   Tree03  INFIX
+// =VerifyTree    Tree03  0
+
+// ==========================================================
+//
+== Test root right right  
+=NewTree       Tree04
+=InsertSymbol  Tree04  20  .true
+=DisplayTree   Tree04  INFIX
+=VerifyTree    Tree04  0
+=InsertSymbol  Tree04  15  .true
+=DisplayTree   Tree04  INFIX
+=VerifyTree    Tree04  0
+=InsertSymbol  Tree04  30  .true
+=DisplayTree   Tree04  INFIX
+=VerifyTree    Tree04  0
+=InsertSymbol  Tree04  32 .true
+=DisplayTree   Tree04  INFIX
+=VerifyTree    Tree04  0
+=InsertSymbol  Tree04  35  .true
+=ExceptionProgram   AssertionExc  AssertionExcId   'c'
+// =DisplayTree   Tree04  INFIX
+// =VerifyTree    Tree04  0
+
+
+// ==========================================================
+//
+== Verify memory leak
+=Reset
+=AllocCompareBytes 1
+=AllocCompareNum   3

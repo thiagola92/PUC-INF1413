@@ -1,0 +1,47 @@
+# Project:              Talisman
+# Owning organization:  LES/DI/PUC-Rio
+# Build: tst-seg - test segment file handler
+
+[Diretorios]
+
+Nome        =  Tst-avl
+
+PathDefault =  ..\sources
+err         =  ..\sources
+obj         =  ..\obj
+cpp         =  ..\sources
+hpp         =  ..\sources;..\test
+inc         =  ..\sources;..\test
+
+[MacrosAntes]   
+DEFS = /D_TESTPAGE
+
+[Modulos]
+
+avltree
+tst_avl 
+
+Main
+Breakpnt
+String
+
+# SPECTEST must contain the name of the module containing the specific test class 
+# It will be used to generate an include file
+
+[MacrosApos]
+SPECTEST    = tst_avl     
+
+[Link]
+   SET CL=
+   CD  $(Fobj)
+   LINK  $(L)  @$(NOME).build >> $(Ferr)\$(NOME).err
+
+[BuildInicio]
+/OUT:Tst-avl.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+..\obj\TalismanTestLib.lib
+
+[Fim]

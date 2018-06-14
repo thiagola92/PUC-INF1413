@@ -1,0 +1,36 @@
+// Script:    Tst-avl-01.script
+// Author:    Arndt von Staa
+// Date:      05/jun/2018
+// Purpose:   Test avl trees 
+
+== Declare constants
+=DeclareParameter  AssertionExc      int 1
+=DeclareParameter  EnforceExc        int 2
+=DeclareParameter  ErrorExc          int 3
+=DeclareParameter  FailureExc        int 4
+=DeclareParameter  AssertionExcId    int 144
+=DeclareParameter  EnforceExcId      int 143
+
+=DeclareParameter  PREFIX            int 0
+=DeclareParameter  INFIX             int 1
+=DeclareParameter  POSFIX            int 2
+
+=DeclareParameter  Tree01            int 0  
+=DeclareParameter  Tree02            int 1  
+=DeclareParameter  Tree03            int 2  
+
+== Save the number of allocated data spaces
+=Reset
+=AllocSaveNum   3
+=AllocSaveBytes 1
+
+== Test create an empty tree
+=NewTree       Tree01
+
+== Generate test script
+=GenerateTest  Tree01  20 10  10
+
+== Verify memory leak
+=Reset
+=AllocCompareBytes 1
+=AllocCompareNum   3
