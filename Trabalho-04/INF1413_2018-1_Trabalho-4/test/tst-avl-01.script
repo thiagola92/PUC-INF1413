@@ -28,7 +28,7 @@
 =AllocSaveNum   3
 =AllocSaveBytes 1
 
-// Árvore que não dá erro
+// ï¿½rvore que nï¿½o dï¿½ erro
 //
 == Test create an empty tree
 =NewTree       Tree01
@@ -103,7 +103,7 @@
 
 // ==========================================================
 // 
-== Test right right 
+== Test right left 
 =DeleteTree    Tree01
 =NewTree       Tree01
 =InsertSymbol  Tree01  20  .true

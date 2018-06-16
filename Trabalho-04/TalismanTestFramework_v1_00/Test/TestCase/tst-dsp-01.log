@@ -1,0 +1,97 @@
+TALISMAN Log file
+
+2018/06/15-04:40:30 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:30 : !!! Start test, script file: tst-dsp-01.script
+
+// Script:    Tst-dsp-01.script
+// Author:    Arndt von Staa
+// Date:      08/dez/2006
+// Purpose:   Test dynamic space control module
+// Generates a DISASTER message due to purposeful data space corruption
+      7 == Get number of spaces
+!!! 0    Line 9  Number of allocated data spaces: 19 
+!!! 0    Line 10  Total allocated data space size: 12114 
+     12 == Create spaces
+     17 == Verify all allocated spaces
+     20 == Verify memory leakage - there are 3 new spaces that have not been deallocated
+>>> 1    Line 21  Check memory leakage. Incorrect number of data spaces  Is 22  Should be 19
+<<< 0    Line 22  Expected failure or error has been recovered. 
+     24 == Display spaces by reference, only headers
+---DataSpace  Id:    60  Size:     9  Line:   135  File:      tst_dsp.cpp   Addr: 00862560
+---DataSpace  Id:    61  Size:     4  Line:   135  File:      tst_dsp.cpp   Addr: 00869208
+---DataSpace  Id:    62  Size:     6  Line:   135  File:      tst_dsp.cpp   Addr: 00862B60
+     30 == Display spaces by id
+---DataSpace  Id:    51  Size:    12  Line:    74  File:       msgstr.cpp   Addr: 00862660
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  04 C3 29 FA 6D 73 67 73 74 72 2E 63 70 70 00 00  .Ã)úmsgstr.cpp..
+   1  00 00 00 00 4A 00 00 00 33 00 00 00 28 0D 87 00  ....J...3...(.‡.
+   2  A0 27 86 00 0C 00 00 00 F6 3C 68 B4 37 00 11 00   '†.....ö<h´7...
+   3  00 00 52 0D 87 00 F6 3C                          ..R.‡.ö<        
+---DataSpace  Id:    52  Size:    18  Line:   688  File:       string.cpp   Addr: 00870D28
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  04 C3 29 FA 73 74 72 69 6E 67 2E 63 70 70 00 00  .Ã)ústring.cpp..
+   1  00 00 00 00 B0 02 00 00 34 00 00 00 60 25 86 00  ....°...4...`%†.
+   2  60 26 86 00 12 00 00 00 F6 3C 74 73 74 2D 64 73  `&†.....ö<tst-ds
+   3  70 2D 30 31 2E 73 63 72 69 70 74 00 F6 3C        p-01.script.ö<  
+
+!!!  Data space id: 53  does not exist.
+     36 == Display not existing space id
+---DataSpace  Id:    61  Size:     4  Line:   135  File:      tst_dsp.cpp   Addr: 00869208
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  04 C3 29 FA 74 73 74 5F 64 73 70 2E 63 70 70 00  .Ã)útst_dsp.cpp.
+   1  00 00 00 00 87 00 00 00 3D 00 00 00 60 2B 86 00  ....‡...=...`+†.
+   2  60 25 86 00 04 00 00 00 F6 3C 78 79 7A 00 F6 3C  `%†.....ö<xyz.ö<
+     39 == Corrupt underflow control in space 1
+---DataSpace  Id:    60  Size:     9  Line:   135  File:      tst_dsp.cpp   Addr: 00862560
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  04 C3 29 FA 74 73 74 5F 64 73 70 2E 63 70 70 00  .Ã)útst_dsp.cpp.
+   1  00 00 00 00 87 00 00 00 3C 00 00 00 08 92 86 00  ....‡...<....’†.
+   2  28 0D 87 00 09 00 00 00 F6 23 61 62 63 64 65 66  (.‡.....ö#abcdef
+   3  67 68 00 F6 3C                                   gh.ö<           
+     43 == Test pointer verifier. Space 2 is OK, space 1 has been corrupted
+>>> ERROR DYNSPAC  Data space error 5:  Space id 60  Line: 135  File: tst_dsp.cpp
+>>> 1    Line 45  Incorrect pointer verification return.  Is false, should be true.
+<<< 0    Line 46  Expected failure or error has been recovered. 
+     48 == Corrupt overflow control in space 3
+---DataSpace  Id:    62  Size:     6  Line:   135  File:      tst_dsp.cpp   Addr: 00862B60
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  04 C3 29 FA 74 73 74 5F 64 73 70 2E 63 70 70 00  .Ã)útst_dsp.cpp.
+   1  00 00 00 00 87 00 00 00 3E 00 00 00 00 00 00 00  ....‡...>.......
+   2  08 92 86 00 06 00 00 00 F6 3C 64 65 66 67 68 00  .’†.....ö<defgh.
+   3  24 3C                                            $<              
+     52 == Test pointer verifier. Space 2 is OK, space 3 has been corrupted
+>>> ERROR DYNSPAC  Data space error 6:  Space id 62  Line: 135  File: tst_dsp.cpp
+     56 == Test verify list
+>>> ERROR DYNSPAC  Data space error 6:  Space id 62  Line: 135  File: tst_dsp.cpp
+>>> ERROR DYNSPAC  Data space error 5:  Space id 60  Line: 135  File: tst_dsp.cpp
+>>> ERROR DYNSPAC  Allocated space does not match. Is 12118, expected 12133
+     59 == Delete correct data space
+     62 == Delete corrupted dataspace, should cancel
+>>> ERROR DYNSPAC  Data space error 5:  Space id 60  Line: 135  File: tst_dsp.cpp
+>>> ERROR DYNSPAC  Tried to delete invalid data space.
+---DataSpace  Id:    60  Size:     9  Line:   135  File:      tst_dsp.cpp   Addr: 00862560
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  04 C3 29 FA 74 73 74 5F 64 73 70 2E 63 70 70 00  .Ã)útst_dsp.cpp.
+   1  00 00 00 00 87 00 00 00 3C 00 00 00 60 2B 86 00  ....‡...<...`+†.
+   2  28 0D 87 00 09 00 00 00 F6 23 61 62 63 64 65 66  (.‡.....ö#abcdef
+   3  67 68 00 F6 3C                                   gh.ö<           
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+>>>DISASTER: Tried to delete illegal pointer. !!!
+
+      At Line: 676  In module: ..\sources\dynspac.cpp
+
+>>>DISASTER: Starting roll back.
+
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+

@@ -1,0 +1,15 @@
+TALISMAN Log file
+
+2018/06/15-04:40:32 : Log start: Some Log
+------ Console log line 1.
+>abcdefghi<
+>abcdefghi<
+>abcde...<
+>\x00\x01abcdefghij\x1F<
+>\x00\x01abcdefghij\x1F<
+>\x00\x01abcdefghij...<
+>\x00\x01abcdefghi...<
+>\x00\x01abcdefgh...<
+>...<
+>...<
+2018/06/15-04:40:32 : Log end: Some Log

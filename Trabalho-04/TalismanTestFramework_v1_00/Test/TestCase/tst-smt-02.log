@@ -1,0 +1,724 @@
+TALISMAN Log file
+
+2018/06/15-04:40:30 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:30 : !!! Start test, script file: tst-smt-02.script
+
+// Script:    Tst-sls-01.script
+// Author:    Arndt von Staa
+// Date:      29/mai/2014
+// Purpose:   Random symbol table test
+      6 == Reset all spaces
+      9 == Preserve the number of allocated spaces
+     13 == Generate and test
+!!!      Line 22   
+!!!      Line 22  Random test results 
+!!!      Line 22  Hash table size: 23  Number of symbols: 40  Number of actions: 1000 
+!!!      Line 22  Number of insertions:   40  Number of failed insertions:  960 
+!!!      Line 22  Number of retrieves:     0  Number of failed retrieves:     0 
+!!!      Line 22  Number of deletes:       0  Number of failed deletes:       0 
+
+Collision list lengths
+      List    0  length:     1
+      List    1  length:     3
+      List    2  length:     1
+      List    3  length:     1
+      List    4  length:     2
+      List    5  length:     0
+      List    6  length:     3
+      List    7  length:     2
+      List    8  length:     4
+      List    9  length:     1
+      List   10  length:     2
+      List   11  length:     1
+      List   12  length:     1
+      List   13  length:     1
+      List   14  length:     1
+      List   15  length:     0
+      List   16  length:     4
+      List   17  length:     1
+      List   18  length:     2
+      List   19  length:     2
+      List   20  length:     4
+      List   21  length:     1
+      List   22  length:     2
+   Total elements:       40
+   Mean list length:   1.74
+   Histogram
+      [  0]:    2
+      [  1]:   10
+      [  2]:    6
+      [  3]:    2
+      [  4]:    3
+      [  5]:    0
+      [  6]:    0
+      [  7]:    0
+      [  8]:    0
+      [  9]:    0
+      [ 10]:    0
+      [ 11]:    0
+      [ 12]:    0
+      [ 13]:    0
+      [ 14]:    0
+      [ 15]:    0
+     24 == Generate and test
+!!!      Line 31   
+!!!      Line 31  Random test results 
+!!!      Line 31  Hash table size: 31  Number of symbols: 100  Number of actions: 2000 
+!!!      Line 31  Number of insertions:  224  Number of failed insertions:  164 
+!!!      Line 31  Number of retrieves:   490  Number of failed retrieves:   702 
+!!!      Line 31  Number of deletes:     178  Number of failed deletes:     242 
+
+Collision list lengths
+      List    0  length:     4
+      List    1  length:     2
+      List    2  length:     0
+      List    3  length:     1
+      List    4  length:     2
+      List    5  length:     5
+      List    6  length:     1
+      List    7  length:     3
+      List    8  length:     1
+      List    9  length:     1
+      List   10  length:     1
+      List   11  length:     0
+      List   12  length:     1
+      List   13  length:     1
+      List   14  length:     1
+      List   15  length:     1
+      List   16  length:     1
+      List   17  length:     1
+      List   18  length:     1
+      List   19  length:     2
+      List   20  length:     3
+      List   21  length:     1
+      List   22  length:     0
+      List   23  length:     0
+      List   24  length:     1
+      List   25  length:     2
+      List   26  length:     1
+      List   27  length:     1
+      List   28  length:     3
+      List   29  length:     3
+      List   30  length:     1
+   Total elements:       46
+   Mean list length:   1.48
+   Histogram
+      [  0]:    4
+      [  1]:   17
+      [  2]:    4
+      [  3]:    4
+      [  4]:    1
+      [  5]:    1
+      [  6]:    0
+      [  7]:    0
+      [  8]:    0
+      [  9]:    0
+      [ 10]:    0
+      [ 11]:    0
+      [ 12]:    0
+      [ 13]:    0
+      [ 14]:    0
+      [ 15]:    0
+     33 == Generate and test
+!!!      Line 40   
+!!!      Line 40  Random test results 
+!!!      Line 40  Hash table size: 31  Number of symbols: 100  Number of actions: 2000 
+!!!      Line 40  Number of insertions:  100  Number of failed insertions: 1900 
+!!!      Line 40  Number of retrieves:     0  Number of failed retrieves:     0 
+!!!      Line 40  Number of deletes:       0  Number of failed deletes:       0 
+
+Collision list lengths
+      List    0  length:     3
+      List    1  length:     2
+      List    2  length:     2
+      List    3  length:     3
+      List    4  length:     4
+      List    5  length:     2
+      List    6  length:     8
+      List    7  length:     1
+      List    8  length:     5
+      List    9  length:     1
+      List   10  length:     3
+      List   11  length:     3
+      List   12  length:     1
+      List   13  length:     5
+      List   14  length:     2
+      List   15  length:     2
+      List   16  length:     4
+      List   17  length:     2
+      List   18  length:     0
+      List   19  length:     5
+      List   20  length:     1
+      List   21  length:     3
+      List   22  length:     1
+      List   23  length:     6
+      List   24  length:     2
+      List   25  length:     5
+      List   26  length:     3
+      List   27  length:     4
+      List   28  length:     4
+      List   29  length:     8
+      List   30  length:     5
+   Total elements:      100
+   Mean list length:   3.23
+   Histogram
+      [  0]:    1
+      [  1]:    5
+      [  2]:    7
+      [  3]:    6
+      [  4]:    4
+      [  5]:    5
+      [  6]:    1
+      [  7]:    0
+      [  8]:    2
+      [  9]:    0
+      [ 10]:    0
+      [ 11]:    0
+      [ 12]:    0
+      [ 13]:    0
+      [ 14]:    0
+      [ 15]:    0
+     44 == Generate and test
+!!!      Line 51   
+!!!      Line 51  Random test results 
+!!!      Line 51  Hash table size: 503  Number of symbols: 999  Number of actions: 4500 
+!!!      Line 51  Number of insertions:  988  Number of failed insertions: 3512 
+!!!      Line 51  Number of retrieves:     0  Number of failed retrieves:     0 
+!!!      Line 51  Number of deletes:       0  Number of failed deletes:       0 
+
+Collision list lengths
+      List    0  length:     1
+      List    1  length:     0
+      List    2  length:     4
+      List    3  length:     3
+      List    4  length:     2
+      List    5  length:     0
+      List    6  length:     3
+      List    7  length:     1
+      List    8  length:     2
+      List    9  length:     4
+      List   10  length:     5
+      List   11  length:     1
+      List   12  length:     0
+      List   13  length:     2
+      List   14  length:     2
+      List   15  length:     3
+      List   16  length:     5
+      List   17  length:     2
+      List   18  length:     2
+      List   19  length:     2
+      List   20  length:     6
+      List   21  length:     1
+      List   22  length:     1
+      List   23  length:     3
+      List   24  length:     2
+      List   25  length:     3
+      List   26  length:     3
+      List   27  length:     1
+      List   28  length:     1
+      List   29  length:     1
+      List   30  length:     0
+      List   31  length:     4
+      List   32  length:     2
+      List   33  length:     5
+      List   34  length:     3
+      List   35  length:     2
+      List   36  length:     1
+      List   37  length:     1
+      List   38  length:     5
+      List   39  length:     3
+      List   40  length:     2
+      List   41  length:     1
+      List   42  length:     1
+      List   43  length:     2
+      List   44  length:     3
+      List   45  length:     4
+      List   46  length:     3
+      List   47  length:     7
+      List   48  length:     3
+      List   49  length:     3
+      List   50  length:     3
+      List   51  length:     1
+      List   52  length:     1
+      List   53  length:     2
+      List   54  length:     3
+      List   55  length:     3
+      List   56  length:     1
+      List   57  length:     0
+      List   58  length:     2
+      List   59  length:     2
+      List   60  length:     1
+      List   61  length:     3
+      List   62  length:     2
+      List   63  length:     3
+      List   64  length:     3
+      List   65  length:     1
+      List   66  length:     4
+      List   67  length:     2
+      List   68  length:     4
+      List   69  length:     3
+      List   70  length:     0
+      List   71  length:     0
+      List   72  length:     2
+      List   73  length:     1
+      List   74  length:     3
+      List   75  length:     2
+      List   76  length:     3
+      List   77  length:     0
+      List   78  length:     0
+      List   79  length:     3
+      List   80  length:     4
+      List   81  length:     1
+      List   82  length:     2
+      List   83  length:     2
+      List   84  length:     3
+      List   85  length:     0
+      List   86  length:     3
+      List   87  length:     1
+      List   88  length:     6
+      List   89  length:     4
+      List   90  length:     3
+      List   91  length:     0
+      List   92  length:     2
+      List   93  length:     2
+      List   94  length:     2
+      List   95  length:     1
+      List   96  length:     2
+      List   97  length:     4
+      List   98  length:     3
+      List   99  length:     4
+      List  100  length:     2
+      List  101  length:     3
+      List  102  length:     0
+      List  103  length:     1
+      List  104  length:     0
+      List  105  length:     2
+      List  106  length:     3
+      List  107  length:     2
+      List  108  length:     1
+      List  109  length:     0
+      List  110  length:     1
+      List  111  length:     2
+      List  112  length:     1
+      List  113  length:     3
+      List  114  length:     1
+      List  115  length:     3
+      List  116  length:     3
+      List  117  length:     0
+      List  118  length:     3
+      List  119  length:     3
+      List  120  length:     1
+      List  121  length:     1
+      List  122  length:     0
+      List  123  length:     2
+      List  124  length:     0
+      List  125  length:     1
+      List  126  length:     2
+      List  127  length:     2
+      List  128  length:     1
+      List  129  length:     2
+      List  130  length:     2
+      List  131  length:     4
+      List  132  length:     3
+      List  133  length:     1
+      List  134  length:     1
+      List  135  length:     0
+      List  136  length:     4
+      List  137  length:     3
+      List  138  length:     1
+      List  139  length:     2
+      List  140  length:     5
+      List  141  length:     1
+      List  142  length:     4
+      List  143  length:     2
+      List  144  length:     2
+      List  145  length:     1
+      List  146  length:     1
+      List  147  length:     1
+      List  148  length:     3
+      List  149  length:     0
+      List  150  length:     1
+      List  151  length:     3
+      List  152  length:     2
+      List  153  length:     1
+      List  154  length:     4
+      List  155  length:     2
+      List  156  length:     2
+      List  157  length:     1
+      List  158  length:     2
+      List  159  length:     3
+      List  160  length:     1
+      List  161  length:     4
+      List  162  length:     3
+      List  163  length:     1
+      List  164  length:     2
+      List  165  length:     0
+      List  166  length:     3
+      List  167  length:     0
+      List  168  length:     3
+      List  169  length:     2
+      List  170  length:     2
+      List  171  length:     4
+      List  172  length:     1
+      List  173  length:     0
+      List  174  length:     1
+      List  175  length:     2
+      List  176  length:     2
+      List  177  length:     2
+      List  178  length:     2
+      List  179  length:     3
+      List  180  length:     1
+      List  181  length:     1
+      List  182  length:     0
+      List  183  length:     3
+      List  184  length:     0
+      List  185  length:     3
+      List  186  length:     1
+      List  187  length:     1
+      List  188  length:     0
+      List  189  length:     1
+      List  190  length:     4
+      List  191  length:     4
+      List  192  length:     1
+      List  193  length:     4
+      List  194  length:     4
+      List  195  length:     3
+      List  196  length:     5
+      List  197  length:     0
+      List  198  length:     4
+      List  199  length:     2
+      List  200  length:     1
+      List  201  length:     2
+      List  202  length:     2
+      List  203  length:     2
+      List  204  length:     5
+      List  205  length:     1
+      List  206  length:     1
+      List  207  length:     1
+      List  208  length:     2
+      List  209  length:     1
+      List  210  length:     3
+      List  211  length:     1
+      List  212  length:     3
+      List  213  length:     1
+      List  214  length:     1
+      List  215  length:     2
+      List  216  length:     1
+      List  217  length:     1
+      List  218  length:     0
+      List  219  length:     0
+      List  220  length:     2
+      List  221  length:     2
+      List  222  length:     0
+      List  223  length:     1
+      List  224  length:     1
+      List  225  length:     2
+      List  226  length:     2
+      List  227  length:     3
+      List  228  length:     1
+      List  229  length:     2
+      List  230  length:     1
+      List  231  length:     1
+      List  232  length:     1
+      List  233  length:     1
+      List  234  length:     1
+      List  235  length:     3
+      List  236  length:     3
+      List  237  length:     3
+      List  238  length:     0
+      List  239  length:     3
+      List  240  length:     2
+      List  241  length:     1
+      List  242  length:     0
+      List  243  length:     1
+      List  244  length:     1
+      List  245  length:     2
+      List  246  length:     2
+      List  247  length:     4
+      List  248  length:     1
+      List  249  length:     1
+      List  250  length:     3
+      List  251  length:     2
+      List  252  length:     1
+      List  253  length:     4
+      List  254  length:     3
+      List  255  length:     1
+      List  256  length:     1
+      List  257  length:     1
+      List  258  length:     1
+      List  259  length:     1
+      List  260  length:     0
+      List  261  length:     1
+      List  262  length:     1
+      List  263  length:     1
+      List  264  length:     1
+      List  265  length:     0
+      List  266  length:     2
+      List  267  length:     0
+      List  268  length:     1
+      List  269  length:     2
+      List  270  length:     1
+      List  271  length:     3
+      List  272  length:     3
+      List  273  length:     3
+      List  274  length:     4
+      List  275  length:     0
+      List  276  length:     1
+      List  277  length:     3
+      List  278  length:     2
+      List  279  length:     1
+      List  280  length:     4
+      List  281  length:     4
+      List  282  length:     0
+      List  283  length:     2
+      List  284  length:     2
+      List  285  length:     1
+      List  286  length:     0
+      List  287  length:     0
+      List  288  length:     1
+      List  289  length:     0
+      List  290  length:     0
+      List  291  length:     1
+      List  292  length:     1
+      List  293  length:     0
+      List  294  length:     1
+      List  295  length:     2
+      List  296  length:     1
+      List  297  length:     1
+      List  298  length:     1
+      List  299  length:     5
+      List  300  length:     0
+      List  301  length:     2
+      List  302  length:     4
+      List  303  length:     2
+      List  304  length:     2
+      List  305  length:     1
+      List  306  length:     1
+      List  307  length:     2
+      List  308  length:     4
+      List  309  length:     0
+      List  310  length:     2
+      List  311  length:     2
+      List  312  length:     5
+      List  313  length:     4
+      List  314  length:     3
+      List  315  length:     0
+      List  316  length:     0
+      List  317  length:     1
+      List  318  length:     1
+      List  319  length:     3
+      List  320  length:     1
+      List  321  length:     2
+      List  322  length:     5
+      List  323  length:     3
+      List  324  length:     1
+      List  325  length:     3
+      List  326  length:     0
+      List  327  length:     1
+      List  328  length:     1
+      List  329  length:     2
+      List  330  length:     2
+      List  331  length:     1
+      List  332  length:     4
+      List  333  length:     4
+      List  334  length:     0
+      List  335  length:     1
+      List  336  length:     2
+      List  337  length:     2
+      List  338  length:     1
+      List  339  length:     3
+      List  340  length:     3
+      List  341  length:     2
+      List  342  length:     2
+      List  343  length:     0
+      List  344  length:     2
+      List  345  length:     3
+      List  346  length:     3
+      List  347  length:     1
+      List  348  length:     2
+      List  349  length:     0
+      List  350  length:     0
+      List  351  length:     0
+      List  352  length:     2
+      List  353  length:     1
+      List  354  length:     4
+      List  355  length:     2
+      List  356  length:     3
+      List  357  length:     2
+      List  358  length:     2
+      List  359  length:     0
+      List  360  length:     5
+      List  361  length:     3
+      List  362  length:     1
+      List  363  length:     1
+      List  364  length:     0
+      List  365  length:     0
+      List  366  length:     2
+      List  367  length:     2
+      List  368  length:     2
+      List  369  length:     1
+      List  370  length:     2
+      List  371  length:     1
+      List  372  length:     4
+      List  373  length:     4
+      List  374  length:     2
+      List  375  length:     2
+      List  376  length:     2
+      List  377  length:     1
+      List  378  length:     2
+      List  379  length:     6
+      List  380  length:     3
+      List  381  length:     5
+      List  382  length:     2
+      List  383  length:     3
+      List  384  length:     1
+      List  385  length:     1
+      List  386  length:     2
+      List  387  length:     5
+      List  388  length:     2
+      List  389  length:     2
+      List  390  length:     1
+      List  391  length:     1
+      List  392  length:     1
+      List  393  length:     4
+      List  394  length:     3
+      List  395  length:     2
+      List  396  length:     2
+      List  397  length:     2
+      List  398  length:     2
+      List  399  length:     1
+      List  400  length:     0
+      List  401  length:     3
+      List  402  length:     6
+      List  403  length:     5
+      List  404  length:     1
+      List  405  length:     0
+      List  406  length:     1
+      List  407  length:     1
+      List  408  length:     0
+      List  409  length:     2
+      List  410  length:     2
+      List  411  length:     2
+      List  412  length:     2
+      List  413  length:     0
+      List  414  length:     0
+      List  415  length:     2
+      List  416  length:     3
+      List  417  length:     1
+      List  418  length:     3
+      List  419  length:     3
+      List  420  length:     3
+      List  421  length:     2
+      List  422  length:     2
+      List  423  length:     5
+      List  424  length:     3
+      List  425  length:     2
+      List  426  length:     3
+      List  427  length:     0
+      List  428  length:     3
+      List  429  length:     3
+      List  430  length:     4
+      List  431  length:     1
+      List  432  length:     3
+      List  433  length:     2
+      List  434  length:     3
+      List  435  length:     3
+      List  436  length:     2
+      List  437  length:     3
+      List  438  length:     1
+      List  439  length:     1
+      List  440  length:     4
+      List  441  length:     2
+      List  442  length:     4
+      List  443  length:     1
+      List  444  length:     1
+      List  445  length:     3
+      List  446  length:     1
+      List  447  length:     4
+      List  448  length:     2
+      List  449  length:     2
+      List  450  length:     0
+      List  451  length:     3
+      List  452  length:     2
+      List  453  length:     2
+      List  454  length:     3
+      List  455  length:     2
+      List  456  length:     3
+      List  457  length:     2
+      List  458  length:     1
+      List  459  length:     1
+      List  460  length:     3
+      List  461  length:     2
+      List  462  length:     3
+      List  463  length:     1
+      List  464  length:     5
+      List  465  length:     1
+      List  466  length:     1
+      List  467  length:     1
+      List  468  length:     2
+      List  469  length:     3
+      List  470  length:     1
+      List  471  length:     0
+      List  472  length:     2
+      List  473  length:     1
+      List  474  length:     3
+      List  475  length:     1
+      List  476  length:     2
+      List  477  length:     3
+      List  478  length:     0
+      List  479  length:     4
+      List  480  length:     2
+      List  481  length:     2
+      List  482  length:     4
+      List  483  length:     4
+      List  484  length:     1
+      List  485  length:     4
+      List  486  length:     3
+      List  487  length:     3
+      List  488  length:     1
+      List  489  length:     1
+      List  490  length:     4
+      List  491  length:     3
+      List  492  length:     1
+      List  493  length:     0
+      List  494  length:     1
+      List  495  length:     1
+      List  496  length:     2
+      List  497  length:     2
+      List  498  length:     4
+      List  499  length:     3
+      List  500  length:     1
+      List  501  length:     3
+      List  502  length:     0
+   Total elements:      988
+   Mean list length:   1.96
+   Histogram
+      [  0]:   65
+      [  1]:  145
+      [  2]:  129
+      [  3]:   98
+      [  4]:   45
+      [  5]:   16
+      [  6]:    4
+      [  7]:    1
+      [  8]:    0
+      [  9]:    0
+      [ 10]:    0
+      [ 11]:    0
+      [ 12]:    0
+      [ 13]:    0
+      [ 14]:    0
+      [ 15]:    0
+     53 == Verify leakage
+
+2018/06/15-04:40:30 : !!! End of test, script file: tst-smt-02.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 7  Test commands 10  Test lines 57
+     Test ending condition: No failures found.
+
+2018/06/15-04:40:30 : Log end: EVENT

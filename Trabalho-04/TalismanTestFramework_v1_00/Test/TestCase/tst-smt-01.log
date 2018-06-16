@@ -1,0 +1,144 @@
+TALISMAN Log file
+
+2018/06/15-04:40:30 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:30 : !!! Start test, script file: tst-smt-01.script
+
+// Script:    Tst-sls-01.script
+// Author:    Arndt von Staa
+// Date:      10/fev/2007
+// Purpose:   Test symbol table
+      6 == Reset all spaces
+      9 == Preserve the number of allocated spaces
+     13 == Create tables
+     18 == Verify empty tables
+     23 == Test seach in empty table
+>>> 1    Line 26  Incorrect symbol search return  Is false, should be true.
+<<< 0    Line 27  Expected failure or error has been recovered. 
+     29 == Test insert string
+     37 == Test delete symbol
+     42 == Test mix of insert and delete
+     52 == Test insert string in another table
+     60 == Verify structure of table with no delete performed
+     63 == Verify structure of table with delete performed
+     66 == Verify sensibility with respect to case and diacritic characters
+>>> 1    Line 70  Incorrect symbol search return  Is false, should be true.
+<<< 0    Line 71  Expected failure or error has been recovered. 
+     73 == Verify correct comparison at the extremities
+     78 == Test random
+     93 == Test display collision list lengths
+
+Collision list lengths
+      List    0  length:     1
+      List    1  length:     0
+      List    2  length:     2
+      List    3  length:     0
+      List    4  length:     0
+      List    5  length:     0
+      List    6  length:     0
+      List    7  length:     0
+      List    8  length:     0
+      List    9  length:     0
+   Total elements:        3
+   Mean list length:   0.30
+   Histogram
+      [  0]:    8
+      [  1]:    1
+      [  2]:    1
+      [  3]:    0
+      [  4]:    0
+      [  5]:    0
+      [  6]:    0
+      [  7]:    0
+      [  8]:    0
+      [  9]:    0
+      [ 10]:    0
+      [ 11]:    0
+      [ 12]:    0
+      [ 13]:    0
+      [ 14]:    0
+      [ 15]:    0
+
+Collision list lengths
+      List    0  length:     0
+      List    1  length:     0
+      List    2  length:     0
+      List    3  length:     1
+      List    4  length:     2
+   Total elements:        3
+   Mean list length:   0.60
+   Histogram
+      [  0]:    3
+      [  1]:    1
+      [  2]:    1
+      [  3]:    0
+      [  4]:    0
+      [  5]:    0
+      [  6]:    0
+      [  7]:    0
+      [  8]:    0
+      [  9]:    0
+      [ 10]:    0
+      [ 11]:    0
+      [ 12]:    0
+      [ 13]:    0
+      [ 14]:    0
+      [ 15]:    0
+
+Collision list lengths
+      List    0  length:     1
+      List    1  length:     0
+      List    2  length:     0
+      List    3  length:     0
+      List    4  length:     0
+      List    5  length:     0
+      List    6  length:     0
+      List    7  length:     1
+      List    8  length:     0
+      List    9  length:     0
+      List   10  length:     0
+      List   11  length:     0
+      List   12  length:     0
+      List   13  length:     0
+      List   14  length:     0
+      List   15  length:     0
+      List   16  length:     0
+      List   17  length:     1
+      List   18  length:     0
+      List   19  length:     0
+      List   20  length:     0
+      List   21  length:     0
+      List   22  length:     0
+   Total elements:        3
+   Mean list length:   0.13
+   Histogram
+      [  0]:   20
+      [  1]:    3
+      [  2]:    0
+      [  3]:    0
+      [  4]:    0
+      [  5]:    0
+      [  6]:    0
+      [  7]:    0
+      [  8]:    0
+      [  9]:    0
+      [ 10]:    0
+      [ 11]:    0
+      [ 12]:    0
+      [ 13]:    0
+      [ 14]:    0
+      [ 15]:    0
+     98 == Destruct these tables
+    103 == Verify leakage
+    107 == Test table tester destruction, must not leave allocated spaces
+
+2018/06/15-04:40:30 : !!! End of test, script file: tst-smt-01.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 18  Test commands 69  Test lines 112
+     Test ending condition: No failures found.
+
+2018/06/15-04:40:30 : Log end: EVENT

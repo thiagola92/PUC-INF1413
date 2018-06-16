@@ -1,0 +1,108 @@
+TALISMAN Log file
+
+2018/06/15-04:40:30 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:30 : !!! Start test, script file: tst-sls-01.script
+
+// Script:    Tst-sls-01.script
+// Author:    Arndt von Staa
+// Date:      01/fev/2007
+// Purpose:   Test simple list
+      6 == Reset all spaces
+      9 == Declare parameters to be used
+     13 == Preserve the number of allocated spaces
+     17 == Create a list
+     20 == Test empty list
+     29 == Test emptying empty list
+     39 == Insert an element into this list
+     46 == Test movefirst with only one element
+     50 == Test movelast with only one element
+     54 == Delete the list
+!!!  Deleted element: abcdefg
+     57 == Test destroyed list
+>>> 1    Line 58  Incorrect command parameters:  =getnumelem   0  0
+<<< 0    Line 59  Expected failure or error has been recovered. 
+     61 == Test inexistent list
+>>> 1    Line 62  Incorrect command parameters:  =getnumelem   1  0
+<<< 0    Line 63  Expected failure or error has been recovered. 
+     65 == Build list with 1 element using insert before
+     71 == Build list with 2 elements using insert before
+     76 == Build list with 3 elements using insert before
+     83 == Verify list from begining to end
+     92 == Verify list from end to begining
+    101 == Destroy the list of 3 elements
+!!!  Deleted element: cc
+!!!  Deleted element: bbb
+!!!  Deleted element: aaaa
+    104 == Build list with 1 element using insert after
+    110 == Build list with 2 elements using insert after
+    115 == Build list with 3 elements using insert after
+    122 == Verify list from begining to end
+    131 == Verify list from end to begining
+    140 == Add elements to the beginning
+// ww x yyyy zzzzz
+// ww ttt x yyyy zzzzzz
+    147 == Add elements to the end
+// ww ttt x yyyy zzzzzz rrrr
+// ww ttt x yyyy zzzzzz sssss rrrr
+    155 == Add elements to the middle
+// ww ttt qqq x yyyy zzzzzz sssss rrrr
+    161 == Add another element to the middle
+// ww ttt qqq x yyyy ooooooo zzzzzz sssss rrrr
+    167 == Verify list structure
+    170 == Verify whole list
+    191 == Delete first element
+!!!  Deleted element: ww
+// ttt qqq x yyyy ooooooo zzzzzz sssss rrrr
+    197 == Delete last element
+!!!  Deleted element: rrrr
+// ttt qqq x yyyy ooooooo zzzzzz sssss
+    203 == Delete element in the middle
+!!!  Deleted element: x
+// ttt qqq yyyy ooooooo zzzzzz sssss
+    209 == Delete element in the middle
+!!!  Deleted element: ooooooo
+// ttt qqq yyyy zzzzzz sssss
+    215 ==Delete remaining elements
+!!!  Deleted element: yyyy
+!!!  Deleted element: qqq
+!!!  Deleted element: ttt
+!!!  Deleted element: zzzzzz
+!!!  Deleted element: sssss
+    226 == Delete element from empty list
+    230 == Destroy the empty list
+    233 == Build list with 8 elements using insert after
+    244 == Verify contents of the list
+    262 == Empty the list
+!!!  Deleted element: 1
+!!!  Deleted element: 22
+!!!  Deleted element: 333
+!!!  Deleted element: 4444
+!!!  Deleted element: 55555
+!!!  Deleted element: 666666
+!!!  Deleted element: 7777777
+!!!  Deleted element: 88888888
+    265 == Verify if list is empty
+    274 == Destroy the list
+    277 == Create dummy list
+    285 == Destroy the list
+!!!  Deleted element: 22
+!!!  Deleted element: 333
+!!!  Deleted element: 55555
+!!!  Deleted element: 666666
+!!!  Deleted element: 7777777
+    289 == Verify leakage
+    293 == Create dummy list, test tester destruction, may not leave allocated dataspaces
+// end test
+
+2018/06/15-04:40:30 : !!! End of test, script file: tst-sls-01.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 45  Test commands 188  Test lines 297
+     Test ending condition: No failures found.
+
+!!!  Deleted element: 1
+2018/06/15-04:40:30 : Log end: EVENT

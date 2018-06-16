@@ -1,0 +1,64 @@
+TALISMAN Log file
+
+2018/06/15-04:40:32 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:32 : !!! Start test, script file: tst-cnt-02.script
+
+// Test counters
+      3 == Open counter module counter definition file
+      7 == List all counters
+ccc 0    Line 8  Counter value:     0  name: Handle: Copy accumulated counters file 
+ccc 0    Line 8  Counter value:     0  name: Handle: Delete accumulated counters file 
+ccc 0    Line 8  Counter value:     0  name: Handle: Get count 
+ccc 0    Line 8  Counter value:     0  name: Handle: Get number of counters 
+ccc 0    Line 8  Counter value:     0  name: Handle: Read accumulated counters file 
+ccc 0    Line 8  Counter value:     0  name: Handle: Read counter name declarations 
+ccc 0    Line 8  Counter value:     0  name: Handle: Reset all counters 
+ccc 0    Line 8  Counter value:     0  name: Handle: display counters 
+ccc 0    Line 8  Counter value:     0  name: Handle: reset counter 
+ccc 0    Line 8  Counter value:     0  name: Handle: start counting 
+ccc 0    Line 8  Counter value:     0  name: Handle: stop counting 
+ccc 0    Line 8  Counter value:     0  name: Handle: verify zero 
+ccc 0    Line 8  Counter value:     0  name: ICNT &Interpret passage counter commands 
+     10 == Count commands that will not be executed
+     15 == Get accumulator file
+     19 == Get count
+     22 == Get number of counters
+     25 == Start counting again
+     28 == Stop counting
+     31 == Restart counting
+     34 == Reset counter, does nothing
+     39 == Verify zero counters
+>>> 1    Line 40  Zero count in counter: Handle: Delete accumulated counters file
+>>> 2    Line 40  Zero count in counter: Handle: Get count
+>>> 3    Line 40  Zero count in counter: Handle: Get number of counters
+>>> 4    Line 40  Zero count in counter: Handle: Read accumulated counters file
+>>> 5    Line 40  Zero count in counter: Handle: display counters
+>>> 6    Line 40  Zero count in counter: Handle: reset counter
+>>> 7    Line 40  Zero count in counter: Handle: start counting
+>>> 8    Line 40  Zero count in counter: Handle: stop counting
+>>> 9    Line 40  Zero count in counter: Handle: verify zero
+>>> 10   Line 40  Zero count in counter: ICNT &Interpret passage counter commands
+>>> 11   Line 40  Incorrect number of counters containing zero  Is 10  Should be 0
+
+2018/06/15-04:40:32 : !!! End of test, script file: tst-cnt-02.script
+!!! **************************************************
+!!! 11   Line 41   Verifying counters at end of test run 
+ccc 11   Line 41  Zero count in counter: Handle: Delete accumulated counters file
+ccc 11   Line 41  Zero count in counter: Handle: Get count
+ccc 11   Line 41  Zero count in counter: Handle: Get number of counters
+ccc 11   Line 41  Zero count in counter: Handle: Read accumulated counters file
+ccc 11   Line 41  Zero count in counter: Handle: display counters
+ccc 11   Line 41  Zero count in counter: Handle: reset counter
+ccc 11   Line 41  Zero count in counter: Handle: start counting
+ccc 11   Line 41  Zero count in counter: Handle: stop counting
+ccc 11   Line 41  Zero count in counter: Handle: verify zero
+ccc 11   Line 41  Zero count in counter: ICNT &Interpret passage counter commands
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 11  Test commands 17  Test lines 41
+     Test ending condition: >>> 11 <<< failures found.
+
+2018/06/15-04:40:32 : Log end: EVENT

@@ -1,0 +1,31 @@
+TALISMAN Log file
+
+2018/06/15-04:40:27 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:27 : !!! Start test, script file: tst-main-04.script
+
+// Script:    Tst-main-02.script
+// Author:    Arndt von Staa
+// Date:      08/dez/2006
+// Purpose:   Test basic functionality
+// Test script file with test case containing only control commands and execution cancel command
+//
+// ==========>>> Must display 2 errors  17 lines read, cancel
+//
+// Start
+     13 == Test control commands
+!!!      Line 15  Breakpoint:  : 0
+!!!      Line 16  Breakpoint:  : 123
+>>> 1    Line 17  Cancel command found .
+>>> 2    Line 17  Test has been canceled. 
+
+2018/06/15-04:40:27 : !!! End of test, script file: tst-main-04.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 1  Test commands 3  Test lines 17
+     Test ending condition: >>> 2 <<< failures found.
+
+2018/06/15-04:40:27 : Log end: EVENT

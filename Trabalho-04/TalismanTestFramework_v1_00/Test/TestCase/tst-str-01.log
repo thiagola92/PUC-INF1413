@@ -1,0 +1,74 @@
+TALISMAN Log file
+
+2018/06/15-04:40:29 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:29 : !!! Start test, script file: tst-str-01.script
+
+// Script:    Tst-str-01.script
+// Author:    Arndt von Staa
+// Date:      30/mai/2018
+// Purpose:   Test string, converison
+      6 == Declare constants
+     15 == Save the number of allocated data spaces
+     20 == Test minimum converted string buffer size assertion
+
+>>> 1    Line 22  Tester caught a program exception, context -1 >>
+--- EXC: ENFORCE: Failing expression: maxLenNewString >= 4
+        Exception thrown in Line: 1022  File: ..\sources\string.cpp
+
+<<< 0    Line 23  Expected exception has been ignored.
+ 
+// Test truncate right fitting strings
+     27 == Convert an empty string
+     30 == Convert an one character string
+     33 == Convert a to character string
+     36 == Convert using hexadecimal coding
+// Test truncate right strings with no control character
+     44 == Convert to non fitting buffers
+     51 == Convert to an exact size buffer
+     57 == Convert small strings into fitting buffer
+// Test truncate right string containing one control character
+     67 == Convert single code to a large buffer
+     70 == Convert to exact buffer with walking control
+     76 == Convert to exact buffer code at beginning with chars at end
+     82 == Convert to smaller buffer with code block in the middle
+     93 == Convert to smaller buffer with walking code block in the middle
+// Test truncate right strings containing two code blocks
+    103 == Convert with decreasing buffer sizes and char before and between blocks
+    116 == Convert with decreasing buffer sizes and between blocks
+    130 == Convert with decreasing buffer sizes and char before and none blocks
+// Test truncate right when all converted characters are hexadecimal code
+    147 == Convert a normal string into large buffer
+    150 == Convert a normal string into exact buffer
+    154 == Convert a normal string lnto decreasing size buffers
+// Test truncate left strings with no control character
+    178 == Convert into non fitting buffers
+    185 == Convert into exact size buffers
+    191 == Convert small strings into fitting buffer
+// Test truncate left strings containing one control character
+    201 == Convert single code to a large buffer
+    204 == Convert to exact buffer with walking control
+    210 == Convert to exact buffer code at beginning with chars at end
+    216 == Convert to decreasing size with code block in the middle
+    227 == Convert to smaller buffer with walking code block in the middle
+// Test truncate right strings containing two code blocks
+    237 == Convert with decreasing buffer sizes and char before and between blocks
+    252 == Convert with decreasing buffer sizes and character between blocks
+    266 == Convert with decreasing buffer sizes and char before and none between blocks
+// Test truncate lrft when all converted characters are hexadecimal code
+    281 == Convert a normal string into large buffer
+    284 == Convert a normal string into exact buffer
+    288 == Convert a normal string lnto decreasing size buffers
+    299 == Convert mixed characters
+    311 == Verify memory leak
+
+2018/06/15-04:40:29 : !!! End of test, script file: tst-str-01.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 37  Test commands 213  Test lines 314
+     Test ending condition: No failures found.
+
+2018/06/15-04:40:29 : Log end: EVENT

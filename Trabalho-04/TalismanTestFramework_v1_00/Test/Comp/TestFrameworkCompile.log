@@ -1,0 +1,400 @@
+	..\..\tools\programs\CompileBanner /cTst-Main
+
+
+#################### Compilacao do construto: Tst-Main
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_tst.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-Main  > ..\sources\Tst-Main.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_bcd.str /T..\tables\str_bcd.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_cnt.str /T..\tables\str_cnt.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_dis.str /T..\tables\str_dis.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_dsp.str /T..\tables\str_dsp.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_env.str /T..\tables\str_env.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_exc.str /T..\tables\str_exc.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_glb.str /T..\tables\str_glb.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_global.str /T..\tables\str_global.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_log.str /T..\tables\str_log.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_msg.str /T..\tables\str_msg.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_sio.str /T..\tables\str_sio.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_sls.str /T..\tables\str_sls.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_smt.str /T..\tables\str_smt.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_str.str /T..\tables\str_str.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_tim.str /T..\tables\str_tim.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_tst.str /T..\tables\str_tst.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_ver.str /T..\tables\str_ver.inc >> ..\sources\Tst-Main.err
+	..\..\tools\programs\GENSTRTB  /D..\tables  /L..\tables\string.makeup   /T..\tables\string.table >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\mutant.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\gnrctest.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_tst.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\bcdarit.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\breakpnt.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\counters.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\disaster.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\dynspac.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\environ.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\exceptn.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\global.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\int_cnt.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\int_dsp.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\logger.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\message.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgbin.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgstr.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgtime.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\readtest.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\simplist.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\sioctrl.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\sls_elem.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\string.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\symbtab.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\time.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tracer.cpp >> ..\sources\Tst-Main.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\verifier.cpp >> ..\sources\Tst-Main.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-Main.build >> ..\sources\Tst-Main.err
+	..\..\tools\programs\CompileBanner /cTst-exc
+
+
+#################### Compilacao do construto: Tst-exc
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_exc.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-exc  > ..\sources\Tst-exc.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_texc.str /T..\tables\str_texc.inc >> ..\sources\Tst-exc.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_exc.cpp >> ..\sources\Tst-exc.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-exc.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-exc.build >> ..\sources\Tst-exc.err
+	..\..\tools\programs\CompileBanner /cTst-Dis
+
+
+#################### Compilacao do construto: Tst-Dis
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_dis.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-Dis  > ..\sources\Tst-Dis.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_dis.cpp >> ..\sources\Tst-Dis.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-Dis.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-Dis.build >> ..\sources\Tst-Dis.err
+	..\..\tools\programs\CompileBanner /cTst-Rdt
+
+
+#################### Compilacao do construto: Tst-Rdt
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_rdt.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-Rdt  > ..\sources\Tst-Rdt.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_rdt.cpp >> ..\sources\Tst-Rdt.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-Rdt.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-Rdt.build >> ..\sources\Tst-Rdt.err
+	..\..\tools\programs\CompileBanner /cTst-tim
+
+
+#################### Compilacao do construto: Tst-tim
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_tim.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-tim  > ..\sources\Tst-tim.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	del ..\Obj\time.obj
+	CL /D_TEST_TIM /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\time.cpp >> ..\sources\Tst-tim.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_tim.cpp >> ..\sources\Tst-tim.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-tim.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgbcd.cpp >> ..\sources\Tst-tim.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-tim.build >> ..\sources\Tst-tim.err
+	del ..\Obj\time.obj
+	..\..\tools\programs\CompileBanner /cTst-str
+
+
+#################### Compilacao do construto: Tst-str
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_str.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-str  > ..\sources\Tst-str.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_str.cpp >> ..\sources\Tst-str.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-str.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\time.cpp >> ..\sources\Tst-str.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-str.build >> ..\sources\Tst-str.err
+	..\..\tools\programs\CompileBanner /cTst-bcd
+
+
+#################### Compilacao do construto: Tst-bcd
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_bcd.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-bcd  > ..\sources\Tst-bcd.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_bcd.cpp >> ..\sources\Tst-bcd.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-bcd.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\randgen.cpp >> ..\sources\Tst-bcd.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-bcd.build >> ..\sources\Tst-bcd.err
+	..\..\tools\programs\CompileBanner /cTst-dsp
+
+
+#################### Compilacao do construto: Tst-dsp
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_dsp.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-dsp  > ..\sources\Tst-dsp.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_dsp.cpp >> ..\sources\Tst-dsp.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-dsp.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-dsp.build >> ..\sources\Tst-dsp.err
+	..\..\tools\programs\CompileBanner /cTst-sls
+
+
+#################### Compilacao do construto: Tst-sls
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_sls.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-sls  > ..\sources\Tst-sls.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_sls.cpp >> ..\sources\Tst-sls.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-sls.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-sls.build >> ..\sources\Tst-sls.err
+	..\..\tools\programs\CompileBanner /cTst-smt
+
+
+#################### Compilacao do construto: Tst-smt
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_smt.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-smt  > ..\sources\Tst-smt.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_smt.cpp >> ..\sources\Tst-smt.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-smt.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-smt.build >> ..\sources\Tst-smt.err
+	..\..\tools\programs\CompileBanner /cTst-Rnd
+
+
+#################### Compilacao do construto: Tst-Rnd
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_rnd.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-Rnd  > ..\sources\Tst-Rnd.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_rnd.cpp >> ..\sources\Tst-Rnd.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-Rnd.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-Rnd.build >> ..\sources\Tst-Rnd.err
+	..\..\tools\programs\CompileBanner /cTst-Cnt
+
+
+#################### Compilacao do construto: Tst-Cnt
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_cnt.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-Cnt  > ..\sources\Tst-Cnt.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_cnt.cpp >> ..\sources\Tst-Cnt.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-Cnt.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-Cnt.build >> ..\sources\Tst-Cnt.err
+	..\..\tools\programs\CompileBanner /cTst-sio
+
+
+#################### Compilacao do construto: Tst-sio
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_sio.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-sio  > ..\sources\Tst-sio.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_sio.cpp >> ..\sources\Tst-sio.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-sio.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-sio.build >> ..\sources\Tst-sio.err
+	..\..\tools\programs\CompileBanner /cTst-log
+
+
+#################### Compilacao do construto: Tst-log
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_log.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-log  > ..\sources\Tst-log.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_log.cpp >> ..\sources\Tst-log.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-log.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-log.build >> ..\sources\Tst-log.err
+	..\..\tools\programs\CompileBanner /cTst-msg
+
+
+#################### Compilacao do construto: Tst-msg
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_msg.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-msg  > ..\sources\Tst-msg.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_tmsg.str /T..\tables\str_tmsg.inc >> ..\sources\Tst-msg.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_msg.cpp >> ..\sources\Tst-msg.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-msg.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-msg.build >> ..\sources\Tst-msg.err
+	..\..\tools\programs\CompileBanner /cTst-cfg
+
+
+#################### Compilacao do construto: Tst-cfg
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_cfg.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-cfg  > ..\sources\Tst-cfg.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	..\..\tools\programs\GENSTRID  /D..\tables  /E..\tables\str_cfg.str /T..\tables\str_cfg.inc >> ..\sources\Tst-cfg.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\configfl.cpp >> ..\sources\Tst-cfg.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_cfg.cpp >> ..\sources\Tst-cfg.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-cfg.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-cfg.build >> ..\sources\Tst-cfg.err
+	..\..\tools\programs\CompileBanner /cTst-env
+
+
+#################### Compilacao do construto: Tst-env
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_env.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-env  > ..\sources\Tst-env.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_env.cpp >> ..\sources\Tst-env.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-env.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-env.build >> ..\sources\Tst-env.err
+	..\..\tools\programs\CompileBanner /cTst-buf
+
+
+#################### Compilacao do construto: Tst-buf
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_buf.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-buf  > ..\sources\Tst-buf.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\buffer.cpp >> ..\sources\Tst-buf.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_buf.cpp >> ..\sources\Tst-buf.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-buf.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-buf.build >> ..\sources\Tst-buf.err
+	..\..\tools\programs\CompileBanner /cTst-ver
+
+
+#################### Compilacao do construto: Tst-ver
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_ver.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-ver  > ..\sources\Tst-ver.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_ver.cpp >> ..\sources\Tst-ver.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-ver.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-ver.build >> ..\sources\Tst-ver.err
+	..\..\tools\programs\CompileBanner /cTalismanTestLib
+
+
+#################### Compilacao do construto: TalismanTestLib
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"dummy_test.hpp\""
+	..\..\tools\programs\CompileBanner /cTalismanTestLib  > ..\sources\TalismanTestLib.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	del    ..\obj\talismantestlib.lib
+	del    ..\..\global\lib\talismantestlib.lib
+	cd ..\Obj
+	LIB  @TalismanTestLib.build >> ..\sources\TalismanTestLib.err
+	copy   ..\obj\TalismanTestLib.lib  ..\..\global\lib
+        1 file(s) copied.
+	..\..\tools\programs\CompileBanner /cTst-lib
+
+
+#################### Compilacao do construto: Tst-lib
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_str.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-lib  > ..\sources\Tst-lib.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-lib.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-lib.build >> ..\sources\Tst-lib.err
+	..\..\tools\programs\CompileBanner /cTalismanTestDll
+
+
+#################### Compilacao do construto: TalismanTestDll
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"dummy_test.hpp\""
+	..\..\tools\programs\CompileBanner /cTalismanTestDll  > ..\sources\TalismanTestDll.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	del ..\Obj\*.obj
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\bcdarit.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\breakpnt.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\buffer.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\configfl.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\counters.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\disaster.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\dynspac.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\environ.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\exceptn.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\global.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\gnrctest.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\int_cnt.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\int_dsp.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\logger.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\message.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgbcd.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgbin.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgstr.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\msgtime.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\randgen.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\readtest.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\simplist.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\sioctrl.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\sls_elem.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\string.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\symbtab.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\time.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tracer.cpp >> ..\sources\TalismanTestDll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\verifier.cpp >> ..\sources\TalismanTestDll.err
+	cd ..\Obj
+	DUMPBIN  /SYMBOLS   *.obj  /OUT:dllsymbols.txt
+Microsoft (R) COFF/PE Dumper Version 14.12.25835.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	..\..\tools\programs\grdllexp  /edllsymbols.txt /stalismantestdll
+
+
+Laboratório de Engenharia de Software, PUC-Rio
+Extrair API para a geração de arquivo .def para .DLL.  V1.0, 2003
+
+	del    dllsymbols.txt
+	del    talismantestdll.lib
+	del    talismantestdll.dll
+	del    ..\..\global\lib\talismantestdll.lib
+	del    ..\..\global\lib\talismantestdll.dll
+	LINK  @TalismanTestDll.build >> ..\sources\TalismanTestDll.err
+	copy   talismantestdll.lib  ..\..\global\lib
+        1 file(s) copied.
+	copy   talismantestdll.dll  ..\..\global\lib
+        1 file(s) copied.
+	..\..\tools\programs\CompileBanner /cTst-dll
+
+
+#################### Compilacao do construto: Tst-dll
+
+	..\..\tools\programs\GenerateFile ..\sources\specific-test.hpp  "#include \"tst_str.hpp\""
+	..\..\tools\programs\CompileBanner /cTst-dll  > ..\sources\Tst-dll.err
+	SET CL=/c /J /W4 /EHa /GA /GF /GR /Zp /nologo
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\main.cpp >> ..\sources\Tst-dll.err
+	CL /Gs /D_CRT_SECURE_NO_DEPRECATE /D_DEBUG  /Fo..\Obj\  ..\sources\tst_str.cpp >> ..\sources\Tst-dll.err
+	SET CL=
+	CD  ..\Obj
+	LINK    @Tst-dll.build >> ..\sources\Tst-dll.err

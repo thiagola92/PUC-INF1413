@@ -1,0 +1,60 @@
+TALISMAN Log file
+
+2018/06/15-04:40:30 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:30 : !!! Start test, script file: tst-dsp-04.script
+
+// Script:    Tst-dsp-04.script
+// Author:    Arndt von Staa
+// Date:      08/dez/2006
+// Purpose:   Test dynamic space control module
+      6 == Preserve the number of allocated spaces
+!!! 0    Line 9  Number of allocated data spaces: 19 
+!!! 0    Line 10  Total allocated data space size: 12114 
+     12 == Set test tracing
+     16 == Verify number of bytes
+!!! 0    Line 17  Number of allocated data spaces: 19 
+!!! 0    Line 18  Total allocated data space size: 12114 
+     20 == Allocate space
+---Alloc      Id:    60  Size:     6  Line:   135  File:      tst_dsp.cpp   Addr: 012928E0
+---Alloc      Id:    61  Size:     4  Line:   135  File:      tst_dsp.cpp   Addr: 01299208
+---Alloc      Id:    62  Size:     7  Line:   135  File:      tst_dsp.cpp   Addr: 01292860
+---Alloc      Id:    63  Size:     1  Line:   135  File:      tst_dsp.cpp   Addr: 012A1070
+---Alloc      Id:    64  Size:    11  Line:   135  File:      tst_dsp.cpp   Addr: 01292760
+---Alloc      Id:    65  Size:     7  Line:   135  File:      tst_dsp.cpp   Addr: 01292720
+---Alloc      Id:    66  Size:     2  Line:   135  File:      tst_dsp.cpp   Addr: 012A10A8
+---Alloc      Id:    67  Size:     6  Line:   135  File:      tst_dsp.cpp   Addr: 012927E0
+---Alloc      Id:    68  Size:     4  Line:   135  File:      tst_dsp.cpp   Addr: 012A0FC8
+---Alloc      Id:    69  Size:     8  Line:   135  File:      tst_dsp.cpp   Addr: 012929E0
+---Alloc      Id:    70  Size:     5  Line:   135  File:      tst_dsp.cpp   Addr: 01292C60
+---Alloc      Id:    71  Size:     7  Line:   135  File:      tst_dsp.cpp   Addr: 012928A0
+---Alloc      Id:    72  Size:    18  Line:   135  File:      tst_dsp.cpp   Addr: 012A1178
+     37 == Verify number of bytes
+>>> 1    Line 38  Incorrect number of allocated spaces  Is 32  Should be 30
+>>> 2    Line 39  No recovery provided. Command ignored:  =AllocGetBytes     9602
+     41 == Verify if some memory leaked - it did - 13 spaces leaked
+>>> 3    Line 42  Check memory leakage. Incorrect number of data spaces  Is 32  Should be 19
+<<< 2    Line 43  Expected failure or error has been recovered. 
+     45 == Verify leakage, 9 spaces remain leaking
+>>> 3    Line 50  Check memory leakage. Incorrect number of data spaces  Is 28  Should be 19
+<<< 2    Line 51  Expected failure or error has been recovered. 
+     53 == Verify remaining number of bytes
+>>> 3    Line 54  Incorrect number of allocated spaces  Is 28  Should be 26
+>>> 4    Line 55  No recovery provided. Command ignored:  =AllocGetBytes     9580
+     58 == Force 9 leaking spaces at exit
+>>> 5    Line 59  Check memory leakage. Incorrect number of data spaces  Is 28  Should be 19
+<<< 4    Line 60  Expected failure or error has been recovered. 
+//
+// should fail with 1 error and a listing of the remaining data space
+// error is detected in  procedure main, after deleting the test and logger objects
+
+2018/06/15-04:40:30 : !!! End of test, script file: tst-dsp-04.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 9  Test commands 33  Test lines 65
+     Test ending condition: >>> 4 <<< failures found.
+
+2018/06/15-04:40:30 : Log end: EVENT

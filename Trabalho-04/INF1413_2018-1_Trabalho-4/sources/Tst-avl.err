@@ -1,9 +1,5 @@
-avltree.cpp
-tst_avl.cpp
 main.cpp
-breakpnt.cpp
-string.cpp
-Microsoft (R) Incremental Linker Version 14.00.24215.1
+Microsoft (R) Incremental Linker Version 14.12.25835.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /OUT:Tst-avl.exe 

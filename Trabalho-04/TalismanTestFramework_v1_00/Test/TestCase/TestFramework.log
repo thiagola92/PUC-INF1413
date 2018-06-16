@@ -1,0 +1,1271 @@
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-01
+!!! Event log file name: tst-main-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 0  Test commands 0  Test lines 12
+
+    Test ending condition: >>> 1 <<< failures found.
+
+
+!!! ------------------------------
+
+>>> TEST found 1 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-02
+!!! Event log file name: tst-main-02
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 0  Test commands 0  Test lines 16
+
+    Test ending condition: >>> 4 <<< failures found.
+
+
+!!! ------------------------------
+
+>>> TEST found 4 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-03
+!!! Event log file name: tst-main-03
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 1  Test commands 1  Test lines 21
+
+    Test ending condition: >>> 1 <<< failures found.
+
+
+!!! ------------------------------
+
+>>> TEST found 1 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-04
+!!! Event log file name: tst-main-04
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 1  Test commands 3  Test lines 17
+
+    Test ending condition: >>> 2 <<< failures found.
+
+
+!!! ------------------------------
+
+>>> TEST found 2 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-05
+!!! Event log file name: tst-main-05
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 4  Test commands 5  Test lines 29
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-06
+!!! Event log file name: tst-main-06
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 7  Test commands 7  Test lines 36
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-07
+!!! Event log file name: tst-main-07
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-08
+!!! Event log file name: tst-main-08
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-09
+!!! Event log file name: tst-main-09
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 26  Test commands 28  Test lines 122
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-10
+!!! Event log file name: tst-main-10
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 2  Test cases 8  Test commands 23  Test lines 36
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-main-12
+!!! Event log file name: tst-main-12
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 3  Test cases 11  Test commands 28  Test lines 36
+
+    Test ending condition: >>> 1 <<< failures found.
+
+
+!!! ------------------------------
+
+>>> TEST found 1 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-01
+!!! Event log file name: tst-exc-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 15  Test commands 29  Test lines 71
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-02
+!!! Event log file name: tst-exc-02
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-03
+!!! Event log file name: tst-exc-03
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-04
+!!! Event log file name: tst-exc-04
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-05
+!!! Event log file name: tst-exc-05
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-06
+!!! Event log file name: tst-exc-06
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-07
+!!! Event log file name: tst-exc-07
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-exc-08
+!!! Event log file name: tst-exc-08
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>> vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+>>> Test crash: Program will be cancelled.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-dis-01
+!!! Event log file name: tst-dis-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: ??? Message id %19 not found. !!!
+      At Line: 102  In module: ..\sources\tst_dis.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-rdt-01
+!!! Event log file name: tst-rdt-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 52  Test commands 171  Test lines 291
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-tim-01
+!!! Event log file name: tst-tim-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 22  Test commands 55  Test lines 105
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-str-01
+!!! Event log file name: tst-str-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 37  Test commands 213  Test lines 314
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-str-02
+!!! Event log file name: tst-str-02
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 7  Test commands 37  Test lines 58
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-str-03
+!!! Event log file name: tst-str-03
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 113  Test commands 566  Test lines 800
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-bcd-01
+!!! Event log file name: tst-bcd-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+!!!  abc  BCD number: size 3  minus 4|92|46
+
+!!! Test statistics:   Test files 1  Test cases 191  Test commands 686  Test lines 1108
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-dsp-01
+!!! Event log file name: tst-dsp-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Tried to delete illegal pointer. !!!
+      At Line: 676  In module: ..\sources\dynspac.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-dsp-02
+!!! Event log file name: tst-dsp-02
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 21  Test commands 46  Test lines 95
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-dsp-03
+!!! Event log file name: tst-dsp-03
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>>>DISASTER: Talisman ran out of memory !!!
+      At Line: 135  In module: tst_dsp.cpp
+>>>DISASTER: Starting roll back.
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-dsp-04
+!!! Event log file name: tst-dsp-04
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 9  Test commands 33  Test lines 65
+
+    Test ending condition: >>> 4 <<< failures found.
+
+
+>>> 13 Allocated data spaces remain: 9, verify memory leakage.
+
+>>> Log closed: ---DataSpace  Id:    72  Size:    18  Line:   135  File:      tst_dsp.cpp   Addr: 012A1178
+>>> Log closed: ---DataSpace  Id:    71  Size:     7  Line:   135  File:      tst_dsp.cpp   Addr: 012928A0
+>>> Log closed: ---DataSpace  Id:    69  Size:     8  Line:   135  File:      tst_dsp.cpp   Addr: 012929E0
+>>> Log closed: ---DataSpace  Id:    68  Size:     4  Line:   135  File:      tst_dsp.cpp   Addr: 012A0FC8
+>>> Log closed: ---DataSpace  Id:    67  Size:     6  Line:   135  File:      tst_dsp.cpp   Addr: 012927E0
+>>> Log closed: ---DataSpace  Id:    65  Size:     7  Line:   135  File:      tst_dsp.cpp   Addr: 01292720
+>>> Log closed: ---DataSpace  Id:    63  Size:     1  Line:   135  File:      tst_dsp.cpp   Addr: 012A1070
+>>> Log closed: ---DataSpace  Id:    62  Size:     7  Line:   135  File:      tst_dsp.cpp   Addr: 01292860
+>>> Log closed: ---DataSpace  Id:    60  Size:     6  Line:   135  File:      tst_dsp.cpp   Addr: 012928E0
+>>> Log closed: 
+!!! Spaces still allocated:          9
+>>> Log closed: 
+!!! Total data spaces allocated:   246
+>>> Log closed: 
+!!! Total data spaces deleted:     181
+>>> Log closed:  
+
+
+!!! ------------------------------
+
+>>> TEST found 13 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-sls-01
+!!! Event log file name: tst-sls-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 45  Test commands 188  Test lines 297
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-sls-02
+!!! Event log file name: tst-sls-02
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 11  Test commands 51  Test lines 77
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-smt-01
+!!! Event log file name: tst-smt-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 18  Test commands 69  Test lines 112
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-smt-02
+!!! Event log file name: tst-smt-02
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 7  Test commands 10  Test lines 57
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-rnd-01
+!!! Event log file name: tst-rnd-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 28  Test commands 45  Test lines 109
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-cnt-01
+!!! Event log file name: tst-cnt-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 24  Test commands 69  Test lines 123
+
+    Test ending condition: >>> 6 <<< failures found.
+
+
+!!! ------------------------------
+
+>>> TEST found 6 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-cnt-01
+!!! Event log file name: tst-cnt-01a
+!!! Accum  file name: TestFramework
+!!! Count passage.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 24  Test commands 66  Test lines 123
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-cnt-02
+!!! Event log file name: tst-cnt-02
+!!! Accum  file name: TestFramework
+!!! Count passage.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 11  Test commands 17  Test lines 41
+
+    Test ending condition: >>> 11 <<< failures found.
+
+
+!!! ------------------------------
+
+>>> TEST found 11 problems.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-cnt-02
+!!! Event log file name: tst-cnt-02a
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 11  Test commands 17  Test lines 41
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-sio-01
+!!! Event log file name: tst-sio-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 71  Test commands 193  Test lines 348
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-log-01
+!!! Event log file name: tst-log-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+2018/06/15-04:40:32 : Log end: ???
+
+2018/06/15-04:40:32 : Log start: Error log
+?????? Error log line sent to console.
+2018/06/15-04:40:32 : Log end: Error log
+
+2018/06/15-04:40:32 : Log start: Console log
+------ Console log line 1.
+------ Console log line 2.
+------ Console log line 3.
+2018/06/15-04:40:32 : Log end: Console log
+
+2018/06/15-04:40:32 : Log start: Console log
+------ Console log line 1.
+>abcdefghi<
+>abcdefghi<
+>abcde...<
+>\x00\x01abcdefghij\x1F<
+>\x00\x01abcdefghij\x1F<
+>\x00\x01abcdefghij...<
+>\x00\x01abcdefghi...<
+>\x00\x01abcdefgh...<
+>...<
+>...<
+2018/06/15-04:40:32 : Log end: Console log
+
+
+!!! Test statistics:   Test files 1  Test cases 22  Test commands 188  Test lines 250
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-msg-01
+!!! Event log file name: tst-msg-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 100  Test commands 216  Test lines 425
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-cfg-01
+!!! Event log file name: tst-cfg-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 13  Test commands 33  Test lines 86
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-env-01
+!!! Event log file name: tst-env-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 23  Test commands 30  Test lines 93
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-buf-01
+!!! Event log file name: tst-buf-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 19  Test commands 39  Test lines 84
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-ver-01
+!!! Event log file name: tst-ver-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 5  Test commands 18  Test lines 33
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-lib-01
+!!! Event log file name: tst-lib-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! Test statistics:   Test files 1  Test cases 109  Test commands 557  Test lines 783
+
+    Test ending condition: No failures found.
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\testcase\
+!!! Script file name: tst-dll-01
+!!! Event log file name: tst-dll-01
+!!! Accum  file name: TestFramework
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+
+
+
+!!! Test statistics:   Test files 1  Test cases 109  Test commands 557  Test lines 783
+
+    Test ending condition: No failures found.

@@ -1,0 +1,40 @@
+TALISMAN Log file
+
+2018/06/15-04:40:33 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:33 : !!! Start test, script file: tst-buf-01.script
+
+// Script:    Tst-str-01.script
+// Author:    Arndt von Staa
+// Date:      17/jan/2011
+// Purpose:   Test buffer
+      6 == Declare constants
+     25 == save the number of allocated data spaces
+     30 == Create a buffer
+     33 == Get buffer space size
+     36 == Retrieve zeroes
+     40 == Retrieve space boundary control
+     43 == Insert a string at the beginning
+     46 == Retrieve the string
+     49 == Retrieve parts of the string
+     53 == Insert an empty string in the midlle
+     56 == Retrieve the string
+     59 == Insert a short string in the middle the midlle
+     62 == Retrieve the string
+     65 == Insert a string at the end
+     68 == Retrieve the string
+     72 == Delete the buffer
+     75 == Create a local buffer
+     78 == Create a buffer on the stack
+     81 == verify memory leak
+
+2018/06/15-04:40:33 : !!! End of test, script file: tst-buf-01.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 19  Test commands 39  Test lines 84
+     Test ending condition: No failures found.
+
+2018/06/15-04:40:33 : Log end: EVENT

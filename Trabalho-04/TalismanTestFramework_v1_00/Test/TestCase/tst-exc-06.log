@@ -1,0 +1,49 @@
+TALISMAN Log file
+
+2018/06/15-04:40:28 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:28 : !!! Start test, script file: tst-exc-06.script
+
+// Script:    Tst-main-06.script
+// Author:    Arndt von Staa
+// Date:      02/dec/2011
+// Purpose:   Test basic functionality
+// Test throw, do not handle due to wrong exception recovery command
+//
+// ==========>>> Must stop with 5 errors and disaster
+//
+     12 == Declarations
+     24 == Test incorrect catcher, both type and message id are wrong
+
+>>> 1    Line 25  Tester caught a program exception, context 0 >>
+--- EXC: PROGRAM: Thrown while testing
+        Exception thrown in Line: 837  File: ..\sources\tst_exc.cpp
+
+>>> 2    Line 26  Incorrect exception type  Is 5  Should be 3
+>>> 3    Line 26  Incorrect exception id  Is 30147  Should be 30146
+>>> 4    Line 26  Program exception catch command does not recover:  =ExceptionProgram   typeError    30146  'c'
+
+######  Unexpected program exception !!!!!
+
+    5    Line 26  vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+>>> 6    Line 26  Test crash: Program will be cancelled.
+ 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+
+>>>DISASTER: Starting roll back.
+
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+

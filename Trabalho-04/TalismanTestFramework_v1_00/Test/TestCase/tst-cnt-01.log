@@ -1,0 +1,58 @@
+TALISMAN Log file
+
+2018/06/15-04:40:32 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:32 : !!! Start test, script file: tst-cnt-01.script
+
+// Script:    Tst-cnt-01.script
+// Author:    Arndt von Staa
+// Date:      10/mar/2007
+// Purpose:   Test counter
+      6 == Start measuring time
+!!!      Line 7  ========== Starting clock: 1 
+      9 == Try to read non existing file
+>>> 1    Line 11  No expected failure or error to recover from. =Recover
+     13 == Read existing file
+     17 == Read existing file again
+>>> 2    Line 19  No expected failure or error to recover from. =Recover
+>>> 3    Line 20  Command ignored:  =FailureReset             5
+     22 == Verify contents
+     31 == Verify counters
+>>> 4    Line 33  Incorrect failure count.   Is 3  Should be 2
+     35 == Count opcional counter
+     41 == List all counters
+     44 == Reset all counters
+     47 == Verify counters
+<<< 0    Line 49  Expected number of failures have been reset. 
+     51 == Verify contents
+     59 == Read accumulator file with one wrong counter name
+>>> 1    Line 63  No expected failure or error to recover from. =Recover
+     65 == Read another accumulator file
+>>> 2    Line 67  No expected failure or error to recover from. =Recover
+     69 == Verify contents
+     77 == Display zero counters
+     80 == Count with DoCount default false
+     86 == Count with DoCount true
+>>> 3    Line 92  Incorrect failure count.   Is 2  Should be 1
+     94 == Count with DoCount false
+    101 == Reset forbidden counter
+>>> 4    Line 104  No expected failure or error to recover from. =Recover
+>>> 5    Line 105  Command ignored:  =CounterGetCount       "1234"     -2
+    107 == Reset optional counter
+    111 == Reset normal counter
+    115 == List all counters
+    118 == Verify counters
+>>> 6    Line 120  Incorrect failure count.   Is 5  Should be 3
+    122 == End measuring time
+!!!      Line 123  ========== Clock 1 elapsed time: 0.015 
+
+2018/06/15-04:40:32 : !!! End of test, script file: tst-cnt-01.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 24  Test commands 69  Test lines 123
+     Test ending condition: >>> 6 <<< failures found.
+
+2018/06/15-04:40:32 : Log end: EVENT

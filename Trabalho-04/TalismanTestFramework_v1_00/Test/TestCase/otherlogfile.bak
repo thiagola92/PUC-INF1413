@@ -1,0 +1,67 @@
+TALISMAN Log file
+
+2018/06/15-04:40:32 : Log start: Some Log
+!!! **************************************************
+!!! Start test script file: tst-log-01.script
+
+// Script:    Tst-log-01.script
+// Author:    Arndt von Staa
+// Date:      26/may/2007
+// Purpose:   Test logger||Appended string
+- - - - 0  0 -
+     Empty space
+- - - - 1  1 -
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  42                                               B               
+- - - -16  2 -
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52  CDEFGHIJKLMNOPQR
+- - - -17  3 -
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  44 45 46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52 53  DEFGHIJKLMNOPQRS
+   1  54                                               T               
+- - - -32  4 -
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  45 46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52 53 54  EFGHIJKLMNOPQRST
+   1  55 56 57 58 59 5A 30 31 32 33 34 35 36 37 38 39  UVWXYZ0123456789
+- - - -33  5 -
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52 53 54 55  FGHIJKLMNOPQRSTU
+   1  56 57 58 59 5A 30 31 32 33 34 35 36 37 38 39 61  VWXYZ0123456789a
+   2  62                                               b               
+- - - 300 186-
+      00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+   0  41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F 50  ABCDEFGHIJKLMNOP
+   1  51 52 53 54 55 56 57 58 59 5A 30 31 32 33 34 35  QRSTUVWXYZ012345
+   2  36 37 38 39 61 62 63 64 65 66 67 68 69 6A 6B 6C  6789abcdefghijkl
+   3  6D 6E 6F 70 71 72 73 74 75 76 77 78 79 7A 41 42  mnopqrstuvwxyzAB
+   4  43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52  CDEFGHIJKLMNOPQR
+   5  53 54 55 56 57 58 59 5A 30 31 32 33 34 35 36 37  STUVWXYZ01234567
+   6  38 39 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E  89abcdefghijklmn
+   7  6F 70 71 72 73 74 75 76 77 78 79 7A 41 42 43 44  opqrstuvwxyzABCD
+   8  45 46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52 53 54  EFGHIJKLMNOPQRST
+   9  55 56 57 58 59 5A 30 31 32 33 34 35 36 37 38 39  UVWXYZ0123456789
+  10  61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70  abcdefghijklmnop
+  11  71 72 73 74 75 76 77 78 79 7A                    qrstuvwxyz      
+- - - 300 186 64 10 -
+      00 01 02 03 04 05 06 07 08 09  0123456789
+   0  41 42 43 44 45 46 47 48 49 4A  ABCDEFGHIJ
+   1  4B 4C 4D 4E 4F 50 51 52 53 54  KLMNOPQRST
+   2  55 56 57 58 59 5A 30 31 32 33  UVWXYZ0123
+   3  34 35 36 37 38 39 61 62 63 64  456789abcd
+   4  65 66 67 68 69 6A 6B 6C 6D 6E  efghijklmn
+   5  6F 70 71 72 73 74 75 76 77 78  opqrstuvwx
+   6  79 7A 41 42                    yzAB      
+- - - 300 10   9  0  10 -
+      00 01 02 03 04 05 06 07 08 09  0123456789
+   0                             4A           J
+- - - 300 11   9  0  10 -
+      00 01 02 03 04 05 06 07 08 09  0123456789
+   0                             4A           J
+   1  4B                             K         
+- - - 300 22  43  0  10 -
+      00 01 02 03 04 05 06 07 08 09  0123456789
+   2        57 58 59 5A 30 31 32 33    WXYZ0123
+   3  34 35 36 37 38 39 61 62 63 64  456789abcd
+   4  65 66 67                       efg       
+2018/06/15-04:40:32 : Log end: Some Log

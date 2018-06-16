@@ -1,0 +1,64 @@
+TALISMAN Log file
+
+2018/06/15-04:40:33 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:33 : !!! Start test, script file: tst-env-01.script
+
+// Script:    Tst-env-01.script
+// Author:    Arndt von Staa
+// Date:      04/dec/2011
+// Purpose:   Test environment variables
+//
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// This script requires a environment variable to be set
+// On a command line execute:   SET TALISMAN= /config:talisman
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//
+     14 == Declarations
+     19 == Reset all spaces
+     23 == Test create a new parameter list
+     26 == Test delete empty parameter list
+     30 == Test create another new parameter list
+     33 == Test build environment with default name
+     36 == Test display name
+!!!      Line 37  Environment variable name:  TALISMAN
+     39 == Test display name
+!!!      Line 40  Environment variable string:  -config:talisman
+     42 == Test compare name
+     45 == Test compare envirnment parameter string
+     48 == Test compare environment parameter item
+     51 == Test get nonexisting parameter item
+>>> 1    Line 52  Did not find parameter:  -cnfig:
+<<< 0    Line 53  Expected failure or error has been recovered. 
+     55 == Test compare environment parameter item, case sensitivity
+>>> 1    Line 56  Incorrect environment parameter value. 
+    1    Line 56          Is: >talisman< 
+    1    Line 56   Should be: >TaLISMAN< 
+<<< 0    Line 57  Expected failure or error has been recovered. 
+     59 == Test get nonexisting parameter item, case sensitivity
+>>> 1    Line 60  Did not find parameter:  -Config:
+<<< 0    Line 61  Expected failure or error has been recovered. 
+     63 == Test set empty
+     66 == Test display contents of empty environment
+!!!      Line 67  Variable is not set. 
+!!!      Line 68  String is NULL. 
+     70 == Test delete empty parameter list
+     73 == Open a third environment using an inexisting name
+>>> 1    Line 75  Environment variable "Something" has not been set. 
+<<< 0    Line 76  Expected failure or error has been recovered. 
+     78 == Try to build with an existing name
+     81 == Verify if correct
+     84 == Test getting first parameter
+     87 == Test getting second parameter
+     90 == Verify leakage
+
+2018/06/15-04:40:33 : !!! End of test, script file: tst-env-01.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 23  Test commands 30  Test lines 93
+     Test ending condition: No failures found.
+
+2018/06/15-04:40:33 : Log end: EVENT

@@ -1,0 +1,128 @@
+TALISMAN Log file
+
+2018/06/15-04:40:32 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:32 : !!! Start test, script file: tst-sio-01.script
+
+// Script:    Tst-sls-01.script
+// Author:    Arndt von Staa
+// Date:      09/abr/2007
+// Purpose:   Test sequencial IO control
+      7 == Declare parameters to be used
+     19 == Reset all spaces
+     22 == Preserve the number of allocated spaces
+     25 == Test c  reate an empty control
+     28 == Test illegal access to pointer in empty control
+     31 == Try to reuse the index
+>>> 1    Line 32  Incorrect command parameters:  =NewSIO           sioNULL
+<<< 0    Line 33  Expected failure or error has been recovered. 
+     35 == Verify empty control
+     38 == Destroy empty control
+     41 == Test open a file
+     45 == Test get the file name
+     48 == Verify read file
+     51 == Test read the file
+     57 == Destroy control
+     60 == Open inexistent file
+>>> ERROR:   Could not open inexistent file: ..\testcase\tst-sio-xx.test
+     64 == Verify if inexistent file exists
+     68 == Verify if existing file exists
+     72 == Open existing file
+     75 == Verify read file
+     78 == Read the file testing line count, line size, GetBufferPointer and untrimmed read
+     82 == Read line  "a"
+     87 == Read line  "ab"
+     92 == Read line  "abcd"
+     97 == Read line  "x"
+    102 == Read line  "abcd"
+    106 == Read line  "    "
+    111 == Read line  "    "
+    116 == Read line  "    "
+    121 == Read line  "    "
+    126 == Read line "   three blanks before"
+    131 == Read line "   three blanks before"
+    136 == Read line "   three blanks before"
+    141 == Read line "   three blanks before"
+    146 == Read line "three blanks after   "
+    151 == Read line "three blanks after   "
+    156 == Read line "three blanks after   "
+    161 == Read line "three blanks after   "
+    166 == Read line "   three before and after   "
+    171 == Read line "   three before and after   "
+    176 == Read line "   three before and after   "
+    181 == Read line "   three before and after   "
+    186 == Read line "x"
+    191 == Read line "x"
+    196 == Read line "x"
+    201 == Read line "x"
+    206 == Read line "   x"
+    211 == Read line "   x"
+    216 == Read line "   x"
+    221 == Read line "   x"
+    226 == Read line "   x   "
+    231 == Read line "   x   "
+    236 == Read line "   x   "
+    241 == Read line "   x   "
+    246 == Read line ""
+    251 == Read line "   end\01   "     end of file"  no new line at end of file
+    256 == Destroy control
+    259 == Test write a file
+    263 == Write the content of the file
+    274 == Destroy the file object
+    277 == Verify the written file
+    290 == Test compare file
+!!! INFO:    Comparing files:
+          File A: tst-sio-02.test
+          File B: ..\testcase\written.bak
+    293 == Test append line to file
+    300 == Test compare unequal files, wrong length
+!!! INFO:    Comparing files:
+          File A: ..\testcase\tst-sio-01.test
+          File B: ..\testcase\written.bak
+!!! INFO:    Accepted different lines 1
+>>> ERROR:   At count 2 lines are different.
+>>> ERROR:   At count 3 lines are different.
+>>> ERROR:   At count 4 lines are different.
+>>> ERROR:   At count 5 lines are different.
+>>> ERROR:   At count 6 lines are different.
+>>> ERROR:   At count 7 lines are different.
+>>> ERROR:   File ..\testcase\tst-sio-01.test is greater than file ..\testcase\written.bak
+    303 == Create wrong file
+    312 == Test compare unequal file, unequal lines
+!!! INFO:    Comparing files:
+          File A: ..\testcase\tst-sio-02.test
+          File B: ..\testcase\written.bak
+!!! INFO:    Accepted different lines 1
+!!! INFO:    Accepted different lines 2
+>>> ERROR:   File ..\testcase\tst-sio-02.test is greater than file ..\testcase\written.bak
+    315 == Test Copy file
+!!! INFO:    Comparing files:
+          File A: tst-sio-01.test
+          File B: written.bak
+    319 == Test copy file with blanks in name
+!!! INFO:    Comparing files:
+          File A: tst-sio-01.test
+          File B:  w r i t t e n .bak
+    323 == Test delete existing file
+>>> 1    Line 325  Could not delete file  Is false, should be true.
+<<< 0    Line 326  Expected failure or error has been recovered. 
+    328 == Test delete non existing file
+    331 == Test copy file with incorrect name
+>>> ERROR:   Could not open copy source file: ..\testcase\tst-sio-01.xxx
+    334 == Test extension extractor
+>>> 1    Line 339  Extension should exist. Pointer should not be NULL.
+<<< 0    Line 340  Expected failure or error has been recovered. 
+>>> 1    Line 341  Extension should not exist. Pointer should be NULL.
+<<< 0    Line 342  Expected failure or error has been recovered. 
+    344 == Verify leakage
+
+2018/06/15-04:40:32 : !!! End of test, script file: tst-sio-01.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 71  Test commands 193  Test lines 348
+     Test ending condition: No failures found.
+
+2018/06/15-04:40:32 : Log end: EVENT

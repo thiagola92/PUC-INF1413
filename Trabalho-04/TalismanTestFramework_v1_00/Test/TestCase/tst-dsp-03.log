@@ -1,0 +1,49 @@
+TALISMAN Log file
+
+2018/06/15-04:40:30 : Log start: EVENT
+
+!!! **************************************************
+2018/06/15-04:40:30 : !!! Start test, script file: tst-dsp-03.script
+
+// Script:    Tst-dsp-03.script
+// Author:    Arndt von Staa
+// Date:      07/set/2007
+// Purpose:   Test dynamic space control module
+      6 == Preserve the number of allocated spaces
+!!! 0    Line 8  Number of allocated data spaces: 19 
+     10 == Preserve the number of allocated bytes
+!!! 0    Line 12  Total allocated data space size: 12114 
+     14 == Create a space with
+     17 == Display number of spaces and allocated size
+!!! 0    Line 18  Number of allocated data spaces: 20 
+!!! 0    Line 19  Total allocated data space size: 12123 
+     23 == Delete the allocated space
+     26 == Verify if everything returned to the initial state
+     30 == Set a limit
+!!! 0    Line 32  Number of allocated data spaces: 19 
+!!! 0    Line 33  Total allocated data space size: 12114 
+     35 == Allocate 81 bites (0 string terminator counts!)
+!!! 0    Line 37  Number of allocated data spaces: 20 
+!!! 0    Line 38  Total allocated data space size: 12195 
+     42 == Allocate another 81 bytes total 162
+!!! 0    Line 44  Number of allocated data spaces: 21 
+!!! 0    Line 45  Total allocated data space size: 12276 
+     49 == Allocate one byte too much
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+>>>DISASTER: Talisman ran out of memory !!!
+
+      At Line: 135  In module: tst_dsp.cpp
+
+>>>DISASTER: Starting roll back.
+
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
