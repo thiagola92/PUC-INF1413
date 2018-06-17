@@ -1,0 +1,404 @@
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\test
+!!! Script file name: tst-avl-01
+!!! Event log to be directed to console.
+!!! Statistics will not be accumulated.
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+2018/06/17-08:35:31 : Log start: EVENT
+
+!!! **************************************************
+2018/06/17-08:35:31 : !!! Start test, script file: tst-avl-01.script
+
+// Script:    Tst-avl-01.script
+// Author:    Arndt von Staa
+// Date:      05/jun/2018
+// Purpose:   Test avl trees
+      6 == Declare constants
+     26 == Save the number of allocated data spaces
+// �rvore que n�o d� erro
+//
+     33 == Test create an empty tree
+--- 0    Line 35  Display start
+
+           
+
+
+Empty AVL tree
+ 
+--- 0    Line 35  Display end 
+--- 0    Line 36  Verify start 
+--- 0    Line 36  Verify end
+ 
+     38 == Test insert root
+--- 0    Line 40  Display start
+
+           1/xxx:020 
+ 
+--- 0    Line 40  Display end 
+--- 0    Line 41  Verify start 
+--- 0    Line 41  Verify end
+ 
+     43 == Test insert left of root
+--- 0    Line 45  Display start
+
+           1/020:010 2/xxx:020 
+ 
+--- 0    Line 45  Display end 
+--- 0    Line 46  Verify start 
+--- 0    Line 46  Verify end
+ 
+     48 == Test insert right  of root
+--- 0    Line 50  Display start
+
+           1/020:010 2/xxx:020 1/020:030 
+ 
+--- 0    Line 50  Display end 
+--- 0    Line 51  Verify start 
+--- 0    Line 51  Verify end
+ 
+     53 == Test insert left of left
+--- 0    Line 55  Display start
+
+           1/010:005 2/020:010 3/xxx:020 1/020:030 
+ 
+--- 0    Line 55  Display end 
+--- 0    Line 56  Verify start 
+--- 0    Line 56  Verify end
+ 
+     58 == Test insert right of left
+--- 0    Line 60  Display start
+
+           1/010:005 2/020:010 1/010:015 3/xxx:020 1/020:030 
+ 
+--- 0    Line 60  Display end 
+--- 0    Line 61  Verify start 
+--- 0    Line 61  Verify end
+ 
+     63 == Test insert left of right
+--- 0    Line 65  Display start
+
+           1/010:005 2/020:010 1/010:015 3/xxx:020 1/030:025 2/020:030 
+ 
+--- 0    Line 65  Display end 
+--- 0    Line 66  Verify start 
+--- 0    Line 66  Verify end
+ 
+     68 == Test insert right of right
+--- 0    Line 70  Display start
+
+           1/010:005 2/020:010 1/010:015 3/xxx:020 1/030:025 2/020:030 1/030:035 
+ 
+--- 0    Line 70  Display end 
+--- 0    Line 71  Verify start 
+--- 0    Line 71  Verify end
+ 
+// ==========================================================
+//
+     75 == Test left left
+--- 0    Line 79  Display start
+
+           1/xxx:020 
+ 
+--- 0    Line 79  Display end 
+--- 0    Line 80  Verify start 
+--- 0    Line 80  Verify end
+ 
+--- 0    Line 82  Display start
+
+           1/020:010 2/xxx:020 
+ 
+--- 0    Line 82  Display end 
+--- 0    Line 83  Verify start 
+--- 0    Line 83  Verify end
+ 
+-- rotate right 3/xxx:020 2/020:010 ------ ------ 
+-- first 2/020:010 1/010:005 3/010:020 
+-- second 3/010:020 ------ ------ 
+>>> 1    Line 85  Unknown command:  =ExceptionSystem       'c'
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+// ==========================================================
+//
+     91 == Test left right
+--- 1    Line 94  Display start
+
+           1/xxx:020 
+ 
+--- 1    Line 94  Display end 
+--- 1    Line 95  Verify start 
+--- 1    Line 95  Verify end
+ 
+--- 1    Line 97  Display start
+
+           1/020:010 2/xxx:020 
+ 
+--- 1    Line 97  Display end 
+--- 1    Line 98  Verify start 
+--- 1    Line 98  Verify end
+ 
+-- left right case 3/xxx:020 
+-- rotate left 2/020:010 1/010:015 ------ 3/xxx:020 
+-- first 1/010:015 2/015:010 
+>>> 2    Line 99  Tester caught system exception. 
+<<< 1    Line 100  Expected system exception has been ignored.
+ 
+// =DisplayTree   Tree02  INFIX
+// =VerifyTree    Tree02  0
+// ==========================================================
+//
+    106 == Test right left
+--- 1    Line 110  Display start
+
+           1/xxx:020 
+ 
+--- 1    Line 110  Display end 
+--- 1    Line 111  Verify start 
+--- 1    Line 111  Verify end
+ 
+--- 1    Line 113  Display start
+
+           2/xxx:020 1/020:030 
+ 
+--- 1    Line 113  Display end 
+--- 1    Line 114  Verify start 
+--- 1    Line 114  Verify end
+ 
+-- right left case 3/xxx:020 
+>>> 2    Line 115  Tester caught system exception. 
+<<< 1    Line 116  Expected system exception has been ignored.
+ 
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+// ==========================================================
+//
+    122 == Test right right
+--- 1    Line 126  Display start
+
+           1/xxx:010 
+ 
+--- 1    Line 126  Display end 
+--- 1    Line 127  Verify start 
+--- 1    Line 127  Verify end
+ 
+--- 1    Line 129  Display start
+
+           2/xxx:010 1/010:015 
+ 
+--- 1    Line 129  Display end 
+--- 1    Line 130  Verify start 
+--- 1    Line 130  Verify end
+ 
+-- rotate left 3/xxx:010 2/010:015 ------ ------ 
+-- first 2/010:015 3/015:010 1/015:020 
+-- second 3/015:010 ------ ------ 
+// =ExceptionSystem       'c'
+--- 1    Line 133  Display start
+
+           1/015:010 2/xxx:015 1/015:020 
+ 
+--- 1    Line 133  Display end 
+--- 1    Line 134  Verify start 
+--- 1    Line 134  Verify end
+ 
+// ==========================================================
+//
+    138 == Test root left left
+--- 1    Line 142  Display start
+
+           1/xxx:020 
+ 
+--- 1    Line 142  Display end 
+--- 1    Line 143  Verify start 
+--- 1    Line 143  Verify end
+ 
+--- 1    Line 145  Display start
+
+           2/xxx:020 1/020:025 
+ 
+--- 1    Line 145  Display end 
+--- 1    Line 146  Verify start 
+--- 1    Line 146  Verify end
+ 
+--- 1    Line 148  Display start
+
+           1/020:015 2/xxx:020 1/020:025 
+ 
+--- 1    Line 148  Display end 
+--- 1    Line 149  Verify start 
+--- 1    Line 149  Verify end
+ 
+--- 1    Line 151  Display start
+
+           1/015:010 2/020:015 3/xxx:020 1/020:025 
+ 
+--- 1    Line 151  Display end 
+--- 1    Line 152  Verify start 
+--- 1    Line 152  Verify end
+ 
+-- rotate right 3/020:015 2/015:010 ------ 3/xxx:020 
+-- first 2/015:010 1/010:005 3/010:015 
+-- second 3/010:015 ------ ------ 
+>>> 2    Line 154  Unknown command:  =ExceptionSystem       'c'
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+// ==========================================================
+//
+    160 == Test root left right
+--- 2    Line 164  Display start
+
+           1/xxx:020 
+ 
+--- 2    Line 164  Display end 
+--- 2    Line 165  Verify start 
+--- 2    Line 165  Verify end
+ 
+--- 2    Line 167  Display start
+
+           2/xxx:020 1/020:025 
+ 
+--- 2    Line 167  Display end 
+--- 2    Line 168  Verify start 
+--- 2    Line 168  Verify end
+ 
+--- 2    Line 170  Display start
+
+           1/020:015 2/xxx:020 1/020:025 
+ 
+--- 2    Line 170  Display end 
+--- 2    Line 171  Verify start 
+--- 2    Line 171  Verify end
+ 
+--- 2    Line 173  Display start
+
+           1/015:010 2/020:015 3/xxx:020 1/020:025 
+ 
+--- 2    Line 173  Display end 
+--- 2    Line 174  Verify start 
+--- 2    Line 174  Verify end
+ 
+-- left right case 3/020:015 
+-- rotate left 2/015:010 1/010:012 ------ 3/020:015 
+-- first 1/010:012 2/012:010 
+>>> 3    Line 175  Tester caught system exception. 
+<<< 2    Line 176  Expected system exception has been ignored.
+ 
+// =DisplayTree   Tree01  INFIX
+// =VerifyTree    Tree01  0
+// ==========================================================
+//
+    182 == Test root right left
+--- 2    Line 185  Display start
+
+           1/xxx:020 
+ 
+--- 2    Line 185  Display end 
+--- 2    Line 186  Verify start 
+--- 2    Line 186  Verify end
+ 
+--- 2    Line 188  Display start
+
+           1/020:015 2/xxx:020 
+ 
+--- 2    Line 188  Display end 
+--- 2    Line 189  Verify start 
+--- 2    Line 189  Verify end
+ 
+--- 2    Line 191  Display start
+
+           1/020:015 2/xxx:020 1/020:030 
+ 
+--- 2    Line 191  Display end 
+--- 2    Line 192  Verify start 
+--- 2    Line 192  Verify end
+ 
+--- 2    Line 194  Display start
+
+           1/020:015 3/xxx:020 2/020:030 1/030:035 
+ 
+--- 2    Line 194  Display end 
+--- 2    Line 195  Verify start 
+--- 2    Line 195  Verify end
+ 
+-- right left case 3/020:030 
+>>> 3    Line 196  Tester caught system exception. 
+<<< 2    Line 197  Expected system exception has been ignored.
+ 
+// =DisplayTree   Tree03  INFIX
+// =VerifyTree    Tree03  0
+// ==========================================================
+//
+    203 == Test root right right
+--- 2    Line 206  Display start
+
+           1/xxx:020 
+ 
+--- 2    Line 206  Display end 
+--- 2    Line 207  Verify start 
+--- 2    Line 207  Verify end
+ 
+--- 2    Line 209  Display start
+
+           1/020:015 2/xxx:020 
+ 
+--- 2    Line 209  Display end 
+--- 2    Line 210  Verify start 
+--- 2    Line 210  Verify end
+ 
+--- 2    Line 212  Display start
+
+           1/020:015 2/xxx:020 1/020:030 
+ 
+--- 2    Line 212  Display end 
+--- 2    Line 213  Verify start 
+--- 2    Line 213  Verify end
+ 
+--- 2    Line 215  Display start
+
+           1/020:015 3/xxx:020 2/020:030 1/030:032 
+ 
+--- 2    Line 215  Display end 
+--- 2    Line 216  Verify start 
+--- 2    Line 216  Verify end
+ 
+-- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
+-- first 2/030:032 3/032:030 1/032:035 
+-- second 3/032:030 ------ ------ 
+>>> 3    Line 218  Unknown command:  =ExceptionProgram   AssertionExc  AssertionExcId   'c'
+// =DisplayTree   Tree04  INFIX
+// =VerifyTree    Tree04  0
+// ==========================================================
+//
+    225 == Verify memory leak
+>>> 4    Line 226  Tester caught system exception. 
+>>> 5    Line 227  Command is not a system exception catcher:  =AllocCompareBytes 1
+
+######  Unexpected system exception !!!!!
+
+    6    Line 227  vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+>>> 7    Line 227  Test crash: Program will be cancelled.
+ 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+
+>>>DISASTER: Starting roll back.
+
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+

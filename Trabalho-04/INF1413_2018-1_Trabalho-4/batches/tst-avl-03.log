@@ -1,0 +1,157 @@
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\test
+!!! Script file name: tst-avl-03
+!!! Event log to be directed to console.
+!!! Statistics will not be accumulated.
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+2018/06/17-17:30:02 : Log start: EVENT
+
+!!! **************************************************
+2018/06/17-17:30:02 : !!! Start test, script file: tst-avl-03.script
+
+// Script:    Tst-avl-03.script
+// Author:    Arndt von Staa
+// Date:      05/jun/2018
+// Purpose:   Test avl trees
+      6 == Declare constants
+     22 == Save the number of allocated data spaces
+     27 == Test create an empty tree
+--- 0    Line 29  Display start
+
+           
+
+
+Empty AVL tree
+ 
+--- 0    Line 29  Display end 
+--- 0    Line 30  Verify start 
+--- 0    Line 30  Verify end
+ 
+     32 == Test insert root
+--- 0    Line 34  Display start
+
+           1/xxx:013 
+ 
+--- 0    Line 34  Display end 
+--- 0    Line 35  Verify start 
+--- 0    Line 35  Verify end
+ 
+     37 == Test insert left of root
+--- 0    Line 39  Display start
+
+           1/013:010 2/xxx:013 
+ 
+--- 0    Line 39  Display end 
+--- 0    Line 40  Verify start 
+--- 0    Line 40  Verify end
+ 
+     42 == Test insert right  of root
+--- 0    Line 44  Display start
+
+           1/013:010 2/xxx:013 1/013:015 
+ 
+--- 0    Line 44  Display end 
+--- 0    Line 45  Verify start 
+--- 0    Line 45  Verify end
+ 
+     47 == Test insert left of left
+--- 0    Line 49  Display start
+
+           1/013:010 3/xxx:013 2/013:015 1/015:016 
+ 
+--- 0    Line 49  Display end 
+--- 0    Line 50  Verify start 
+--- 0    Line 50  Verify end
+ 
+     52 == Test insert right of left
+--- 0    Line 54  Display start
+
+           1/010:005 2/013:010 3/xxx:013 2/013:015 1/015:016 
+ 
+--- 0    Line 54  Display end 
+--- 0    Line 55  Verify start 
+--- 0    Line 55  Verify end
+ 
+     57 == Test insert left of right
+--- 0    Line 59  Display start
+
+           1/010:005 2/013:010 1/010:011 3/xxx:013 2/013:015 1/015:016 
+ 
+--- 0    Line 59  Display end 
+--- 0    Line 60  Verify start 
+--- 0    Line 60  Verify end
+ 
+     62 == Test insert right of right
+--- 0    Line 64  Display start
+
+           1/010:005 2/013:010 1/010:011 3/xxx:013 1/015:014 2/013:015 1/015:016 
+ 
+--- 0    Line 64  Display end 
+--- 0    Line 65  Verify start 
+--- 0    Line 65  Verify end
+ 
+     67 == Test insert right of right
+--- 0    Line 69  Display start
+
+           1/005:004 2/010:005 3/013:010 1/010:011 4/xxx:013 1/015:014 2/013:015 1/015:016 
+ 
+--- 0    Line 69  Display end 
+--- 0    Line 70  Verify start 
+--- 0    Line 70  Verify end
+ 
+     72 == Test insert left of left
+--- 0    Line 74  Display start
+
+           1/005:004 2/010:005 3/013:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
+ 
+--- 0    Line 74  Display end 
+--- 0    Line 75  Verify start 
+--- 0    Line 75  Verify end
+ 
+     77 == Test insert right of right
+--- 0    Line 79  Display start
+
+           1/005:004 2/010:005 1/005:006 3/013:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
+ 
+--- 0    Line 79  Display end 
+--- 0    Line 80  Verify start 
+--- 0    Line 80  Verify end
+ 
+     82 == Test insert right of right
+-- rotate left 3/015:016 2/016:018 ------ 3/013:015 
+-- first 2/015:018 3/018:016 1/018:020 
+-- second 3/018:016 ------ ------ 
+--- 0    Line 84  Display start
+
+           1/005:004 2/010:005 1/005:006 3/013:010 1/010:011 4/xxx:013 1/015:014 3/013:015 1/018:016 2/015:018 1/018:020 
+ 
+--- 0    Line 84  Display end 
+--- 0    Line 85  Verify start 
+--- 0    Line 85  Verify end
+ 
+     87 == Verify memory leak
+
+2018/06/17-17:30:02 : !!! End of test, script file: tst-avl-03.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 15  Test commands 54  Test lines 90
+     Test ending condition: No failures found.
+
+2018/06/17-17:30:02 : Log end: EVENT
+
+
+!!! ------------------------------
+
+!!! TEST OK.
+
+!!! ------------------------------
+

@@ -695,21 +695,41 @@ if ( pParent != NULL )
    DisplayNode( pParent ) ;
 } else
 {
-   pLogger->Log( "xxx " , false ) ;
-   DisplayNode( pLeft ) ;
+   pLogger->Log( "------ " , false ) ;
+} /* if */
+if ( pNode->pRightSubTree != NULL )////////////////
+{
+   DisplayNode( pNode->pRightSubTree ) ;
+} else
+{
+   pLogger->Log( "------ " , false ) ;
 } /* if */
 
    // Rotate
 
       pLeft->pRightSubTree = pNode ;
+      pNode->pParent = pLeft;
+      pLeft->pParent = pParent ; 
+      pNode->pLeftSubTree = pLeftRight ; 
+
+if (pLeftRight != NULL)
+{
+  pLeftRight->pParent = pNode;
+}
+
+if (pParent != NULL && pParent->pRightSubTree == pNode)
+{
+  pParent->pRightSubTree = pLeft;
+}
+else if (pParent != NULL && pParent->pLeftSubTree == pNode)
+{
+  pParent->pLeftSubTree = pLeft;
+}
 
 pLogger->Log( "-- first " ) ;
 DisplayNode( pLeft ) ;
 DisplayNode( pLeft->pLeftSubTree ) ;
 DisplayNode( pLeft->pRightSubTree ) ;
-
-      pNode->pLeftSubTree = pLeftRight ; 
-      pLeft->pParent = pParent ;
 
 pLogger->Log( "-- second " ) ;
 DisplayNode( pNode ) ;
@@ -720,7 +740,13 @@ if ( pNode->pLeftSubTree != NULL )
 {
    pLogger->Log( "------ " , false ) ;
 } /* if */
-DisplayNode( pNode->pRightSubTree ) ;
+if ( pNode->pRightSubTree != NULL )
+{
+   DisplayNode( pNode->pRightSubTree ) ;
+} else
+{
+   pLogger->Log( "------ " , false ) ;
+} /* if */
 
    // Update heights
    
@@ -761,9 +787,18 @@ EXC_ASSERT( VerifyChild( pLeft->pParent )) ;
 pLogger->Log( "-- rotate left " ) ;
 DisplayNode( pNode ) ;
 DisplayNode( pRight ) ;
+
 if ( pRightLeft != NULL )
 {
    DisplayNode( pRightLeft ) ;
+} else
+{
+   pLogger->Log( "------ " , false ) ;
+} /* if */
+
+if ( pParent != NULL )
+{
+   DisplayNode( pParent ) ;
 } else
 {
    pLogger->Log( "------ " , false ) ;
@@ -773,15 +808,28 @@ if ( pRightLeft != NULL )
    // Rotate
 
       pRight->pLeftSubTree = pNode ;
+      pNode->pParent = pRight;
+      pRight->pParent = pParent ;
+      pNode->pRightSubTree = pRightLeft ; 
+
+if (pRightLeft != NULL)
+{
+  pRightLeft->pParent = pNode;
+}
+
+if (pParent != NULL && pParent->pRightSubTree == pNode)
+{
+  pParent->pRightSubTree = pRight;
+}
+else if (pParent != NULL && pParent->pLeftSubTree == pNode)
+{
+  pParent->pLeftSubTree = pRight;
+}
 
 pLogger->Log( "-- first " ) ;
 DisplayNode( pRight ) ;
 DisplayNode( pRight->pLeftSubTree ) ;
 DisplayNode( pRight->pRightSubTree ) ;
-
-      pNode->pRightSubTree = pRightLeft ; 
-
-      pRight->pParent = pParent ;
 
 pLogger->Log( "-- second " ) ;
 DisplayNode( pNode ) ;
