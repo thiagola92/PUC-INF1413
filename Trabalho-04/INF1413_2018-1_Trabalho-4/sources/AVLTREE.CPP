@@ -674,8 +674,6 @@
 
    tpTreeElement * AVL_Tree :: ROTATE_RIGHT( tpTreeElement * pNode )
    {
-     if(pNode == NULL)
-     puts("asdf\n");
       tpTreeElement * pLeft      = pNode->pLeftSubTree ;
       tpTreeElement * pLeftRight = pLeft->pRightSubTree ;
       tpTreeElement * pParent    = pNode->pParent ;

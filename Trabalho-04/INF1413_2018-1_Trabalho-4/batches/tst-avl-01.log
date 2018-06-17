@@ -11,10 +11,10 @@ LES - Laboratorio de Engenharia de Software
 !!! No mutation test
 !!! ------------------------------
 
-2018/06/17-19:09:16 : Log start: EVENT
+2018/06/17-19:50:32 : Log start: EVENT
 
 !!! **************************************************
-2018/06/17-19:09:16 : !!! Start test, script file: tst-avl-01.script
+2018/06/17-19:50:32 : !!! Start test, script file: tst-avl-01.script
 
 // Script:    Tst-avl-01.script
 // Author:    Arndt von Staa
@@ -411,27 +411,33 @@ Empty AVL tree
 -- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
 -- first 2/020:032 3/032:030 1/032:035 
 -- second 3/032:030 ------ ------ 
->>> 1    Line 211  Unknown command:  =ExceptionProgram   AssertionExc  AssertionExcId   'c'
-// =DisplayTree   Tree04  INFIX
-// =VerifyTree    Tree04  0
+//=ExceptionProgram   AssertionExc  AssertionExcId   'c'
+--- 0    Line 212  Display start
+
+           1/020:015 3/xxx:020 1/032:030 2/020:032 1/032:035 
+ 
+--- 0    Line 212  Display end 
+--- 0    Line 213  Verify start 
+--- 0    Line 213  Verify end
+ 
 // ==========================================================
 //
     218 == Verify memory leak
 
-2018/06/17-19:09:16 : !!! End of test, script file: tst-avl-01.script
+2018/06/17-19:50:32 : !!! End of test, script file: tst-avl-01.script
 !!! **************************************************
 
 !!! --------------------
 !!!  Test ended
-     Test statistics:   Test files 1  Test cases 19  Test commands 154  Test lines 221
-     Test ending condition: >>> 1 <<< failures found.
+     Test statistics:   Test files 1  Test cases 19  Test commands 155  Test lines 221
+     Test ending condition: No failures found.
 
-2018/06/17-19:09:16 : Log end: EVENT
+2018/06/17-19:50:32 : Log end: EVENT
 
 
 !!! ------------------------------
 
->>> TEST found 1 problems.
+!!! TEST OK.
 
 !!! ------------------------------
 

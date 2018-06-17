@@ -208,9 +208,9 @@
 =DisplayTree   Tree04  INFIX
 =VerifyTree    Tree04  0
 =InsertSymbol  Tree04  35  .true
-=ExceptionProgram   AssertionExc  AssertionExcId   'c'
-// =DisplayTree   Tree04  INFIX
-// =VerifyTree    Tree04  0
+//=ExceptionProgram   AssertionExc  AssertionExcId   'c'
+=DisplayTree   Tree04  INFIX
+=VerifyTree    Tree04  0
 
 
 // ==========================================================
