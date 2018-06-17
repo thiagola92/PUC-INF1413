@@ -11,10 +11,10 @@ LES - Laboratorio de Engenharia de Software
 !!! No mutation test
 !!! ------------------------------
 
-2018/06/17-17:29:02 : Log start: EVENT
+2018/06/17-18:23:43 : Log start: EVENT
 
 !!! **************************************************
-2018/06/17-17:29:02 : !!! Start test, script file: tst-avl-02.script
+2018/06/17-18:23:43 : !!! Start test, script file: tst-avl-02.script
 
 // Script:    Tst-avl-02.script
 // Author:    Arndt von Staa
@@ -128,39 +128,34 @@ Empty AVL tree
 -- left right case 4/013:010 
 -- rotate left 3/010:005 2/005:006 ------ 4/013:010 
 -- first 2/010:006 3/006:005 1/006:007 
--- second 3/006:005 1/005:004 ------  -- after 4/013:010 2/010:006 
--- rotate right 4/013:010 2/010:006 1/006:007 4/xxx:013 1/010:011 
--- first 2/013:006 1/006:005 4/006:010 
+-- second 3/006:005 1/005:004 ------  -- after 4/013:010 3/010:006 
+-- rotate right 4/013:010 3/010:006 1/006:007 4/xxx:013 
+-- first 3/013:006 2/006:005 4/006:010 
 -- second 4/006:010 1/010:007 1/010:011 
 --- 0    Line 84  Display start
 
-           1/005:004 1/006:005 3/013:006 1/010:007 2/006:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
+           1/005:004 2/006:005 3/013:006 1/010:007 2/006:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
  
 --- 0    Line 84  Display end 
 --- 0    Line 85  Verify start 
-
-Element height 1 of left child 004 of element 005 should be 1 - 1 or - 2
-
-Height 1 of parent element 005 of element 004 should be 1 + 1 or + 2
 --- 0    Line 85  Verify end
  
->>> 1    Line 85  Incorrect AVL tree verification return  Is 2  Should be 0
      87 == Verify memory leak
 
-2018/06/17-17:29:02 : !!! End of test, script file: tst-avl-02.script
+2018/06/17-18:23:43 : !!! End of test, script file: tst-avl-02.script
 !!! **************************************************
 
 !!! --------------------
 !!!  Test ended
      Test statistics:   Test files 1  Test cases 15  Test commands 54  Test lines 90
-     Test ending condition: >>> 1 <<< failures found.
+     Test ending condition: No failures found.
 
-2018/06/17-17:29:02 : Log end: EVENT
+2018/06/17-18:23:43 : Log end: EVENT
 
 
 !!! ------------------------------
 
->>> TEST found 1 problems.
+!!! TEST OK.
 
 !!! ------------------------------
 

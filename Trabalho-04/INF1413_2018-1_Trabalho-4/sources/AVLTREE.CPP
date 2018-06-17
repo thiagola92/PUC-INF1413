@@ -697,13 +697,6 @@ if ( pParent != NULL )
 {
    pLogger->Log( "------ " , false ) ;
 } /* if */
-if ( pNode->pRightSubTree != NULL )////////////////
-{
-   DisplayNode( pNode->pRightSubTree ) ;
-} else
-{
-   pLogger->Log( "------ " , false ) ;
-} /* if */
 
    // Rotate
 
@@ -749,9 +742,9 @@ if ( pNode->pRightSubTree != NULL )
 } /* if */
 
    // Update heights
-   
-      pNode->elementHeight = MAX( HEIGHT( pNode->pLeftSubTree ) , HEIGHT( pNode->pRightSubTree ) + 1 ) ;
-      pLeft->elementHeight = MAX( HEIGHT( pLeft->pLeftSubTree ) , HEIGHT( pLeft->pRightSubTree ) + 1 ) ;
+
+      pNode->elementHeight = MAX( HEIGHT( pNode->pLeftSubTree ) , HEIGHT( pNode->pRightSubTree ) ) + 1 ;
+      pLeft->elementHeight = MAX( HEIGHT( pLeft->pLeftSubTree ) , HEIGHT( pLeft->pRightSubTree ) ) + 1 ;
 
 #ifdef zero
 
@@ -850,9 +843,9 @@ if ( pNode->pRightSubTree != NULL )
 
 
    // Update heights
-   
-      pNode->elementHeight  = MAX( HEIGHT( pNode->pLeftSubTree  ) , HEIGHT( pNode->pRightSubTree  ) + 1 ) ;
-      pRight->elementHeight = MAX( HEIGHT( pRight->pLeftSubTree ) , HEIGHT( pRight->pRightSubTree ) + 1 ) ;
+
+      pNode->elementHeight  = MAX( HEIGHT( pNode->pLeftSubTree  ) , HEIGHT( pNode->pRightSubTree  ) )  + 1;
+      pRight->elementHeight = MAX( HEIGHT( pRight->pLeftSubTree ) , HEIGHT( pRight->pRightSubTree ) )  + 1;
 
 EXC_ASSERT( VerifyChild( pRight )) ;
 EXC_ASSERT( VerifyFather( pRight->pLeftSubTree )) ;

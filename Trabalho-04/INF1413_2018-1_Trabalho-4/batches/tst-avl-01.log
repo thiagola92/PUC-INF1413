@@ -11,10 +11,10 @@ LES - Laboratorio de Engenharia de Software
 !!! No mutation test
 !!! ------------------------------
 
-2018/06/17-08:35:31 : Log start: EVENT
+2018/06/17-18:24:05 : Log start: EVENT
 
 !!! **************************************************
-2018/06/17-08:35:31 : !!! Start test, script file: tst-avl-01.script
+2018/06/17-18:24:05 : !!! Start test, script file: tst-avl-01.script
 
 // Script:    Tst-avl-01.script
 // Author:    Arndt von Staa
@@ -119,7 +119,7 @@ Empty AVL tree
 --- 0    Line 83  Verify end
  
 -- rotate right 3/xxx:020 2/020:010 ------ ------ 
--- first 2/020:010 1/010:005 3/010:020 
+-- first 2/xxx:010 1/010:005 3/010:020 
 -- second 3/010:020 ------ ------ 
 >>> 1    Line 85  Unknown command:  =ExceptionSystem       'c'
 // =DisplayTree   Tree01  INFIX
@@ -145,7 +145,7 @@ Empty AVL tree
  
 -- left right case 3/xxx:020 
 -- rotate left 2/020:010 1/010:015 ------ 3/xxx:020 
--- first 1/010:015 2/015:010 
+-- first 1/020:015 2/015:010 
 >>> 2    Line 99  Tester caught system exception. 
 <<< 1    Line 100  Expected system exception has been ignored.
  
@@ -196,7 +196,7 @@ Empty AVL tree
 --- 1    Line 130  Verify end
  
 -- rotate left 3/xxx:010 2/010:015 ------ ------ 
--- first 2/010:015 3/015:010 1/015:020 
+-- first 2/xxx:015 3/015:010 1/015:020 
 -- second 3/015:010 ------ ------ 
 // =ExceptionSystem       'c'
 --- 1    Line 133  Display start
@@ -243,7 +243,7 @@ Empty AVL tree
 --- 1    Line 152  Verify end
  
 -- rotate right 3/020:015 2/015:010 ------ 3/xxx:020 
--- first 2/015:010 1/010:005 3/010:015 
+-- first 2/020:010 1/010:005 3/010:015 
 -- second 3/010:015 ------ ------ 
 >>> 2    Line 154  Unknown command:  =ExceptionSystem       'c'
 // =DisplayTree   Tree01  INFIX
@@ -285,7 +285,7 @@ Empty AVL tree
  
 -- left right case 3/020:015 
 -- rotate left 2/015:010 1/010:012 ------ 3/020:015 
--- first 1/010:012 2/012:010 
+-- first 1/015:012 2/012:010 
 >>> 3    Line 175  Tester caught system exception. 
 <<< 2    Line 176  Expected system exception has been ignored.
  
@@ -368,7 +368,7 @@ Empty AVL tree
 --- 2    Line 216  Verify end
  
 -- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
--- first 2/030:032 3/032:030 1/032:035 
+-- first 2/020:032 3/032:030 1/032:035 
 -- second 3/032:030 ------ ------ 
 >>> 3    Line 218  Unknown command:  =ExceptionProgram   AssertionExc  AssertionExcId   'c'
 // =DisplayTree   Tree04  INFIX
@@ -376,29 +376,21 @@ Empty AVL tree
 // ==========================================================
 //
     225 == Verify memory leak
->>> 4    Line 226  Tester caught system exception. 
->>> 5    Line 227  Command is not a system exception catcher:  =AllocCompareBytes 1
 
-######  Unexpected system exception !!!!!
+2018/06/17-18:24:05 : !!! End of test, script file: tst-avl-01.script
+!!! **************************************************
 
-    6    Line 227  vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
->>> 7    Line 227  Test crash: Program will be cancelled.
- 
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 19  Test commands 144  Test lines 228
+     Test ending condition: >>> 3 <<< failures found.
 
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
->>>DISASTER: Test has been cancelled prior to ending !!!
-
-      At Line: 250  In module: ..\sources\gnrctest.cpp
-
->>>DISASTER: Starting roll back.
+2018/06/17-18:24:05 : Log end: EVENT
 
 
->>>DISASTER: Roll back completed. Program will be canceled now !!!
+!!! ------------------------------
 
+>>> TEST found 3 problems.
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+!!! ------------------------------
 
