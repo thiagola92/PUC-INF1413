@@ -674,6 +674,8 @@
 
    tpTreeElement * AVL_Tree :: ROTATE_RIGHT( tpTreeElement * pNode )
    {
+     if(pNode == NULL)
+     puts("asdf\n");
       tpTreeElement * pLeft      = pNode->pLeftSubTree ;
       tpTreeElement * pLeftRight = pLeft->pRightSubTree ;
       tpTreeElement * pParent    = pNode->pParent ;
@@ -721,8 +723,22 @@ else if (pParent != NULL && pParent->pLeftSubTree == pNode)
 
 pLogger->Log( "-- first " ) ;
 DisplayNode( pLeft ) ;
-DisplayNode( pLeft->pLeftSubTree ) ;
-DisplayNode( pLeft->pRightSubTree ) ;
+
+if (pLeft->pLeftSubTree != NULL )
+{
+  DisplayNode( pLeft->pLeftSubTree ) ;
+} else
+{
+   pLogger->Log( "------ " , false ) ;
+} /* if */
+
+if (pLeft->pRightSubTree != NULL )
+{
+  DisplayNode( pLeft->pRightSubTree ) ;
+} else
+{
+   pLogger->Log( "------ " , false ) ;
+} /* if */
 
 pLogger->Log( "-- second " ) ;
 DisplayNode( pNode ) ;
@@ -821,8 +837,22 @@ else if (pParent != NULL && pParent->pLeftSubTree == pNode)
 
 pLogger->Log( "-- first " ) ;
 DisplayNode( pRight ) ;
-DisplayNode( pRight->pLeftSubTree ) ;
-DisplayNode( pRight->pRightSubTree ) ;
+
+if (pRight->pLeftSubTree != NULL )
+{
+  DisplayNode( pRight->pLeftSubTree ) ;
+} else
+{
+   pLogger->Log( "------ " , false ) ;
+} /* if */
+
+if (pRight->pRightSubTree != NULL )
+{
+  DisplayNode( pRight->pRightSubTree ) ;
+} else
+{
+   pLogger->Log( "------ " , false ) ;
+} /* if */
 
 pLogger->Log( "-- second " ) ;
 DisplayNode( pNode ) ;
@@ -991,7 +1021,7 @@ EXC_ASSERT( VerifyChild( pCurrElement->pParent )) ;
 pLogger->Log( "-- right left case " ) ;
 DisplayNode( pCurrElement ) ;
          
-         pCurrElement->pRightSubTree = ROTATE_RIGHT( pCurrElement->pLeftSubTree ) ;
+         pCurrElement->pRightSubTree = ROTATE_RIGHT( pCurrElement->pRightSubTree ) ;
          pCurrElement->pRightSubTree->pParent = pCurrElement ;
 
 pLogger->Log( "-- after " , false ) ;

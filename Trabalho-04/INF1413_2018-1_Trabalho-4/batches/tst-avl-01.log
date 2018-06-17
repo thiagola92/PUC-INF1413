@@ -11,10 +11,10 @@ LES - Laboratorio de Engenharia de Software
 !!! No mutation test
 !!! ------------------------------
 
-2018/06/17-18:24:05 : Log start: EVENT
+2018/06/17-19:09:16 : Log start: EVENT
 
 !!! **************************************************
-2018/06/17-18:24:05 : !!! Start test, script file: tst-avl-01.script
+2018/06/17-19:09:16 : !!! Start test, script file: tst-avl-01.script
 
 // Script:    Tst-avl-01.script
 // Author:    Arndt von Staa
@@ -121,276 +121,317 @@ Empty AVL tree
 -- rotate right 3/xxx:020 2/020:010 ------ ------ 
 -- first 2/xxx:010 1/010:005 3/010:020 
 -- second 3/010:020 ------ ------ 
->>> 1    Line 85  Unknown command:  =ExceptionSystem       'c'
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+--- 0    Line 85  Display start
+
+           1/010:005 2/xxx:010 1/010:020 
+ 
+--- 0    Line 85  Display end 
+--- 0    Line 86  Verify start 
+--- 0    Line 86  Verify end
+ 
 // ==========================================================
 //
-     91 == Test left right
---- 1    Line 94  Display start
+     90 == Test left right
+--- 0    Line 93  Display start
 
            1/xxx:020 
  
---- 1    Line 94  Display end 
---- 1    Line 95  Verify start 
---- 1    Line 95  Verify end
+--- 0    Line 93  Display end 
+--- 0    Line 94  Verify start 
+--- 0    Line 94  Verify end
  
---- 1    Line 97  Display start
+--- 0    Line 96  Display start
 
            1/020:010 2/xxx:020 
  
---- 1    Line 97  Display end 
---- 1    Line 98  Verify start 
---- 1    Line 98  Verify end
+--- 0    Line 96  Display end 
+--- 0    Line 97  Verify start 
+--- 0    Line 97  Verify end
  
 -- left right case 3/xxx:020 
 -- rotate left 2/020:010 1/010:015 ------ 3/xxx:020 
--- first 1/020:015 2/015:010 
->>> 2    Line 99  Tester caught system exception. 
-<<< 1    Line 100  Expected system exception has been ignored.
+-- first 1/020:015 2/015:010 ------ 
+-- second 2/015:010 ------ ------  -- after 3/xxx:020 2/020:015 
+-- rotate right 3/xxx:020 2/020:015 ------ ------ 
+-- first 2/xxx:015 1/015:010 3/015:020 
+-- second 3/015:020 ------ ------ 
+--- 0    Line 99  Display start
+
+           1/015:010 2/xxx:015 1/015:020 
  
-// =DisplayTree   Tree02  INFIX
-// =VerifyTree    Tree02  0
+--- 0    Line 99  Display end 
+--- 0    Line 100  Verify start 
+--- 0    Line 100  Verify end
+ 
 // ==========================================================
 //
-    106 == Test right left
---- 1    Line 110  Display start
+    104 == Test right left
+--- 0    Line 108  Display start
 
            1/xxx:020 
  
---- 1    Line 110  Display end 
---- 1    Line 111  Verify start 
---- 1    Line 111  Verify end
+--- 0    Line 108  Display end 
+--- 0    Line 109  Verify start 
+--- 0    Line 109  Verify end
  
---- 1    Line 113  Display start
+--- 0    Line 111  Display start
 
            2/xxx:020 1/020:030 
  
---- 1    Line 113  Display end 
---- 1    Line 114  Verify start 
---- 1    Line 114  Verify end
+--- 0    Line 111  Display end 
+--- 0    Line 112  Verify start 
+--- 0    Line 112  Verify end
  
 -- right left case 3/xxx:020 
->>> 2    Line 115  Tester caught system exception. 
-<<< 1    Line 116  Expected system exception has been ignored.
+-- rotate right 2/020:030 1/030:025 ------ 3/xxx:020 
+-- first 1/020:025 ------ 2/025:030 
+-- second 2/025:030 ------ ------ -- after 3/xxx:020 2/020:025 
+-- rotate left 3/xxx:020 2/020:025 ------ ------ 
+-- first 2/xxx:025 3/025:020 1/025:030 
+-- second 3/025:020 ------ ------ 
+--- 0    Line 114  Display start
+
+           1/025:020 2/xxx:025 1/025:030 
  
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+--- 0    Line 114  Display end 
+--- 0    Line 115  Verify start 
+--- 0    Line 115  Verify end
+ 
 // ==========================================================
 //
-    122 == Test right right
---- 1    Line 126  Display start
+    119 == Test right right
+--- 0    Line 123  Display start
 
            1/xxx:010 
  
---- 1    Line 126  Display end 
---- 1    Line 127  Verify start 
---- 1    Line 127  Verify end
+--- 0    Line 123  Display end 
+--- 0    Line 124  Verify start 
+--- 0    Line 124  Verify end
  
---- 1    Line 129  Display start
+--- 0    Line 126  Display start
 
            2/xxx:010 1/010:015 
  
---- 1    Line 129  Display end 
---- 1    Line 130  Verify start 
---- 1    Line 130  Verify end
+--- 0    Line 126  Display end 
+--- 0    Line 127  Verify start 
+--- 0    Line 127  Verify end
  
 -- rotate left 3/xxx:010 2/010:015 ------ ------ 
 -- first 2/xxx:015 3/015:010 1/015:020 
 -- second 3/015:010 ------ ------ 
-// =ExceptionSystem       'c'
---- 1    Line 133  Display start
+--- 0    Line 129  Display start
 
            1/015:010 2/xxx:015 1/015:020 
  
---- 1    Line 133  Display end 
---- 1    Line 134  Verify start 
---- 1    Line 134  Verify end
+--- 0    Line 129  Display end 
+--- 0    Line 130  Verify start 
+--- 0    Line 130  Verify end
  
 // ==========================================================
 //
-    138 == Test root left left
---- 1    Line 142  Display start
+    134 == Test root left left
+--- 0    Line 138  Display start
 
            1/xxx:020 
  
---- 1    Line 142  Display end 
---- 1    Line 143  Verify start 
---- 1    Line 143  Verify end
+--- 0    Line 138  Display end 
+--- 0    Line 139  Verify start 
+--- 0    Line 139  Verify end
  
---- 1    Line 145  Display start
+--- 0    Line 141  Display start
 
            2/xxx:020 1/020:025 
  
---- 1    Line 145  Display end 
---- 1    Line 146  Verify start 
---- 1    Line 146  Verify end
+--- 0    Line 141  Display end 
+--- 0    Line 142  Verify start 
+--- 0    Line 142  Verify end
  
---- 1    Line 148  Display start
+--- 0    Line 144  Display start
 
            1/020:015 2/xxx:020 1/020:025 
  
---- 1    Line 148  Display end 
---- 1    Line 149  Verify start 
---- 1    Line 149  Verify end
+--- 0    Line 144  Display end 
+--- 0    Line 145  Verify start 
+--- 0    Line 145  Verify end
  
---- 1    Line 151  Display start
+--- 0    Line 147  Display start
 
            1/015:010 2/020:015 3/xxx:020 1/020:025 
  
---- 1    Line 151  Display end 
---- 1    Line 152  Verify start 
---- 1    Line 152  Verify end
+--- 0    Line 147  Display end 
+--- 0    Line 148  Verify start 
+--- 0    Line 148  Verify end
  
 -- rotate right 3/020:015 2/015:010 ------ 3/xxx:020 
 -- first 2/020:010 1/010:005 3/010:015 
 -- second 3/010:015 ------ ------ 
->>> 2    Line 154  Unknown command:  =ExceptionSystem       'c'
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+--- 0    Line 150  Display start
+
+           1/010:005 2/020:010 1/010:015 3/xxx:020 1/020:025 
+ 
+--- 0    Line 150  Display end 
+--- 0    Line 151  Verify start 
+--- 0    Line 151  Verify end
+ 
 // ==========================================================
 //
-    160 == Test root left right
---- 2    Line 164  Display start
+    155 == Test root left right
+--- 0    Line 159  Display start
 
            1/xxx:020 
  
---- 2    Line 164  Display end 
---- 2    Line 165  Verify start 
---- 2    Line 165  Verify end
+--- 0    Line 159  Display end 
+--- 0    Line 160  Verify start 
+--- 0    Line 160  Verify end
  
---- 2    Line 167  Display start
+--- 0    Line 162  Display start
 
            2/xxx:020 1/020:025 
  
---- 2    Line 167  Display end 
---- 2    Line 168  Verify start 
---- 2    Line 168  Verify end
+--- 0    Line 162  Display end 
+--- 0    Line 163  Verify start 
+--- 0    Line 163  Verify end
  
---- 2    Line 170  Display start
+--- 0    Line 165  Display start
 
            1/020:015 2/xxx:020 1/020:025 
  
---- 2    Line 170  Display end 
---- 2    Line 171  Verify start 
---- 2    Line 171  Verify end
+--- 0    Line 165  Display end 
+--- 0    Line 166  Verify start 
+--- 0    Line 166  Verify end
  
---- 2    Line 173  Display start
+--- 0    Line 168  Display start
 
            1/015:010 2/020:015 3/xxx:020 1/020:025 
  
---- 2    Line 173  Display end 
---- 2    Line 174  Verify start 
---- 2    Line 174  Verify end
+--- 0    Line 168  Display end 
+--- 0    Line 169  Verify start 
+--- 0    Line 169  Verify end
  
 -- left right case 3/020:015 
 -- rotate left 2/015:010 1/010:012 ------ 3/020:015 
--- first 1/015:012 2/012:010 
->>> 3    Line 175  Tester caught system exception. 
-<<< 2    Line 176  Expected system exception has been ignored.
+-- first 1/015:012 2/012:010 ------ 
+-- second 2/012:010 ------ ------  -- after 3/020:015 2/015:012 
+-- rotate right 3/020:015 2/015:012 ------ 3/xxx:020 
+-- first 2/020:012 1/012:010 3/012:015 
+-- second 3/012:015 ------ ------ 
+--- 0    Line 171  Display start
+
+           1/012:010 2/020:012 1/012:015 3/xxx:020 1/020:025 
  
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+--- 0    Line 171  Display end 
+--- 0    Line 172  Verify start 
+--- 0    Line 172  Verify end
+ 
 // ==========================================================
 //
-    182 == Test root right left
---- 2    Line 185  Display start
+    176 == Test root right left
+--- 0    Line 179  Display start
 
            1/xxx:020 
  
---- 2    Line 185  Display end 
---- 2    Line 186  Verify start 
---- 2    Line 186  Verify end
+--- 0    Line 179  Display end 
+--- 0    Line 180  Verify start 
+--- 0    Line 180  Verify end
  
---- 2    Line 188  Display start
+--- 0    Line 182  Display start
 
            1/020:015 2/xxx:020 
  
---- 2    Line 188  Display end 
---- 2    Line 189  Verify start 
---- 2    Line 189  Verify end
+--- 0    Line 182  Display end 
+--- 0    Line 183  Verify start 
+--- 0    Line 183  Verify end
  
---- 2    Line 191  Display start
+--- 0    Line 185  Display start
 
            1/020:015 2/xxx:020 1/020:030 
  
---- 2    Line 191  Display end 
---- 2    Line 192  Verify start 
---- 2    Line 192  Verify end
+--- 0    Line 185  Display end 
+--- 0    Line 186  Verify start 
+--- 0    Line 186  Verify end
  
---- 2    Line 194  Display start
+--- 0    Line 188  Display start
 
            1/020:015 3/xxx:020 2/020:030 1/030:035 
  
---- 2    Line 194  Display end 
---- 2    Line 195  Verify start 
---- 2    Line 195  Verify end
+--- 0    Line 188  Display end 
+--- 0    Line 189  Verify start 
+--- 0    Line 189  Verify end
  
 -- right left case 3/020:030 
->>> 3    Line 196  Tester caught system exception. 
-<<< 2    Line 197  Expected system exception has been ignored.
+-- rotate right 2/030:035 1/035:032 ------ 3/020:030 
+-- first 1/030:032 ------ 2/032:035 
+-- second 2/032:035 ------ ------ -- after 3/020:030 2/030:032 
+-- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
+-- first 2/020:032 3/032:030 1/032:035 
+-- second 3/032:030 ------ ------ 
+--- 0    Line 191  Display start
+
+           1/020:015 3/xxx:020 1/032:030 2/020:032 1/032:035 
  
-// =DisplayTree   Tree03  INFIX
-// =VerifyTree    Tree03  0
+--- 0    Line 191  Display end 
+--- 0    Line 192  Verify start 
+--- 0    Line 192  Verify end
+ 
 // ==========================================================
 //
-    203 == Test root right right
---- 2    Line 206  Display start
+    196 == Test root right right
+--- 0    Line 199  Display start
 
            1/xxx:020 
  
---- 2    Line 206  Display end 
---- 2    Line 207  Verify start 
---- 2    Line 207  Verify end
+--- 0    Line 199  Display end 
+--- 0    Line 200  Verify start 
+--- 0    Line 200  Verify end
  
---- 2    Line 209  Display start
+--- 0    Line 202  Display start
 
            1/020:015 2/xxx:020 
  
---- 2    Line 209  Display end 
---- 2    Line 210  Verify start 
---- 2    Line 210  Verify end
+--- 0    Line 202  Display end 
+--- 0    Line 203  Verify start 
+--- 0    Line 203  Verify end
  
---- 2    Line 212  Display start
+--- 0    Line 205  Display start
 
            1/020:015 2/xxx:020 1/020:030 
  
---- 2    Line 212  Display end 
---- 2    Line 213  Verify start 
---- 2    Line 213  Verify end
+--- 0    Line 205  Display end 
+--- 0    Line 206  Verify start 
+--- 0    Line 206  Verify end
  
---- 2    Line 215  Display start
+--- 0    Line 208  Display start
 
            1/020:015 3/xxx:020 2/020:030 1/030:032 
  
---- 2    Line 215  Display end 
---- 2    Line 216  Verify start 
---- 2    Line 216  Verify end
+--- 0    Line 208  Display end 
+--- 0    Line 209  Verify start 
+--- 0    Line 209  Verify end
  
 -- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
 -- first 2/020:032 3/032:030 1/032:035 
 -- second 3/032:030 ------ ------ 
->>> 3    Line 218  Unknown command:  =ExceptionProgram   AssertionExc  AssertionExcId   'c'
+>>> 1    Line 211  Unknown command:  =ExceptionProgram   AssertionExc  AssertionExcId   'c'
 // =DisplayTree   Tree04  INFIX
 // =VerifyTree    Tree04  0
 // ==========================================================
 //
-    225 == Verify memory leak
+    218 == Verify memory leak
 
-2018/06/17-18:24:05 : !!! End of test, script file: tst-avl-01.script
+2018/06/17-19:09:16 : !!! End of test, script file: tst-avl-01.script
 !!! **************************************************
 
 !!! --------------------
 !!!  Test ended
-     Test statistics:   Test files 1  Test cases 19  Test commands 144  Test lines 228
-     Test ending condition: >>> 3 <<< failures found.
+     Test statistics:   Test files 1  Test cases 19  Test commands 154  Test lines 221
+     Test ending condition: >>> 1 <<< failures found.
 
-2018/06/17-18:24:05 : Log end: EVENT
+2018/06/17-19:09:16 : Log end: EVENT
 
 
 !!! ------------------------------
 
->>> TEST found 3 problems.
+>>> TEST found 1 problems.
 
 !!! ------------------------------
 

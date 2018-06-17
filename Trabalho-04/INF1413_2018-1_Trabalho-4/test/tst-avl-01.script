@@ -82,9 +82,8 @@
 =DisplayTree   Tree01  INFIX
 =VerifyTree    Tree01  0
 =InsertSymbol  Tree01  5   .true
-=ExceptionSystem       'c'
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
 
 // ==========================================================
 // 
@@ -97,9 +96,8 @@
 =DisplayTree   Tree02  INFIX
 =VerifyTree    Tree02  0
 =InsertSymbol  Tree02  15  .true
-=ExceptionSystem       'c'
-// =DisplayTree   Tree02  INFIX
-// =VerifyTree    Tree02  0
+=DisplayTree   Tree02  INFIX
+=VerifyTree    Tree02  0
 
 // ==========================================================
 // 
@@ -113,9 +111,8 @@
 =DisplayTree   Tree01  INFIX
 =VerifyTree    Tree01  0
 =InsertSymbol  Tree01  25  .true
-=ExceptionSystem       'c'
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
 
 // ==========================================================
 //
@@ -129,7 +126,6 @@
 =DisplayTree   Tree01  INFIX
 =VerifyTree    Tree01  0
 =InsertSymbol  Tree01  20  .true
-// =ExceptionSystem       'c'
 =DisplayTree   Tree01  INFIX
 =VerifyTree    Tree01  0
 
@@ -151,9 +147,8 @@
 =DisplayTree   Tree01  INFIX
 =VerifyTree    Tree01  0
 =InsertSymbol  Tree01  05  .true
-=ExceptionSystem       'c'
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
 
 // ==========================================================
 //
@@ -173,9 +168,8 @@
 =DisplayTree   Tree01  INFIX
 =VerifyTree    Tree01  0
 =InsertSymbol  Tree01  12  .true
-=ExceptionSystem       'c'
-// =DisplayTree   Tree01  INFIX
-// =VerifyTree    Tree01  0
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
 
 // ==========================================================
 //
@@ -194,9 +188,8 @@
 =DisplayTree   Tree03  INFIX
 =VerifyTree    Tree03  0
 =InsertSymbol  Tree03  32  .true
-=ExceptionSystem       'c'
-// =DisplayTree   Tree03  INFIX
-// =VerifyTree    Tree03  0
+=DisplayTree   Tree03  INFIX
+=VerifyTree    Tree03  0
 
 // ==========================================================
 //
