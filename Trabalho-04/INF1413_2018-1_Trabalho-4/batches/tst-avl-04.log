@@ -1,0 +1,90 @@
+
+
+LES - Laboratorio de Engenharia de Software
+   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
+
+!!! Base folder name: ..\test
+!!! Script file name: tst-avl-04
+!!! Event log to be directed to console.
+!!! Statistics will not be accumulated.
+!!! Do not count passages.
+!!! No mutation test
+!!! ------------------------------
+
+2018/06/18-03:22:28 : Log start: EVENT
+
+!!! **************************************************
+2018/06/18-03:22:28 : !!! Start test, script file: tst-avl-04.script
+
+// Script:    Tst-avl-04.script
+// Author:    Arndt von Staa
+// Date:      05/jun/2018
+// Purpose:   Test avl trees
+      6 == Declare constants
+     22 == Save the number of allocated data spaces
+     27 == Test create an empty tree
+     30 == Generate test script
+Symbol   1 001
+Symbol   4 004
+-- rotate left 3/xxx:001 2/001:004 ------ ------ 
+-- first 2/xxx:004 3/004:001 1/004:012 
+-- second 3/004:001 ------ ------ 
+Symbol  12 012
+Symbol   7 007
+Symbol  16 016
+Symbol   4 004
+Symbol  14 014
+-- right left case 3/xxx:004 
+-- rotate right 2/004:014 1/014:006 ------ 3/xxx:004 
+-- first 1/004:006 ------ 2/006:014 
+-- second 2/006:014 ------ ------ -- after 3/xxx:004 2/004:006 
+-- rotate left 3/xxx:004 2/004:006 ------ ------ 
+-- first 2/xxx:006 3/006:004 1/006:014 
+-- second 3/006:004 ------ ------ 
+Symbol   6 006
+Symbol   2 002
+-- left right case 3/006:004 
+-- rotate left 2/004:002 1/002:003 ------ 3/006:004 
+-- first 1/004:003 2/003:002 ------ 
+-- second 2/003:002 ------ ------  -- after 3/006:004 2/004:003 
+-- rotate right 3/006:004 2/004:003 ------ 3/xxx:006 
+-- first 2/006:003 1/003:002 3/003:004 
+-- second 3/003:004 ------ ------ 
+Symbol   3 003
+     33 == Verify memory leak
+>>> 1    Line 35  Incorrect number of allocated bytes  Is 11351  Should be 11216
+>>> 2    Line 36  No recovery provided. Command ignored:  =AllocCompareNum   3
+
+2018/06/18-03:22:28 : !!! End of test, script file: tst-avl-04.script
+!!! **************************************************
+
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 5  Test commands 19  Test lines 36
+     Test ending condition: >>> 2 <<< failures found.
+
+2018/06/18-03:22:28 : Log end: EVENT
+
+
+>>> 7 Allocated data spaces remain: 5, verify memory leakage.
+
+>>> Log closed: ---DataSpace  Id:   128  Size:    27  Line:   242  File:      avltree.cpp   Addr: 01129290
+>>> Log closed: ---DataSpace  Id:   127  Size:    27  Line:   242  File:      avltree.cpp   Addr: 01128D90
+>>> Log closed: ---DataSpace  Id:   126  Size:    27  Line:   242  File:      avltree.cpp   Addr: 01129240
+>>> Log closed: ---DataSpace  Id:   125  Size:    27  Line:   242  File:      avltree.cpp   Addr: 01129010
+>>> Log closed: ---DataSpace  Id:   124  Size:    27  Line:   242  File:      avltree.cpp   Addr: 01128DE0
+>>> Log closed: 
+!!! Spaces still allocated:          5
+>>> Log closed: 
+!!! Total data spaces allocated:   248
+>>> Log closed: 
+!!! Total data spaces deleted:     211
+>>> Log closed:  
+
+
+!!! ------------------------------
+
+>>> TEST found 7 problems.
+
+!!! ------------------------------
+
