@@ -923,7 +923,7 @@ EXC_ASSERT( VerifyChild( pRight->pParent )) ;
       {
          pCurrElement->pLeftSubTree = DoInsertAVLelement( pCurrElement->pLeftSubTree , pNewElement ) ;
          pCurrElement->pLeftSubTree->pParent = pCurrElement ;
-      } else if ( is >= 0 )
+      } else if ( is > 0 )
       {
          pCurrElement->pRightSubTree = DoInsertAVLelement( pCurrElement->pRightSubTree , pNewElement ) ;
          pCurrElement->pRightSubTree->pParent = pCurrElement ;
