@@ -354,8 +354,8 @@
                inxSymbol = RND_GenerateUniformDist( 1 , numElements ) ;
 
   // dummy
-  //   bool isRet = false ;
-  //   isRet = vtObj[ inxTree ]->InsertAVLtreeSymbol( vtAVLsymbols[ inxSymbol ].symbol ) ;
+     bool isRet = false ; //
+     isRet = vtObj[ inxTree ]->InsertAVLtreeSymbol( vtAVLsymbols[ inxSymbol ].symbol ) ; //
        printf( "\nSymbol %3i %s" , inxSymbol , vtAVLsymbols[ inxSymbol ].symbol ) ;
        isErrorCount ++ ;
   // end dummy

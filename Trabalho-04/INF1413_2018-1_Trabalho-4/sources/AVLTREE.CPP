@@ -230,7 +230,7 @@
 // 
 // Method: AVL  !Insert symbol
 
-   bool AVL_Tree ::
+   bool AVL_Tree :: 
              InsertAVLtreeSymbol( char * pSymbol )
    {
 
@@ -875,6 +875,19 @@ if ( pNode->pRightSubTree != NULL )
       pNode->elementHeight  = MAX( HEIGHT( pNode->pLeftSubTree  ) , HEIGHT( pNode->pRightSubTree  ) )  + 1;
       pRight->elementHeight = MAX( HEIGHT( pRight->pLeftSubTree ) , HEIGHT( pRight->pRightSubTree ) )  + 1;
 
+#ifdef zero
+
+pLogger->Log( "-- result " ) ;
+if ( pParent != NULL )
+{
+   DoDisplayAVLtree( pParent , AVL_INFIX_TRAVERSAL ) ;
+} else
+{
+   pLogger->Log( "xxx " , false ) ;
+   DoDisplayAVLtree( pLeft , AVL_INFIX_TRAVERSAL ) ;
+}
+#endif
+
 EXC_ASSERT( VerifyChild( pRight )) ;
 EXC_ASSERT( VerifyFather( pRight->pLeftSubTree )) ;
 EXC_ASSERT( VerifyFather( pRight->pRightSubTree )) ;
@@ -918,7 +931,8 @@ EXC_ASSERT( VerifyChild( pRight->pParent )) ;
       {
       // New node exists
          pElementFound = pCurrElement ;
-         return pNewElement ;
+         //return pNewElement ; // Não entendi essa parte
+         return NULL;
       } /* if */
 
     // 2. Update height of this ancestor node 

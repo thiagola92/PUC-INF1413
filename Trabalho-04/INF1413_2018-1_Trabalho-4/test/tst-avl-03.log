@@ -1,22 +1,11 @@
-
+TALISMAN Log file
 
-LES - Laboratorio de Engenharia de Software
-   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
-
-!!! Base folder name: ..\test
-!!! Script file name: tst-avl-02
-!!! Event log to be directed to console.
-!!! Statistics will not be accumulated.
-!!! Do not count passages.
-!!! No mutation test
-!!! ------------------------------
-
-2018/06/19-01:45:26 : Log start: EVENT
+2018/06/19-01:48:03 : Log start: EVENT
 
 !!! **************************************************
-2018/06/19-01:45:26 : !!! Start test, script file: tst-avl-02.script
+2018/06/19-01:48:03 : !!! Start test, script file: tst-avl-03.script
 
-// Script:    Tst-avl-02.script
+// Script:    Tst-avl-03.script
 // Author:    Arndt von Staa
 // Date:      05/jun/2018
 // Purpose:   Test avl trees
@@ -125,16 +114,12 @@ Empty AVL tree
 --- 0    Line 80  Verify end
  
      82 == Test insert right of right
--- left right case 4/013:010 
--- rotate left 3/010:005 2/005:006 ------ 4/013:010 
--- first 2/010:006 3/006:005 1/006:007 
--- second 3/006:005 1/005:004 ------  -- after 4/013:010 3/010:006 
--- rotate right 4/013:010 3/010:006 1/006:007 4/xxx:013 
--- first 3/013:006 2/006:005 4/006:010 
--- second 4/006:010 1/010:007 1/010:011 
+-- rotate left 3/015:016 2/016:018 ------ 3/013:015 
+-- first 2/015:018 3/018:016 1/018:020 
+-- second 3/018:016 ------ ------ 
 --- 0    Line 84  Display start
 
-           1/005:004 2/006:005 3/013:006 1/010:007 2/006:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
+           1/005:004 2/010:005 1/005:006 3/013:010 1/010:011 4/xxx:013 1/015:014 3/013:015 1/018:016 2/015:018 1/018:020 
  
 --- 0    Line 84  Display end 
 --- 0    Line 85  Verify start 
@@ -142,7 +127,7 @@ Empty AVL tree
  
      87 == Verify memory leak
 
-2018/06/19-01:45:26 : !!! End of test, script file: tst-avl-02.script
+2018/06/19-01:48:03 : !!! End of test, script file: tst-avl-03.script
 !!! **************************************************
 
 !!! --------------------
@@ -150,12 +135,4 @@ Empty AVL tree
      Test statistics:   Test files 1  Test cases 15  Test commands 54  Test lines 90
      Test ending condition: No failures found.
 
-2018/06/19-01:45:26 : Log end: EVENT
-
-
-!!! ------------------------------
-
-!!! TEST OK.
-
-!!! ------------------------------
-
+2018/06/19-01:48:03 : Log end: EVENT

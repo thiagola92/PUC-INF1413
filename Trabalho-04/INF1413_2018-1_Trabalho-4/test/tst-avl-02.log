@@ -1,20 +1,9 @@
-
+TALISMAN Log file
 
-LES - Laboratorio de Engenharia de Software
-   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
-
-!!! Base folder name: ..\test
-!!! Script file name: tst-avl-02
-!!! Event log to be directed to console.
-!!! Statistics will not be accumulated.
-!!! Do not count passages.
-!!! No mutation test
-!!! ------------------------------
-
-2018/06/19-01:45:26 : Log start: EVENT
+2018/06/17-19:59:42 : Log start: EVENT
 
 !!! **************************************************
-2018/06/19-01:45:26 : !!! Start test, script file: tst-avl-02.script
+2018/06/17-19:59:42 : !!! Start test, script file: tst-avl-02.script
 
 // Script:    Tst-avl-02.script
 // Author:    Arndt von Staa
@@ -142,7 +131,7 @@ Empty AVL tree
  
      87 == Verify memory leak
 
-2018/06/19-01:45:26 : !!! End of test, script file: tst-avl-02.script
+2018/06/17-19:59:42 : !!! End of test, script file: tst-avl-02.script
 !!! **************************************************
 
 !!! --------------------
@@ -150,12 +139,4 @@ Empty AVL tree
      Test statistics:   Test files 1  Test cases 15  Test commands 54  Test lines 90
      Test ending condition: No failures found.
 
-2018/06/19-01:45:26 : Log end: EVENT
-
-
-!!! ------------------------------
-
-!!! TEST OK.
-
-!!! ------------------------------
-
+2018/06/17-19:59:42 : Log end: EVENT

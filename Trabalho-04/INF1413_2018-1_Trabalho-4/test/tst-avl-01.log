@@ -1,20 +1,9 @@
-
+TALISMAN Log file
 
-LES - Laboratorio de Engenharia de Software
-   Talisman unit test, version 0001.00-00, build 00001 (c) 2007
-
-!!! Base folder name: ..\test
-!!! Script file name: tst-avl-01
-!!! Event log to be directed to console.
-!!! Statistics will not be accumulated.
-!!! Do not count passages.
-!!! No mutation test
-!!! ------------------------------
-
-2018/06/19-01:45:16 : Log start: EVENT
+2018/06/17-19:59:44 : Log start: EVENT
 
 !!! **************************************************
-2018/06/19-01:45:16 : !!! Start test, script file: tst-avl-01.script
+2018/06/17-19:59:44 : !!! Start test, script file: tst-avl-01.script
 
 // Script:    Tst-avl-01.script
 // Author:    Arndt von Staa
@@ -411,32 +400,25 @@ Empty AVL tree
 -- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
 -- first 2/020:032 3/032:030 1/032:035 
 -- second 3/032:030 ------ ------ 
---- 0    Line 211  Display start
+//=ExceptionProgram   AssertionExc  AssertionExcId   'c'
+--- 0    Line 212  Display start
 
            1/020:015 3/xxx:020 1/032:030 2/020:032 1/032:035 
  
---- 0    Line 211  Display end 
---- 0    Line 212  Verify start 
---- 0    Line 212  Verify end
+--- 0    Line 212  Display end 
+--- 0    Line 213  Verify start 
+--- 0    Line 213  Verify end
  
 // ==========================================================
 //
-    217 == Verify memory leak
+    218 == Verify memory leak
 
-2018/06/19-01:45:16 : !!! End of test, script file: tst-avl-01.script
+2018/06/17-19:59:44 : !!! End of test, script file: tst-avl-01.script
 !!! **************************************************
 
 !!! --------------------
 !!!  Test ended
-     Test statistics:   Test files 1  Test cases 19  Test commands 155  Test lines 220
+     Test statistics:   Test files 1  Test cases 19  Test commands 155  Test lines 221
      Test ending condition: No failures found.
 
-2018/06/19-01:45:16 : Log end: EVENT
-
-
-!!! ------------------------------
-
-!!! TEST OK.
-
-!!! ------------------------------
-
+2018/06/17-19:59:44 : Log end: EVENT
