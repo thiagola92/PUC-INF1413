@@ -11,10 +11,10 @@ LES - Laboratorio de Engenharia de Software
 !!! No mutation test
 !!! ------------------------------
 
-2018/06/19-01:45:16 : Log start: EVENT
+2018/06/19-17:14:18 : Log start: EVENT
 
 !!! **************************************************
-2018/06/19-01:45:16 : !!! Start test, script file: tst-avl-01.script
+2018/06/19-17:14:18 : !!! Start test, script file: tst-avl-01.script
 
 // Script:    Tst-avl-01.script
 // Author:    Arndt von Staa
@@ -121,32 +121,33 @@ Empty AVL tree
 -- rotate right 3/xxx:020 2/020:010 ------ ------ 
 -- first 2/xxx:010 1/010:005 3/010:020 
 -- second 3/010:020 ------ ------ 
---- 0    Line 85  Display start
+// =ExceptionSystem       'c'
+--- 0    Line 86  Display start
 
            1/010:005 2/xxx:010 1/010:020 
  
---- 0    Line 85  Display end 
---- 0    Line 86  Verify start 
---- 0    Line 86  Verify end
+--- 0    Line 86  Display end 
+--- 0    Line 87  Verify start 
+--- 0    Line 87  Verify end
  
 // ==========================================================
 //
-     90 == Test left right
---- 0    Line 93  Display start
+     91 == Test left right
+--- 0    Line 94  Display start
 
            1/xxx:020 
  
---- 0    Line 93  Display end 
---- 0    Line 94  Verify start 
---- 0    Line 94  Verify end
+--- 0    Line 94  Display end 
+--- 0    Line 95  Verify start 
+--- 0    Line 95  Verify end
  
---- 0    Line 96  Display start
+--- 0    Line 97  Display start
 
            1/020:010 2/xxx:020 
  
---- 0    Line 96  Display end 
---- 0    Line 97  Verify start 
---- 0    Line 97  Verify end
+--- 0    Line 97  Display end 
+--- 0    Line 98  Verify start 
+--- 0    Line 98  Verify end
  
 -- left right case 3/xxx:020 
 -- rotate left 2/020:010 1/010:015 ------ 3/xxx:020 
@@ -155,32 +156,33 @@ Empty AVL tree
 -- rotate right 3/xxx:020 2/020:015 ------ ------ 
 -- first 2/xxx:015 1/015:010 3/015:020 
 -- second 3/015:020 ------ ------ 
---- 0    Line 99  Display start
+// =ExceptionSystem       'c'
+--- 0    Line 101  Display start
 
            1/015:010 2/xxx:015 1/015:020 
  
---- 0    Line 99  Display end 
---- 0    Line 100  Verify start 
---- 0    Line 100  Verify end
+--- 0    Line 101  Display end 
+--- 0    Line 102  Verify start 
+--- 0    Line 102  Verify end
  
 // ==========================================================
 //
-    104 == Test right left
---- 0    Line 108  Display start
+    106 == Test right right
+--- 0    Line 110  Display start
 
            1/xxx:020 
  
---- 0    Line 108  Display end 
---- 0    Line 109  Verify start 
---- 0    Line 109  Verify end
+--- 0    Line 110  Display end 
+--- 0    Line 111  Verify start 
+--- 0    Line 111  Verify end
  
---- 0    Line 111  Display start
+--- 0    Line 113  Display start
 
            2/xxx:020 1/020:030 
  
---- 0    Line 111  Display end 
---- 0    Line 112  Verify start 
---- 0    Line 112  Verify end
+--- 0    Line 113  Display end 
+--- 0    Line 114  Verify start 
+--- 0    Line 114  Verify end
  
 -- right left case 3/xxx:020 
 -- rotate right 2/020:030 1/030:025 ------ 3/xxx:020 
@@ -189,124 +191,127 @@ Empty AVL tree
 -- rotate left 3/xxx:020 2/020:025 ------ ------ 
 -- first 2/xxx:025 3/025:020 1/025:030 
 -- second 3/025:020 ------ ------ 
---- 0    Line 114  Display start
+// =ExceptionSystem       'c'
+--- 0    Line 117  Display start
 
            1/025:020 2/xxx:025 1/025:030 
  
---- 0    Line 114  Display end 
---- 0    Line 115  Verify start 
---- 0    Line 115  Verify end
+--- 0    Line 117  Display end 
+--- 0    Line 118  Verify start 
+--- 0    Line 118  Verify end
  
 // ==========================================================
 //
-    119 == Test right right
---- 0    Line 123  Display start
-
-           1/xxx:010 
- 
---- 0    Line 123  Display end 
---- 0    Line 124  Verify start 
---- 0    Line 124  Verify end
- 
+    122 == Test right right
 --- 0    Line 126  Display start
 
-           2/xxx:010 1/010:015 
+           1/xxx:010 
  
 --- 0    Line 126  Display end 
 --- 0    Line 127  Verify start 
 --- 0    Line 127  Verify end
  
--- rotate left 3/xxx:010 2/010:015 ------ ------ 
--- first 2/xxx:015 3/015:010 1/015:020 
--- second 3/015:010 ------ ------ 
 --- 0    Line 129  Display start
 
-           1/015:010 2/xxx:015 1/015:020 
+           2/xxx:010 1/010:015 
  
 --- 0    Line 129  Display end 
 --- 0    Line 130  Verify start 
 --- 0    Line 130  Verify end
  
+-- rotate left 3/xxx:010 2/010:015 ------ ------ 
+-- first 2/xxx:015 3/015:010 1/015:020 
+-- second 3/015:010 ------ ------ 
+// =ExceptionSystem       'c'
+--- 0    Line 133  Display start
+
+           1/015:010 2/xxx:015 1/015:020 
+ 
+--- 0    Line 133  Display end 
+--- 0    Line 134  Verify start 
+--- 0    Line 134  Verify end
+ 
 // ==========================================================
 //
-    134 == Test root left left
---- 0    Line 138  Display start
+    138 == Test root left left
+--- 0    Line 142  Display start
 
            1/xxx:020 
  
---- 0    Line 138  Display end 
---- 0    Line 139  Verify start 
---- 0    Line 139  Verify end
+--- 0    Line 142  Display end 
+--- 0    Line 143  Verify start 
+--- 0    Line 143  Verify end
  
---- 0    Line 141  Display start
+--- 0    Line 145  Display start
 
            2/xxx:020 1/020:025 
  
---- 0    Line 141  Display end 
---- 0    Line 142  Verify start 
---- 0    Line 142  Verify end
+--- 0    Line 145  Display end 
+--- 0    Line 146  Verify start 
+--- 0    Line 146  Verify end
  
---- 0    Line 144  Display start
+--- 0    Line 148  Display start
 
            1/020:015 2/xxx:020 1/020:025 
  
---- 0    Line 144  Display end 
---- 0    Line 145  Verify start 
---- 0    Line 145  Verify end
+--- 0    Line 148  Display end 
+--- 0    Line 149  Verify start 
+--- 0    Line 149  Verify end
  
---- 0    Line 147  Display start
+--- 0    Line 151  Display start
 
            1/015:010 2/020:015 3/xxx:020 1/020:025 
  
---- 0    Line 147  Display end 
---- 0    Line 148  Verify start 
---- 0    Line 148  Verify end
+--- 0    Line 151  Display end 
+--- 0    Line 152  Verify start 
+--- 0    Line 152  Verify end
  
 -- rotate right 3/020:015 2/015:010 ------ 3/xxx:020 
 -- first 2/020:010 1/010:005 3/010:015 
 -- second 3/010:015 ------ ------ 
---- 0    Line 150  Display start
+// =ExceptionSystem       'c'
+--- 0    Line 155  Display start
 
            1/010:005 2/020:010 1/010:015 3/xxx:020 1/020:025 
  
---- 0    Line 150  Display end 
---- 0    Line 151  Verify start 
---- 0    Line 151  Verify end
+--- 0    Line 155  Display end 
+--- 0    Line 156  Verify start 
+--- 0    Line 156  Verify end
  
 // ==========================================================
 //
-    155 == Test root left right
---- 0    Line 159  Display start
+    160 == Test root left right
+--- 0    Line 164  Display start
 
            1/xxx:020 
  
---- 0    Line 159  Display end 
---- 0    Line 160  Verify start 
---- 0    Line 160  Verify end
+--- 0    Line 164  Display end 
+--- 0    Line 165  Verify start 
+--- 0    Line 165  Verify end
  
---- 0    Line 162  Display start
+--- 0    Line 167  Display start
 
            2/xxx:020 1/020:025 
  
---- 0    Line 162  Display end 
---- 0    Line 163  Verify start 
---- 0    Line 163  Verify end
+--- 0    Line 167  Display end 
+--- 0    Line 168  Verify start 
+--- 0    Line 168  Verify end
  
---- 0    Line 165  Display start
+--- 0    Line 170  Display start
 
            1/020:015 2/xxx:020 1/020:025 
  
---- 0    Line 165  Display end 
---- 0    Line 166  Verify start 
---- 0    Line 166  Verify end
+--- 0    Line 170  Display end 
+--- 0    Line 171  Verify start 
+--- 0    Line 171  Verify end
  
---- 0    Line 168  Display start
+--- 0    Line 173  Display start
 
            1/015:010 2/020:015 3/xxx:020 1/020:025 
  
---- 0    Line 168  Display end 
---- 0    Line 169  Verify start 
---- 0    Line 169  Verify end
+--- 0    Line 173  Display end 
+--- 0    Line 174  Verify start 
+--- 0    Line 174  Verify end
  
 -- left right case 3/020:015 
 -- rotate left 2/015:010 1/010:012 ------ 3/020:015 
@@ -315,36 +320,21 @@ Empty AVL tree
 -- rotate right 3/020:015 2/015:012 ------ 3/xxx:020 
 -- first 2/020:012 1/012:010 3/012:015 
 -- second 3/012:015 ------ ------ 
---- 0    Line 171  Display start
+// =ExceptionSystem       'c'
+--- 0    Line 177  Display start
 
            1/012:010 2/020:012 1/012:015 3/xxx:020 1/020:025 
  
---- 0    Line 171  Display end 
---- 0    Line 172  Verify start 
---- 0    Line 172  Verify end
+--- 0    Line 177  Display end 
+--- 0    Line 178  Verify start 
+--- 0    Line 178  Verify end
  
 // ==========================================================
 //
-    176 == Test root right left
---- 0    Line 179  Display start
-
-           1/xxx:020 
- 
---- 0    Line 179  Display end 
---- 0    Line 180  Verify start 
---- 0    Line 180  Verify end
- 
---- 0    Line 182  Display start
-
-           1/020:015 2/xxx:020 
- 
---- 0    Line 182  Display end 
---- 0    Line 183  Verify start 
---- 0    Line 183  Verify end
- 
+    182 == Test root right left
 --- 0    Line 185  Display start
 
-           1/020:015 2/xxx:020 1/020:030 
+           1/xxx:020 
  
 --- 0    Line 185  Display end 
 --- 0    Line 186  Verify start 
@@ -352,11 +342,27 @@ Empty AVL tree
  
 --- 0    Line 188  Display start
 
-           1/020:015 3/xxx:020 2/020:030 1/030:035 
+           1/020:015 2/xxx:020 
  
 --- 0    Line 188  Display end 
 --- 0    Line 189  Verify start 
 --- 0    Line 189  Verify end
+ 
+--- 0    Line 191  Display start
+
+           1/020:015 2/xxx:020 1/020:030 
+ 
+--- 0    Line 191  Display end 
+--- 0    Line 192  Verify start 
+--- 0    Line 192  Verify end
+ 
+--- 0    Line 194  Display start
+
+           1/020:015 3/xxx:020 2/020:030 1/030:035 
+ 
+--- 0    Line 194  Display end 
+--- 0    Line 195  Verify start 
+--- 0    Line 195  Verify end
  
 -- right left case 3/020:030 
 -- rotate right 2/030:035 1/035:032 ------ 3/020:030 
@@ -365,73 +371,75 @@ Empty AVL tree
 -- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
 -- first 2/020:032 3/032:030 1/032:035 
 -- second 3/032:030 ------ ------ 
---- 0    Line 191  Display start
+// =ExceptionSystem       'c'
+--- 0    Line 198  Display start
 
            1/020:015 3/xxx:020 1/032:030 2/020:032 1/032:035 
  
---- 0    Line 191  Display end 
---- 0    Line 192  Verify start 
---- 0    Line 192  Verify end
+--- 0    Line 198  Display end 
+--- 0    Line 199  Verify start 
+--- 0    Line 199  Verify end
  
 // ==========================================================
 //
-    196 == Test root right right
---- 0    Line 199  Display start
+    203 == Test root right right
+--- 0    Line 206  Display start
 
            1/xxx:020 
  
---- 0    Line 199  Display end 
---- 0    Line 200  Verify start 
---- 0    Line 200  Verify end
+--- 0    Line 206  Display end 
+--- 0    Line 207  Verify start 
+--- 0    Line 207  Verify end
  
---- 0    Line 202  Display start
+--- 0    Line 209  Display start
 
            1/020:015 2/xxx:020 
  
---- 0    Line 202  Display end 
---- 0    Line 203  Verify start 
---- 0    Line 203  Verify end
+--- 0    Line 209  Display end 
+--- 0    Line 210  Verify start 
+--- 0    Line 210  Verify end
  
---- 0    Line 205  Display start
+--- 0    Line 212  Display start
 
            1/020:015 2/xxx:020 1/020:030 
  
---- 0    Line 205  Display end 
---- 0    Line 206  Verify start 
---- 0    Line 206  Verify end
+--- 0    Line 212  Display end 
+--- 0    Line 213  Verify start 
+--- 0    Line 213  Verify end
  
---- 0    Line 208  Display start
+--- 0    Line 215  Display start
 
            1/020:015 3/xxx:020 2/020:030 1/030:032 
  
---- 0    Line 208  Display end 
---- 0    Line 209  Verify start 
---- 0    Line 209  Verify end
+--- 0    Line 215  Display end 
+--- 0    Line 216  Verify start 
+--- 0    Line 216  Verify end
  
 -- rotate left 3/020:030 2/030:032 ------ 3/xxx:020 
 -- first 2/020:032 3/032:030 1/032:035 
 -- second 3/032:030 ------ ------ 
---- 0    Line 211  Display start
+// =ExceptionProgram   AssertionExc  AssertionExcId   'c'
+--- 0    Line 219  Display start
 
            1/020:015 3/xxx:020 1/032:030 2/020:032 1/032:035 
  
---- 0    Line 211  Display end 
---- 0    Line 212  Verify start 
---- 0    Line 212  Verify end
+--- 0    Line 219  Display end 
+--- 0    Line 220  Verify start 
+--- 0    Line 220  Verify end
  
 // ==========================================================
 //
-    217 == Verify memory leak
+    225 == Verify memory leak
 
-2018/06/19-01:45:16 : !!! End of test, script file: tst-avl-01.script
+2018/06/19-17:14:18 : !!! End of test, script file: tst-avl-01.script
 !!! **************************************************
 
 !!! --------------------
 !!!  Test ended
-     Test statistics:   Test files 1  Test cases 19  Test commands 155  Test lines 220
+     Test statistics:   Test files 1  Test cases 19  Test commands 155  Test lines 228
      Test ending condition: No failures found.
 
-2018/06/19-01:45:16 : Log end: EVENT
+2018/06/19-17:14:18 : Log end: EVENT
 
 
 !!! ------------------------------

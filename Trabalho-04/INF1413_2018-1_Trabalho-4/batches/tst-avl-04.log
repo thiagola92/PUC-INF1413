@@ -11,10 +11,10 @@ LES - Laboratorio de Engenharia de Software
 !!! No mutation test
 !!! ------------------------------
 
-2018/06/19-01:51:20 : Log start: EVENT
+2018/06/19-16:53:56 : Log start: EVENT
 
 !!! **************************************************
-2018/06/19-01:51:20 : !!! Start test, script file: tst-avl-04.script
+2018/06/19-16:53:56 : !!! Start test, script file: tst-avl-04.script
 
 // Script:    Tst-avl-04.script
 // Author:    Arndt von Staa
@@ -26,53 +26,30 @@ LES - Laboratorio de Engenharia de Software
      30 == Generate test script
 Symbol   1 001
 Symbol   4 004
--- rotate left 3/xxx:001 2/001:004 ------ ------ 
--- first 2/xxx:004 3/004:001 1/004:012 
--- second 3/004:001 ------ ------ 
 Symbol  12 012
 Symbol   7 007
 Symbol  16 016
 Symbol   4 004
--- rotate left 4/xxx:004 3/004:012 1/012:007 ------ 
--- first 3/xxx:012 4/012:004 2/012:016 
--- second 4/012:004 1/004:001 1/004:007 
 Symbol  14 014
 Symbol   6 006
 Symbol   2 002
--- rotate left 3/004:001 2/001:002 ------ 3/012:004 
--- first 2/004:002 3/002:001 1/002:003 
--- second 3/002:001 ------ ------ 
 Symbol   3 003
      33 == Verify memory leak
->>> 1    Line 35  Incorrect number of allocated bytes  Is 11243  Should be 11216
->>> 2    Line 36  No recovery provided. Command ignored:  =AllocCompareNum   3
 
-2018/06/19-01:51:20 : !!! End of test, script file: tst-avl-04.script
+2018/06/19-16:53:56 : !!! End of test, script file: tst-avl-04.script
 !!! **************************************************
 
 !!! --------------------
 !!!  Test ended
-     Test statistics:   Test files 1  Test cases 5  Test commands 19  Test lines 36
-     Test ending condition: >>> 2 <<< failures found.
+     Test statistics:   Test files 1  Test cases 5  Test commands 20  Test lines 36
+     Test ending condition: No failures found.
 
-2018/06/19-01:51:20 : Log end: EVENT
-
-
->>> 3 Allocated data spaces remain: 1, verify memory leakage.
-
->>> Log closed: ---DataSpace  Id:   129  Size:    27  Line:   242  File:      avltree.cpp   Addr: 00A78B40
->>> Log closed: 
-!!! Spaces still allocated:          1
->>> Log closed: 
-!!! Total data spaces allocated:   208
->>> Log closed: 
-!!! Total data spaces deleted:     199
->>> Log closed:  
+2018/06/19-16:53:56 : Log end: EVENT
 
 
 !!! ------------------------------
 
->>> TEST found 3 problems.
+!!! TEST OK.
 
 !!! ------------------------------
 

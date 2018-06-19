@@ -923,7 +923,7 @@ EXC_ASSERT( VerifyChild( pRight->pParent )) ;
       {
          pCurrElement->pLeftSubTree = DoInsertAVLelement( pCurrElement->pLeftSubTree , pNewElement ) ;
          pCurrElement->pLeftSubTree->pParent = pCurrElement ;
-      } else if ( is > 0 )
+      } else if ( is >= 0 )
       {
          pCurrElement->pRightSubTree = DoInsertAVLelement( pCurrElement->pRightSubTree , pNewElement ) ;
          pCurrElement->pRightSubTree->pParent = pCurrElement ;
@@ -931,8 +931,7 @@ EXC_ASSERT( VerifyChild( pRight->pParent )) ;
       {
       // New node exists
          pElementFound = pCurrElement ;
-         //return pNewElement ; // Não entendi essa parte
-         return NULL;
+         return pNewElement ;
       } /* if */
 
     // 2. Update height of this ancestor node 

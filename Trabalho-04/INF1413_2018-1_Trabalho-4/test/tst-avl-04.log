@@ -1,9 +1,9 @@
 TALISMAN Log file
 
-2018/06/19-01:50:56 : Log start: EVENT
+2018/06/19-05:31:44 : Log start: EVENT
 
 !!! **************************************************
-2018/06/19-01:50:56 : !!! Start test, script file: tst-avl-04.script
+2018/06/19-05:31:44 : !!! Start test, script file: tst-avl-04.script
 
 // Script:    Tst-avl-04.script
 // Author:    Arndt von Staa
@@ -13,25 +13,29 @@ TALISMAN Log file
      22 == Save the number of allocated data spaces
      27 == Test create an empty tree
      30 == Generate test script
--- rotate left 3/xxx:001 2/001:004 ------ ------ 
--- first 2/xxx:004 3/004:001 1/004:012 
--- second 3/004:001 ------ ------ 
--- rotate left 4/xxx:004 3/004:012 1/012:007 ------ 
--- first 3/xxx:012 4/012:004 2/012:016 
--- second 4/012:004 1/004:001 1/004:007 
--- rotate left 3/004:001 2/001:002 ------ 3/012:004 
--- first 2/004:002 3/002:001 1/002:003 
--- second 3/002:001 ------ ------ 
-     33 == Verify memory leak
->>> 1    Line 35  Incorrect number of allocated bytes  Is 13841  Should be 13814
->>> 2    Line 36  No recovery provided. Command ignored:  =AllocCompareNum   3
+>>> 1    Line 31  Tester caught system exception. 
+>>> 2    Line 32  Missing a system exception catcher. 
 
-2018/06/19-01:50:56 : !!! End of test, script file: tst-avl-04.script
-!!! **************************************************
+######  Unexpected system exception !!!!!
 
-!!! --------------------
-!!!  Test ended
-     Test statistics:   Test files 1  Test cases 5  Test commands 19  Test lines 36
-     Test ending condition: >>> 2 <<< failures found.
+    3    Line 32  vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+>>> 4    Line 32  Test crash: Program will be cancelled.
+ 
 
-2018/06/19-01:50:56 : Log end: EVENT
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+>>>DISASTER: Test has been cancelled prior to ending !!!
+
+      At Line: 250  In module: ..\sources\gnrctest.cpp
+
+>>>DISASTER: Starting roll back.
+
+
+>>>DISASTER: Roll back completed. Program will be canceled now !!!
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
