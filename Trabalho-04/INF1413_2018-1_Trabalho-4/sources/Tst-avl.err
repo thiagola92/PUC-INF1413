@@ -1,3 +1,5 @@
+avltree.cpp
+tst_avl.cpp
 main.cpp
 Microsoft (R) Incremental Linker Version 14.12.25835.0
 Copyright (C) Microsoft Corporation.  All rights reserved.

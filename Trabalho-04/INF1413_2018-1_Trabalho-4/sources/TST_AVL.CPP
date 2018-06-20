@@ -15,10 +15,12 @@
 //List of authors
 //   Id      Name
 //   avs Arndt von Staa
+//   tla Thiago Lages de Alencar
 //
 //Software base change control
 //    Version  Date         Authors      Description 
 //    1     09/02/2007   avs          development begun
+//    1     20/06/2018   tla          inf1413 T4
 //
 ////////////////////////////////////////////////////////////////////////////
 
@@ -354,10 +356,20 @@
                inxSymbol = RND_GenerateUniformDist( 1 , numElements ) ;
 
   // dummy
-     //bool isRet = false ; //
-     //isRet = vtObj[ inxTree ]->InsertAVLtreeSymbol( vtAVLsymbols[ inxSymbol ].symbol ) ; //
+     bool isRet = false ;
+     isRet = vtObj[ inxTree ]->InsertAVLtreeSymbol( vtAVLsymbols[ inxSymbol ].symbol ) ;
        printf( "\nSymbol %3i %s" , inxSymbol , vtAVLsymbols[ inxSymbol ].symbol ) ;
-       isErrorCount ++ ;
+       
+       if(isRet == true && vtAVLsymbols[ inxSymbol ].isInTree == false) {
+          vtAVLsymbols[ inxSymbol ].isInTree = true;
+       } else if(isRet == true && vtAVLsymbols[ inxSymbol ].isInTree == false) {
+          printf( ">>> Symbol inserted but not registered " ) ;
+          isErrorCount ++ ;
+       } else if(isRet == false && vtAVLsymbols[ inxSymbol ].isInTree == false) {
+         printf( ">>>  Symbol not inserted " ) ;
+          isErrorCount ++ ;
+       }
+
   // end dummy
             } /* for */
 

@@ -15,10 +15,12 @@
 //List of authors
 //   Id      Name
 //   avs Arndt von Staa
+//   tla Thiago Lages de Alencar
 //
 //Software base change control
 //    Version  Date         Authors      Description 
 //    1     09/02/2007   avs          development begun
+//    1     20/06/2018   thiagla92    inf1413 T4
 //
 ////////////////////////////////////////////////////////////////////////////
 
@@ -931,7 +933,8 @@ EXC_ASSERT( VerifyChild( pRight->pParent )) ;
       {
       // New node exists
          pElementFound = pCurrElement ;
-         return pNewElement ;
+         delete pNewElement;
+         return pCurrElement;
       } /* if */
 
     // 2. Update height of this ancestor node 

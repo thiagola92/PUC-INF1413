@@ -1,7 +1,10 @@
 // Script:    Tst-avl-01.script
 // Author:    Arndt von Staa
-// Date:      05/jun/2018
-// Purpose:   Test avl trees 
+// Author: Thiago Lages de Alencar
+// Date:      20/jun/2018
+// Purpose:   Test avl trees
+
+//  
 
 == Declare constants
 =DeclareParameter  AssertionExc      int 1
@@ -220,22 +223,28 @@
 =VerifyTree    Tree04  0
 
 // ==========================================================
- 
-//== Insert the same symbol
-//=DeleteTree    Tree01
-//=NewTree       Tree01
-//=InsertSymbol  Tree01  20  .true
-//=DisplayTree   Tree01  INFIX
-//=VerifyTree    Tree01  0
-//=InsertSymbol  Tree01  10  .true
-//=DisplayTree   Tree01  INFIX
-//=VerifyTree    Tree01  0
-//=InsertSymbol  Tree01  5   .true
-//=DisplayTree   Tree01  INFIX
-//=VerifyTree    Tree01  0
-//=InsertSymbol  Tree01  20   .true
-//=DisplayTree   Tree01  INFIX
-//=VerifyTree    Tree01  0
+// Tests created by Thiago Lages de Alencar
+
+== Insert the same symbol
+=DeleteTree    Tree01
+=NewTree       Tree01
+=InsertSymbol  Tree01  20  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  10  .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  5   .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+=InsertSymbol  Tree01  20   .true
+=DisplayTree   Tree01  INFIX
+=VerifyTree    Tree01  0
+
+== Generate test script
+=DeleteTree    Tree01
+=NewTree       Tree01
+=GenerateTest  Tree01  30 35  0
 
 // ==========================================================
 //

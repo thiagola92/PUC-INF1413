@@ -1,9 +1,9 @@
 TALISMAN Log file
 
-2018/06/19-05:31:40 : Log start: EVENT
+2018/06/20-00:26:30 : Log start: EVENT
 
 !!! **************************************************
-2018/06/19-05:31:40 : !!! Start test, script file: tst-avl-02.script
+2018/06/20-00:26:30 : !!! Start test, script file: tst-avl-02.script
 
 // Script:    Tst-avl-02.script
 // Author:    Arndt von Staa
@@ -32,7 +32,7 @@ Empty AVL tree
 --- 0    Line 35  Verify start 
 --- 0    Line 35  Verify end
  
-     37 == Test insert left of root1/xxx:010 
+     37 == Test insert left of root
 --- 0    Line 39  Display start
 
            1/013:010 2/xxx:013 
@@ -41,7 +41,7 @@ Empty AVL tree
 --- 0    Line 40  Verify start 
 --- 0    Line 40  Verify end
  
-     42 == Test insert right  of root1/013:010 
+     42 == Test insert right  of root
 --- 0    Line 44  Display start
 
            1/013:010 2/xxx:013 1/013:015 
@@ -51,29 +51,92 @@ Empty AVL tree
 --- 0    Line 45  Verify end
  
      47 == Test insert left of left
->>> 1    Line 48  Tester caught system exception. 
->>> 2    Line 49  Command is not a system exception catcher:  =DisplayTree   Tree01  INFIX
+--- 0    Line 49  Display start
 
-######  Unexpected system exception !!!!!
-
-    3    Line 49  vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
->>> 4    Line 49  Test crash: Program will be cancelled.
+           1/013:010 3/xxx:013 2/013:015 1/015:016 
  
+--- 0    Line 49  Display end 
+--- 0    Line 50  Verify start 
+--- 0    Line 50  Verify end
+ 
+     52 == Test insert right of left
+--- 0    Line 54  Display start
 
+           1/010:005 2/013:010 3/xxx:013 2/013:015 1/015:016 
+ 
+--- 0    Line 54  Display end 
+--- 0    Line 55  Verify start 
+--- 0    Line 55  Verify end
+ 
+     57 == Test insert left of right
+--- 0    Line 59  Display start
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+           1/010:005 2/013:010 1/010:011 3/xxx:013 2/013:015 1/015:016 
+ 
+--- 0    Line 59  Display end 
+--- 0    Line 60  Verify start 
+--- 0    Line 60  Verify end
+ 
+     62 == Test insert right of right
+--- 0    Line 64  Display start
 
+           1/010:005 2/013:010 1/010:011 3/xxx:013 1/015:014 2/013:015 1/015:016 
+ 
+--- 0    Line 64  Display end 
+--- 0    Line 65  Verify start 
+--- 0    Line 65  Verify end
+ 
+     67 == Test insert right of right
+--- 0    Line 69  Display start
 
->>>DISASTER: Test has been cancelled prior to ending !!!
+           1/005:004 2/010:005 3/013:010 1/010:011 4/xxx:013 1/015:014 2/013:015 1/015:016 
+ 
+--- 0    Line 69  Display end 
+--- 0    Line 70  Verify start 
+--- 0    Line 70  Verify end
+ 
+     72 == Test insert left of left
+--- 0    Line 74  Display start
 
-      At Line: 250  In module: ..\sources\gnrctest.cpp
+           1/005:004 2/010:005 3/013:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
+ 
+--- 0    Line 74  Display end 
+--- 0    Line 75  Verify start 
+--- 0    Line 75  Verify end
+ 
+     77 == Test insert right of right
+--- 0    Line 79  Display start
 
->>>DISASTER: Starting roll back.
+           1/005:004 2/010:005 1/005:006 3/013:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
+ 
+--- 0    Line 79  Display end 
+--- 0    Line 80  Verify start 
+--- 0    Line 80  Verify end
+ 
+     82 == Test insert right of right
+-- left right case 4/013:010 
+-- rotate left 3/010:005 2/005:006 ------ 4/013:010 
+-- first 2/010:006 3/006:005 1/006:007 
+-- second 3/006:005 1/005:004 ------  -- after 4/013:010 3/010:006 
+-- rotate right 4/013:010 3/010:006 1/006:007 4/xxx:013 
+-- first 3/013:006 2/006:005 4/006:010 
+-- second 4/006:010 1/010:007 1/010:011 
+--- 0    Line 84  Display start
 
+           1/005:004 2/006:005 3/013:006 1/010:007 2/006:010 1/010:011 4/xxx:013 1/015:014 3/013:015 2/015:016 1/016:018 
+ 
+--- 0    Line 84  Display end 
+--- 0    Line 85  Verify start 
+--- 0    Line 85  Verify end
+ 
+     87 == Verify memory leak
 
->>>DISASTER: Roll back completed. Program will be canceled now !!!
+2018/06/20-00:26:30 : !!! End of test, script file: tst-avl-02.script
+!!! **************************************************
 
+!!! --------------------
+!!!  Test ended
+     Test statistics:   Test files 1  Test cases 15  Test commands 54  Test lines 90
+     Test ending condition: No failures found.
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
+2018/06/20-00:26:30 : Log end: EVENT
