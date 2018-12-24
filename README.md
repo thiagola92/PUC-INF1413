@@ -1,3 +1,5 @@
+![WARNING](WARNING.png)
+
 # PUC-INF1413
 Teste de Software
 
