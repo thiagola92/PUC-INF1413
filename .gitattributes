@@ -1,2 +1,3 @@
 *.HPP linguist-language=C
 *.hpp linguist-language=C
+*.inc linguist-language=C
